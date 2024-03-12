@@ -8,17 +8,21 @@
 	
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
 	
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<link rel="stylesheet" href="css/local.css">
 </head>
 <body>
 	<div class="reveal">
 		<div class="slides">
 			<section>
-				<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
-				<p>Introduction aux langages HTML et CSS</p>  
+				<span class="r-fit-text">
+					<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
+					<p>Introduction aux langages HTML et CSS</p>
+				</span>
 			</section>
 			<section>
 				<span class="r-fit-text">
@@ -38,13 +42,15 @@
 				</span>
 			</section>
 			<section>
-				<h2>Objectifs du cours</h2>
-				<ul>
-					<li>Connaître les principaux fondements et standards du web</li>
-					<li>Savoir rédiger une page HTML</li>
-					<li>Savoir rédiger une feuille de style CSS</li>
-					<li>Comprendre la distinction contenu / forme</li>
-				</ul>
+				<span class="r-fit-text">
+					<h2>Objectifs du cours</h2>
+					<ul>
+						<li>Connaître les principaux fondements et standards du web</li>
+						<li>Savoir rédiger une page HTML</li>
+						<li>Savoir rédiger une feuille de style CSS</li>
+						<li>Comprendre la distinction contenu / forme</li>
+					</ul>
+				</span>
 			</section>
 			
 			<section>
@@ -52,10 +58,12 @@
 			</section>
 			
 			<section>
-				<figure>
-					<img src="assets/img/lee-cerf.jpeg" width="600" alt="Tim Berners-Lee et Vinton Cerf"/>
-					<figcaption>Tim Berners-Lee et Vinton G. Cerf</figcaption>
-				</figure>
+				<span class="r-fit-text">
+					<figure>
+						<img src="assets/img/lee-cerf.jpeg" width="600" alt="Tim Berners-Lee et Vinton Cerf"/>
+						<figcaption>Tim Berners-Lee et Vinton G. Cerf</figcaption>
+					</figure>
+				</span>
 			</section>
 			
 			<section>
@@ -71,10 +79,12 @@
 				</span>
 			</section>
 			<section>
-				<figure>
-					<img src="assets/img/client-serveur.png" width="800" alt="Client serveur"/>
-					<figcaption>Client serveur</figcaption>
-				</figure>
+				<span class="r-fit-text">
+					<figure>
+						<img src="assets/img/client-serveur.png" alt="Client serveur"/>
+						<figcaption>Client serveur</figcaption>
+					</figure>
+				</span>
 			</section>
 			<section>
 				<section>
@@ -117,10 +127,12 @@
 				<h1>HTML</h1>
 			</section>
 			<section>
-				<h2><em>HyperText Markup Language</em></h2>
-				<p>HTML est le langage de publication pour le web. Il est fondé sur l’utilisation de liens <em>hypertextuels</em> entre les documents et sur le protocole HTTP (<em>Hypertext Transfer Protocol</em>).</p>
-				<p>HTML a été développé au CERN par <em>Tim Berners-Lee</em>.</p>
-				<p>C’est un <em>langage de balisage</em>. C’est-à-dire qu’on utilise des balises pour marquer des portions de texte.</p>
+				<span class="r-fit-text">
+					<h2><em>HyperText Markup Language</em></h2>
+					<p>HTML est le langage de publication pour le web. Il est fondé sur l’utilisation de liens <em>hypertextuels</em> entre les documents et sur le protocole HTTP (<em>Hypertext Transfer Protocol</em>).</p>
+					<p>HTML a été développé au CERN par <em>Tim Berners-Lee</em>.</p>
+					<p>C’est un <em>langage de balisage</em>. C’est-à-dire qu’on utilise des balises pour marquer des portions de texte.</p>
+				</span>
 			</section>
 			
 			<section>
@@ -131,38 +143,42 @@
 			</section>
 			
 			<section>
-				<h2>Exemple</h2>
-				<pre>
-					<code>
-						<p>Mon <em>paragraphe</em>.</p>
-					</code>
-				</pre>
+				<span class="r-fit-text">
+					<h2>Exemple</h2>
+<pre>
+	<code>
+		<p>Mon <em>paragraphe</em>.</p>
+	</code>
+</pre>
+				</span>
 			</section>
 			
 			<section>
-				<h2>Exemple</h2>
-				<pre>
-					<code>
-						<article>
-							<h1>Mon titre</h1>
-							<p>Mon premier paragraphe.</p>
-							<p>Mon second <em>paragraphe</em>.</p>
-						</article>
-					</code>
-				</pre>
+				<span class="r-fit-text">
+					<h2>Exemple</h2>
+<pre>
+	<code>
+		<article>
+			<h1>Mon titre</h1>
+			<p>Mon premier paragraphe.</p>
+			<p>Mon second <em>paragraphe</em>.</p>
+		</article>
+	</code>
+</pre>
+				</span>
 			</section>
 			
 			<section>
 				<h2>Arborescence</h2>
-				<pre>
-					<code>
-						<article>
-							<h1>Mon titre</h1>
-							<p>Mon premier paragraphe.</p>
-							<p>Mon second <em>paragraphe</em>.</p>
-						</article>
-					</code>
-				</pre>
+<pre>
+	<code>
+		<article>
+			<h1>Mon titre</h1>
+			<p>Mon premier paragraphe.</p>
+			<p>Mon second <em>paragraphe</em>.</p>
+		</article>
+	</code>
+</pre>
 				<figure>
 					<img src="assets/img/arbre.png" alt="Arborescence HTML"/>
 				</figure>
@@ -179,9 +195,11 @@
 				</span>
 			</section>
 			<section>
-				<h2>Hello World!</h2>
-				<p><a href="https://codepen.io/sardinecan/pen/YzLaedw">Exemple</a>.</p>
-				<p>exercice :  dans un éditeur de texte, créer une page web très simple (p. ex. contenant seulement un paragraphe). La sauvegarder, en prenant soin d’utiliser une extension « .html ». L’ouvrir dans son navigateur.</p>
+				<span class="r-fit-text">
+					<h2>Hello World!</h2>
+					<p><a href="https://codepen.io/sardinecan/pen/YzLaedw">Exemple</a>.</p>
+					<p>exercice :  dans un éditeur de texte, créer une page web très simple (p. ex. contenant seulement un paragraphe). La sauvegarder, en prenant soin d’utiliser une extension « .html ». L’ouvrir dans son navigateur.</p>
+				</span>
 			</section>
 			
 			<section>
@@ -194,9 +212,7 @@
 						Pour être correctement affichés par un navigateur web, les paragraphes doivent être marqués à l’aide de la balise &lt;p&gt;.
 						Sans ces balises, le contenu n’est qu’un amas de texte. Les espaces et sauts de ligne sont ignorés !
 					</p>
-					
 					<p>https://codepen.io/sardinecan/pen/oNdegYx</p>
-					
 				</span>
 			</section>
 			
@@ -207,12 +223,8 @@
 						Il existe 6 niveaux de titre, de &lt;h1&gt; à &lt;h6&gt;. Ils permettent de mieux comprendre la structure d’une page.
 						Dans la mesure du possible, les niveaux de titre doivent se suivre. On évitera donc de passer d’un titre &lt;h1&gt; à un titre &lt;h3&gt; ou &lt;h4&gt; directement !
 					</p>
-					
-					
-					
 					<p>https://codepen.io/sardinecan/pen/KKRvwvr</p>
 					<p>https://codepen.io/sardinecan/pen/BaxdyRY</p>
-					
 				</span>
 			</section>
 			
@@ -226,12 +238,8 @@
 					<p>&lt;i&gt; est une balise de mise en forme (italic, italique). Elle permet de distinguer une portion de texte du texte environnant.</p>
 					<p>&lt;cite&gt; contient un titre d’œuvre. Cela se traduit généralement par un affichage en italique.</p>
 					<p>&lt;strong&gt; et &lt;em&gt; revêtent un caractère sémantique, et sont généralement pris en compte par les moteurs de recherche.</p>
-					
-					
-					
 					<p>https://codepen.io/sardinecan/pen/OJZjyyV</p>
 					<p>https://codepen.io/sardinecan/pen/OJZjygN</p>
-					
 				</span>
 			</section>
 			
@@ -242,11 +250,7 @@
 					<p>&lt;ol&gt; signale une liste ordonnées d’éléments.</p>
 					<p>&lt;dl&gt; indique une liste de définitions (type dictionnaire ou glossaire).</p>
 					<p>La balise &lt;li&gt; est utilisée dans les listes &lt;ul&gt; et &lt;ol&gt; pour marquer les éléments de liste. Dans une liste de définitions on marque les termes avec la balise &lt;dt&gt; et leur définition avec &lt;dd&gt;.</p>
-					
-					
-					
 					<p>https://codepen.io/sardinecan/pen/eYrEJZX</p>
-					
 				</span>
 			</section>
 			
@@ -255,10 +259,7 @@
 					<h3>Les citations &lt;q&gt; | &lt;blockquote&gt;</h3>
 					<p>&lt;q&gt; signale une citation courte. Les navigateurs les représentent avec des marques de citation (p. ex. guillemets).</p>
 					<p>&lt;blockquote&gt; indique un bloc de citation, c’est-à-dire une citation longue.</p>
-					
 					<p>https://codepen.io/sardinecan/pen/OJZjNjq</p>
-					
-					
 				</span>
 			</section>
 			
@@ -280,8 +281,7 @@
 					<p>&lt;pre&gt; signale un texte préformaté où les espaces seront retranscrits (pour du code informatique long, ou des calligrammes par exemple).</p>
 					<p>&lt;br&gt;> indique un saut de ligne. C’est une balise sans contenu et auto-fermante.</p>
 					<p>NB : certains caractères sont dits réservés. Afin de les afficher sur une page web sans qu’ils soient interprétés comme du code HTML on utilise des entités.</p>
-					<p>C’est le cas des caractères &lt;, &gt; et &amp;, qui sont représentés grâce aux entités &amp;lt;, &amp;gt; et &amp;amp;.</p>
-					
+					<p>C’est le cas des caractères &lt;, &gt; et &amp;, qui sont représentés grâce aux entités &amp;lt;, &amp;gt; et &amp;amp;.</p>			
 					<p>https://codepen.io/sardinecan/pen/qBYXaGR</p>
 				</span>
 			</section>
