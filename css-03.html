@@ -26,145 +26,199 @@
 			</section>
 			
 
-			Les unités de mesure
-Documentation
+			<section>
+				<span class="r-fit-text">
+					<h2>Les unités de mesure</h2>
+					<p>Documentation</p>
+				</span>
+			</section>
 
-Les unités absolues
-Les unités de mesure absolues ne dépendent pas d’un paramètre extérieur (largeur de l’écran, valeurs définies préalablement, etc.)
+<section>
+	<span class="r-fit-text">
+		<h3>Les unités absolues</h3>
+		<p>Les unités de mesure absolues ne dépendent pas d’un paramètre extérieur (largeur de l’écran, valeurs définies préalablement, etc.)</p>
+		
+		<ul>
+			<li>px : pixel</li>
+			<li>cm : centimètre</li>
+			<li>mm : millimètre</li>
+			<li>in : pouce (± 2,54 cm)</li>
+			<li>pt : point (1/72e de pouce)</li>
+		</ul>
+		
+		<p>À l’exception du pixel, ces unités de mesure seront essentiellement utilisées pour l’impression.</p>
+	</span>
+</section>
 
-px : pixel
-cm : centimètre
-mm : millimètre
-in : pouce (± 2,54 cm)
-pt : point (1/72e de pouce)
-
-À l’exception du pixel, ces unités de mesure seront essentiellement utilisées pour l’impression.
-
-Les unités relatives
-exemple
-Les unités de mesure relatives sont définies au regard d’un paramètre extérieur (taille de l’écran, zone d’affichage, taille du texte définie pour un élément parent, etc.)
-
-em : pour la typographie, l’unité em est relative à la taille de la police de l’élément parent / pour les autres propriétés, em est relative à la taille de la police de l’élément 
-rem : relative à la taille de la police définie pour l’élément racine (html ou body)
-pourcentage : relative à une fraction de l’élément parent
-vw : 1% de la largeur de la zone d’affichage
-vh : 1% de la hauteur de la zone d’affichage
-
-Ces unités de mesure relatives permettent de travailler à l’échelle. En modifiant le paramètre de référence, le design s’adapte automatiquement.
-
-
-La positionnement
-Documentation
-
-Le positionnement relatif
-
-exemple
-Par défaut, les éléments sont placés les uns à la suite des autres. La propriété position permet de sortir les éléments de ce flux normal en modifiant leur position.
-
-{position: static} : valeur par défaut
-
-Un élément positionné de manière relative est proche d’un élément statique, simplement il devient possible de modifier sa position par l’intermédiaire des propriétés top, bottom, left et right. Des chevauchements sont alors possibles.
-
-{  position: relative;  top: 30px;  left: 10px;}
-
-Le positionnement absolu
-
-exemple
-Le positionnement absolu fait sortir un élément du flux normal de la page.
-
-{position: absolute}
-
-Les propriétés top, bottom, left et right modifient la position de l’élément non plus au regard de sa position relative dans la mise en page du document, mais au regard du contexte défini par son conteneur.
-
-Si aucun ancêtre n’a vu sa position modifiée, l’élément sera positionné relativement à la zone d’affichage. Si on souhaite modifier ce contexte de positionnement, il suffit d’attribuer à un ancêtre, au regard duquel on souhaite positionner notre élément, la propriété position: relative
-
-Le positionnement fixe
-
-exemple
-Le positionnement fixe est proche du positionnement absolu, à la différence que les éléments sont toujours placés au regard de la fenêtre du navigateur.
-
-{position: fixed}
-
-Ainsi, même lors du défilement de la page, les éléments restent fixes ! 
-
-Le positionnement adhérent
-
-exemple
-Le positionnement adhérent est entre le positionnement relatif et le positionnement fixe.
-
-{position: sticky}
-
-C’est-à-dire qu’un élément adhérent garde une position relative jusqu’à un certain point, à partir duquel il adopte une position fixe.
+<section>
+	<span class="r-fit-text">
+		<h3>Les unités relatives</h3>
+		<p>exemple</p>
+		<p>Les unités de mesure relatives sont définies au regard d’un paramètre extérieur (taille de l’écran, zone d’affichage, taille du texte définie pour un élément parent, etc.)</p>
+		<ul>
+			<li>em : pour la typographie, l’unité em est relative à la taille de la police de l’élément parent / pour les autres propriétés, em est relative à la taille de la police de l’élément</li>
+			<li>rem : relative à la taille de la police définie pour l’élément racine (html ou body)</li>
+		</ul>
+		<p>pourcentage : relative à une fraction de l’élément parent</p>
+		<ul>
+			<li>vw : 1% de la largeur de la zone d’affichage</li>
+			<li>vh : 1% de la hauteur de la zone d’affichage</li>
+		</ul>
+		<p>Ces unités de mesure relatives permettent de travailler à l’échelle. En modifiant le paramètre de référence, le design s’adapte automatiquement.</p>
+	</span>
+</section>
 
 
-La superposition z-index
+<section>
+	<span class="r-fit-text">
+		<h2>La positionnement</h2>
+		<p>Documentation</p>
+	</span>
+</section>
 
-exemple
-La propriété z-index peut être utiliser pour modifier l’ordre d’empilement lié aux chevauchement 
+<section>
+	<span class="r-fit-text">
+		<h3>Le positionnement relatif</h3>
+		<p>exemple</p>
+		<p>Par défaut, les éléments sont placés les uns à la suite des autres. La propriété position permet de sortir les éléments de ce flux normal en modifiant leur position.</p>
+		<p>{position: static} : valeur par défaut</p>
+		<p>Un élément positionné de manière relative est proche d’un élément statique, simplement il devient possible de modifier sa position par l’intermédiaire des propriétés top, bottom, left et right. Des chevauchements sont alors possibles.</p>
+		<p>{position: relative; top: 30px; left: 10px;}</p>
+	</span>
+</section>
 
-{z-index: 1}
+<section>
+	<span class="r-fit-text">
+		<h3>Le positionnement absolu</h3>
+		<p>exemple</p>
+		<p>Le positionnement absolu fait sortir un élément du flux normal de la page.</p>
+		<p>{position: absolute}</p>
+		<p>Les propriétés top, bottom, left et right modifient la position de l’élément non plus au regard de sa position relative dans la mise en page du document, mais au regard du contexte défini par son conteneur.</p>
+		<p>Si aucun ancêtre n’a vu sa position modifiée, l’élément sera positionné relativement à la zone d’affichage. Si on souhaite modifier ce contexte de positionnement, il suffit d’attribuer à un ancêtre, au regard duquel on souhaite positionner notre élément, la propriété position: relative</p>
+	</span>
+</section>
 
-Plus la valeur de z-index est importante et plus l’élément sera sur le dessus de la pile.
+<section>
+	<span class="r-fit-text">
+		<h3>Le positionnement fixe</h3>
+		<p>exemple</p>
+		<p>Le positionnement fixe est proche du positionnement absolu, à la différence que les éléments sont toujours placés au regard de la fenêtre du navigateur.</p>
+		<p>{position: fixed}</p>
+		<p>Ainsi, même lors du défilement de la page, les éléments restent fixes !</p>
+	</span>
+</section>
+
+<section>
+	<span class="r-fit-text">
+		<h3>Le positionnement adhérent</h3>
+		<p>exemple</p>
+		<p>Le positionnement adhérent est entre le positionnement relatif et le positionnement fixe.</p>
+		<p>{position: sticky}</p>
+		<p>C’est-à-dire qu’un élément adhérent garde une position relative jusqu’à un certain point, à partir duquel il adopte une position fixe.</p>
+	</span>
+</section>
 
 
-Les éléments flottants
-Documentation
-
-Les éléments flottants
-
-exemple
-La propriété float permet aussi de sortir des éléments  du flux normal du document afin de les rendre flottants.
-
-{float: none} : valeur par défaut (les éléments s’empilent les uns au dessus des autres)
-
-Lorsque l’on utilise la propriété {float: left}, l’élément devient flottant et est placé sur le côté gauche, les éléments qui le suivent et qui contiennent du texte vont alors de disposer autour de lui.
-
-On observe la même chose avec la propriété {float: right}, l’élément devenant flottant du côté droit.
+<section>
+	<span class="r-fit-text">
+		<h3>La superposition z-index</h3>
+		<p>exemple</p>
+		<p>La propriété z-index peut être utiliser pour modifier l’ordre d’empilement lié aux chevauchement</p>
+		<p>{z-index: 1}</p>
+		<p>Plus la valeur de z-index est importante et plus l’élément sera sur le dessus de la pile.</p>
+	</span>
+</section>
 
 
-Les éléments flottants
+<section>
+	<span class="r-fit-text">
+		<h2>Les éléments flottants</h2>
+		<p>Documentation</p>
+	</span>
+</section>
 
-exemple
-La propriété float requiert une disposition block. Ainsi les éléments inline ou inline-block par exemple verront leur propriété display modifiée. 
+<section>
+	<span class="r-fit-text">
+		<h3>Les éléments flottants</h3>
+		<p>exemple</p>
+		<p>La propriété float permet aussi de sortir des éléments  du flux normal du document afin de les rendre flottants.</p>
+		<p>{float: none} : valeur par défaut (les éléments s’empilent les uns au dessus des autres)</p>
+		<p>Lorsque l’on utilise la propriété {float: left}, l’élément devient flottant et est placé sur le côté gauche, les éléments qui le suivent et qui contiennent du texte vont alors de disposer autour de lui.</p>
+		<p>On observe la même chose avec la propriété {float: right}, l’élément devenant flottant du côté droit.</p>
+	</span>
+</section>
 
-Le dégagement des éléments flottants
 
-exemple
-Si l’on souhaite forcer un élément à se placer sous un élément flottant, on peut faire appel à la propriété clear.
+<section>
+	<span class="r-fit-text">
+		<h3>Les éléments flottants</h3>
+		<p>exemple</p>
+		<p>La propriété float requiert une disposition block. Ainsi les éléments inline ou inline-block par exemple verront leur propriété display modifiée.</p>
+	</span>
+</section>
 
-{clear: both}
+<section>
+	<span class="r-fit-text">
+		<h3>Le dégagement des éléments flottants</h3>
+		<p>exemple</p>
+		<p>Si l’on souhaite forcer un élément à se placer sous un élément flottant, on peut faire appel à la propriété clear.</p>
+		<p>{clear: both}</p>
+	</span>
+</section>
 
-
-TP Flexbox - les conteneurs flexibles
-Les conteneurs flexibles vont nous permettre d’agencer les blocs qui structurent notre page plus facilement.
-Téléchargez le fichier tp_css_3 sur cours en ligne et dézippez le
-Commencez par lier le fichier css flexbox.css à la page web index.html
-L’utilisation des flexbox nécessite d’identifier des conteneurs à l’intérieur desquels on va retrouver des éléments.
-Au sein de notre page index.html, nous avons un <article> contenant plusieurs <section>. Si on ouvre ce fichier dans un navigateur, les différentes sections s’affichent les unes en dessous des autres.
-Commençons par ajouter une classe “conteneur” à l’élément <article>, puis dans flexbox.css ajoutons une nouvelle règle pour cet élément afin de le rendre flexible {display: flex;}. 
-Sauvegardez vos fichiers et recharger votre onglet dans le navigateur qu’observez-vous ?
-
-TP Flexbox - Les propriétés du conteneur
-Maintenant que notre conteneur est flexible, certaines propriétés peuvent lui être appliquées.
-La première est flex-direction, qui permet de définir l’axe selon lequel seront disposés les items du conteneur. Cette propriété peut prendre les valeurs row | row-reverse | column | column-reverse. Ajoutez cette propriété au conteneur et testez les différentes valeurs avant d’organiser le contenu selon l’axe de votre choix.
-La seconde propriété est justify-content. Elle définit comment doit être réparti l'espace entre et autour des items du conteneur, selon l'axe choisi précédemment. Les principales valeurs sont start | end | center | flex-start | flex-end |space-between | space-around | stretch. De même, ajoutez cette propriété à notre conteneur et testez les différentes valeurs avant de sélectionner la valeur space-between
-La propriété align-content permet d’organiser le contenu selon l’axe secondaire (vertical dans notre cas). Il est ainsi possible par exemple de centrer le contenu verticalement avec la valeur center.
-
-TP Flexbox - Les propriétés du conteneur
-La propriété flex-wrap rend possible la mise en place d’un retour à la ligne automatique des items avec les valeurs wrap | wrap-reverse. Choisissez l’une ou l’autre de ces valeurs pour notre conteneur, puis redimensionnez la fenêtre de votre navigateur. 
-Cette propriété est très intéressante dans le cadre d’un site responsive qui doit s’adapter à différentes tailles d’écran !
-Enfin, la propriété gap détermine la taille des espaces entre nos items. Fixer une valeur à votre convenance.
-
-TP Flexbox - Les propriétés des items
-Les items d’un conteneur disposent également de propriétés. Il est possible par exemple de déterminer l’ordre d’affichage (order) ou encore leur faculté à occuper l’espace vacant (flex-shrink).
-Dans le fichier index.html laisser uniquement trois items dans le conteneur et attribuez leur une classe différente à chacun (p. exemple un, deux, trois). 
-Changez l’ordre d’affichage du premier item à l’aide de la propriété order (p. exemple .un {order: 2;}). Order prend des valeurs numériques (1, 2, 3, etc.).
-Supprimez cette propriété et modifiez maintenant l’ordre de l’item .deux afin qu’il s’affiche en premier (.deux {order: 1;}). Que se passe-t-il ? 
-Il est important de noter que l’ordre n’a d’effet que sur les autres éléments ordonnés. Si un élément frère n'est pas ordonné, cet élément sera placé en premier dans l'ordre où il apparaît dans le DOM. Pour dépasser ce cas de figure, il convient d’utiliser des valeurs négatives pour order (	.deux {order: -1;})
-
-TP Flexbox - Les propriétés des items
-Ajoutez la propriété flex-grow à l’item du milieu. Flex-grow prend également une valeur numérique. Que se passe-t-il ? 
-La propriété flex-grow correspond au facteur d’expansion d’un item. À l'inverse, il existe la propriété flex-shrink, correspondant au facteur de rétrécissement.
+<section>
+	
+	<section>
+		<span class="r-fit-text">
+			<h2>TP Flexbox - les conteneurs flexibles</h2>
+			<p>Les conteneurs flexibles vont nous permettre d’agencer les blocs qui structurent notre page plus facilement.</p>
+			<p>Téléchargez le fichier tp_css_3 sur cours en ligne et dézippez le</p>
+			<p>Commencez par lier le fichier css flexbox.css à la page web index.html</p>
+			<p>L’utilisation des flexbox nécessite d’identifier des conteneurs à l’intérieur desquels on va retrouver des éléments.</p>
+			<p>Au sein de notre page index.html, nous avons un &lt;article&gt; contenant plusieurs &lt;section&gt;. Si on ouvre ce fichier dans un navigateur, les différentes sections s’affichent les unes en dessous des autres.</p>
+			<p>Commençons par ajouter une classe “conteneur” à l’élément &lt;article&gt;, puis dans flexbox.css ajoutons une nouvelle règle pour cet élément afin de le rendre flexible {display: flex;}.</p>
+			<p>Sauvegardez vos fichiers et recharger votre onglet dans le navigateur qu’observez-vous ?</p>
+		</span>
+	</section>
+	
+	<section>
+		<span class="r-fit-text">
+			<h2>TP Flexbox - Les propriétés du conteneur</h2>
+			<p>Maintenant que notre conteneur est flexible, certaines propriétés peuvent lui être appliquées.</p>
+			<p>La première est flex-direction, qui permet de définir l’axe selon lequel seront disposés les items du conteneur. Cette propriété peut prendre les valeurs row | row-reverse | column | column-reverse. Ajoutez cette propriété au conteneur et testez les différentes valeurs avant d’organiser le contenu selon l’axe de votre choix.</p>
+			<p>La seconde propriété est justify-content. Elle définit comment doit être réparti l'espace entre et autour des items du conteneur, selon l'axe choisi précédemment. Les principales valeurs sont start | end | center | flex-start | flex-end |space-between | space-around | stretch. De même, ajoutez cette propriété à notre conteneur et testez les différentes valeurs avant de sélectionner la valeur space-between</p>
+			<p>La propriété align-content permet d’organiser le contenu selon l’axe secondaire (vertical dans notre cas). Il est ainsi possible par exemple de centrer le contenu verticalement avec la valeur center.</p>
+		</span>
+	</section>
+	
+	<section>
+		<span class="r-fit-text">
+			<h2>TP Flexbox - Les propriétés du conteneur</h2>
+			<p>La propriété flex-wrap rend possible la mise en place d’un retour à la ligne automatique des items avec les valeurs wrap | wrap-reverse. Choisissez l’une ou l’autre de ces valeurs pour notre conteneur, puis redimensionnez la fenêtre de votre navigateur.</p>
+			<p>Cette propriété est très intéressante dans le cadre d’un site responsive qui doit s’adapter à différentes tailles d’écran !</p>
+			<p>Enfin, la propriété gap détermine la taille des espaces entre nos items. Fixer une valeur à votre convenance.</p>
+		</span>
+	</section>
+	
+	<section>
+		<span class="r-fit-text">
+			<h2>TP Flexbox - Les propriétés des items</h2>
+			<p>Les items d’un conteneur disposent également de propriétés. Il est possible par exemple de déterminer l’ordre d’affichage (order) ou encore leur faculté à occuper l’espace vacant (flex-shrink).</p>
+			<p>Dans le fichier index.html laisser uniquement trois items dans le conteneur et attribuez leur une classe différente à chacun (p. exemple un, deux, trois).</p>
+			<p>Changez l’ordre d’affichage du premier item à l’aide de la propriété order (p. exemple .un {order: 2;}). Order prend des valeurs numériques (1, 2, 3, etc.).</p>
+			<p>Supprimez cette propriété et modifiez maintenant l’ordre de l’item .deux afin qu’il s’affiche en premier (.deux {order: 1;}). Que se passe-t-il ?</p>
+			<p>Il est important de noter que l’ordre n’a d’effet que sur les autres éléments ordonnés. Si un élément frère n'est pas ordonné, cet élément sera placé en premier dans l'ordre où il apparaît dans le DOM. Pour dépasser ce cas de figure, il convient d’utiliser des valeurs négatives pour order (	.deux {order: -1;})</p>
+		</span>
+	</section>
+	
+	<section>
+		<span class="r-fit-text">
+			<h2>TP Flexbox - Les propriétés des items</h2>
+			<p>Ajoutez la propriété flex-grow à l’item du milieu. Flex-grow prend également une valeur numérique. Que se passe-t-il ?</p>
+			<p>La propriété flex-grow correspond au facteur d’expansion d’un item. À l'inverse, il existe la propriété flex-shrink, correspondant au facteur de rétrécissement.</p>
+		</span>
+	</section>
+</section>
 
 		</div>
 	</div>
