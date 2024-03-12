@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<title>reveal.js</title>
+	
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
+	
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<link rel="stylesheet" href="css/local.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<span class="r-fit-text">
+					<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
+					<p>Introduction aux langages HTML et CSS</p>
+				</span>
+			</section>
+			
+
+			Les grilles CSS
+Documentation
+
+display grid
+Nous avons vu qu’il était déjà possible d’utiliser les propriétés float et display: flex pour créer des grilles. Quel est alors l’intérêt du display: grid ?
+
+Le système grid permet en réalité de gérer la grille depuis l’élément parent (le conteneur). D’autre part, il permet également définir à la fois les colonnes et les lignes !
+
+grid-template-columns
+grid-template-rows
+exemple
+Une fois la propriété display: flex appliquée au conteneur, deux autres propriétés deviennent accessibles :
+
+grid-template-columns
+grid-template-rows
+
+Elles permettent respectivement de définir les colonnes et les lignes
+
+Syntaxe :
+.conteneur {
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100px 150px 100px;
+}
+
+Espacement et fractions
+exemple
+Les propriétés gap, column-gap et row-gap permettent d’ajouter un espace entre les colonnes et les lignes
+
+column-gap: 2em;
+row-gap: 1em;
+gap: 1em; | gap; 1em 2em;
+
+Ces espacements peuvent faire sortir nos “cellules” du cadre. Afin d’éviter cette situation, il est possible d’utiliser les fractions pour la propriété grid-template-columns
+
+Syntaxe :
+.conteneur {
+    grid-template-columns: 1fr 2fr 3fr;
+}
+
+Position des éléments
+exemple
+Les grilles CSS permettent également de positionner les différents éléments disponibles dans notre conteneur. 
+Nous disposons alors des propriétés : 
+
+grid-column, grid-column-start, et grid-column-end afin de déterminer les colonnes qui doivent être occupées par un élément
+grid-row, grid-row-start, et grid-row-end afin de déterminer les lignes qui doivent être occupées par un élément
+
+
+ 
+
+TP Grid - les grilles CSS
+Atteignez le niveau 28 de Grid Garden ! 
+
+		</div>
+	</div>
+	
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		});
+	</script>
+</body>
+</html>

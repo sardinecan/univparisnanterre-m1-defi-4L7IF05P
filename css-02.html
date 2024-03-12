@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<title>reveal.js</title>
+	
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
+	
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<link rel="stylesheet" href="css/local.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<span class="r-fit-text">
+					<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
+					<p>Introduction aux langages HTML et CSS</p>
+				</span>
+			</section>
+			
+			Le modèle de boîte
+Documentation
+
+Les boîtes
+Documentation
+
+Comprendre le modèle de boîte est primordial pour maîtriser CSS.
+Avec CSS, tout élément HTML est représenté par une boîte qui dispose de certaines propriétés : (par défaut)
+width : largeur, par défaut la totalité de l’espace disponible 
+height : hauteur, par défaut dépend du contenu
+padding : marges intérieures
+border : bordure 
+margin : marges extérieures
+NB : les navigateurs appliquent des styles par défaut.
+
+Les types de boîte
+la propriété display
+
+
+La propriété display permet de définir la façon dont les boîtes vont se comporter au regard des autres éléments environnants.
+
+
+display: block
+paragraphes, titres, etc.
+
+exemple
+ 
+
+prend toute la largeur disponible (par défaut)
+
+la hauteur et la largeur peuvent être définies manuellement
+
+deux éléments block ne peuvent être côte à côte
+
+les marges intérieures/extérieures et les bordures repoussent les autres éléments environnants
+
+display: inline
+Balises qui entourent simplement du texte (em, span, strong, a, etc.)
+exemple
+prend uniquement la dimension de son contenu
+
+la hauteur et la largeur ne peuvent pas être définies manuellement
+
+n’induit pas de retour à la ligne avec les éléments environnants
+
+les marges intérieures/extérieures et bordures verticales sont appliquées mais ne repoussent pas les éléments alentours
+
+les marges intérieures/extérieures et bordures horizontales sont appliquées et repoussent les éléments alentours
+
+display: inline-block
+par exemple les champs de formulaire de type texte
+exemple
+À mi-chemin entre les display block et inline. 
+
+Les éléments se comportent comme des éléments inline, mais il est possible de définir une largeur et une hauteur spécifiques.
+
+Les marges extérieures/intérieures, et les bordures repoussent bien les éléments environnants.
+
+Les autres valeurs de display
+documentation
+exemple
+Il existe d’autres valeurs pour la propriété display
+
+none : masque les éléments. Ils sont retirés de l’arbre d’accessibilité
+list-item : les éléments se comportent comme des items de liste
+flex : éléments flexibles (capacité à modifier leurs dimensions pour occuper l’espace disponible)
+grid : grille css
+etc.
+
+Les marges intérieures/extérieures et les bordures
+ margin, padding et border
+
+
+
+propriété margin
+marges extérieures
+documentation
+exemple
+Syntaxe
+
+margin: 10px; marge de 10 pixels pour tous les côtés
+margin: 10px 20px; marges verticales | marges horizontales
+margin: 10px 20px 5px; marge haute | marges horizontales | marge basse
+margin: 10px 20px 5px 20px; haut | droite | bas | gauche
+margin-top | margin-bottom | margin-left | margin-right
+
+fusion des marges : la marge haute d’un élément se fond parfois avec la marge basse de l’élément qui le précède. La marge restituée est alors égale à la plus grande des deux marges.
+
+propriété padding
+marges intérieures
+documentation
+exemple
+Syntaxe
+
+padding: 10px; marge de 10 pixels pour tous les côtés
+padding: 10px 20px; marges verticales | marges horizontales
+padding: 10px 20px 5px; marge haute | marges horizontales | marge basse
+padding: 10px 20px 5px 20px; haut | droite | bas | gauche
+padding-top | padding-bottom | padding-left | padding-right
+
+propriété border
+les bordures
+documentation
+exemple
+Syntaxe
+
+border: solid; style
+border: 2px dotted; largeur | style
+border: dashed orangered; style | couleur
+border: 5px dashed red; largeur | style | couleur
+
+
+
+
+La typographie
+
+
+
+propriété color
+Couleur du texte
+documentation
+exemple
+color accepte plusieurs formats de couleur
+
+couleurs nommées (red, green, blue, orangered, etc.)
+hexadécimales (#0000FF, #856D4D, etc.)
+RGB, mélange rouge-vert-bleu (rgb(255,160,122))
+RGBA, idem mais avec un paramètre de transparence (rgba(255, 0, 0, 1))
+
+Les propriétés pour les fontes 
+
+exemple
+font-size taille de la fonte (font-size: 12px;)
+font-weight graisse du texte (font-weight: bold;)
+font-family liste priorisée de polices ou de types de police à utiliser (font-family: sans-serif; font-family: Georgia, serif)
+font-style italique/oblique
+
+Les propriétés pour le texte
+
+exemple
+text-align: alignement horizontal du texte (font-size: left | right | center | justify;) ne s’applique que sur des éléments de type inline ou inline-block
+text-decoration ornementation du texte (text-decoration: wavy overline lime;)
+text-indent ornementation du texte (text-indent: 30px;)
+text-transform gestion des capitales/minuscules (text-transform: capitalize;)
+
+
+Les espacements
+exemple
+line-height : hauteur de l’interligne
+letter-spacing : réglage de l’interlettre
+
+TP	
+À l'aide du cours, des exemples et de la documentation, réalisez le tp suivant.
+Télécharger le dossier TP_CSS_2 sur cours en ligne et le décompresser pour accéder aux fichiers.
+l'objectif du TP est de réaliser une feuille de style pour la page web index.html
+commencez par associer la feuille de style style.css au fichier index.html à l'aide de la balise <link> (cours CSS n°1)
+<body>
+pour commencer, nous souhaitons fixer la largeur de cet élément à 800 pixels
+et afin de le centrer sur la page, nous lui appliquerons des marges extérieures automatiques
+
+TP	
+<nav>
+pour la navigation, nous souhaitons supprimer le traitement par défaut de la liste (<ul>), c’est à dire retirer les puces (propriété list-style) ainsi que les marges intérieures
+concernant les éléments de liste, transformez-les en éléments en ligne et appliquez leur une marge extérieure droite de 10 pixels afin de les espacer.
+Supprimer ensuite l’ornementation par défaut des liens et changez leur couleur par une de votre choix
+
+TP	
+<img> et <figure> 
+L’image sort du cadre imposé par la largeur du <body> car sa largeur et sa hauteur sont définies directement dans le code HTML (attributs width et height). Pour faire en sorte qu’elle utilise toute la largeur du body, appliquez lui une largeur correspondant à 100%
+on s’aperçoit que l’image se retrouve alors comme compressée. Afin de régler ce problème appliquez à l’image une hauteur automatique.
+L’élément <figure> dispose par défaut de marges extérieures qui induisent un décalage par rapport au titre h1 ou à la navigation. Supprimez ces marges.
+
+TP	
+<article> et <aside>
+ajoutez une marge extérieure inférieure de 50 pixels au premier élément <article> (voir cours CSS 1 sur les pseudo-classes) 
+concernant l’élément <aside> ajoutez lui des marges intérieures verticales de 10 pixels et 20 pixels pour les marges intérieures horizontales, ainsi qu’une bordure colorée de votre choix
+
+TP	
+<h1>, <h2> et <h3>
+Modifiez la couleur des titres et changez la fonte utilisée : faites en sorte d’utiliser soit Palatino, soit une fonte serif
+<p>
+Changez également la fonte des paragraphes. Établissez une liste de deux fontes sans-serif (Arial, Helvetica, Avenir, Geneva, etc.). Ajoutez à cette liste une fonte sans-serif par défaut
+Vous veillerez aussi à justifier le texte des paragraphes, à changer la taille de la police (16 pixels et 12 pixels pour le paragraphe dans le <aside>) et à modifier l’interligne (1.5 em) 
+
+TP	
+<footer>
+Modifiez la couleur de l'arrière-plan et du texte (à chercher dans la doc)
+enfin, mettez le texte en gras.
+
+		</div>
+	</div>
+	
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		});
+	</script>
+</body>
+</html>

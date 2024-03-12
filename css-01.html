@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<title>reveal.js</title>
+	
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/blood.css">
+	
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+	<link rel="stylesheet" href="css/local.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<span class="r-fit-text">
+					<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
+					<p>Introduction aux langages HTML et CSS</p>
+				</span>
+			</section>
+			
+			Cascading Style Sheets
+(Feuilles de style en cascade)
+
+CSS – ressources utiles
+W3C https://www.w3.org/Style/CSS/
+MDN https://developer.mozilla.org/fr/docs/Web/CSS
+W3C CSS validator : https://jigsaw.w3.org/css-validator/
+CSS cheat sheet : https://github.com/AdamMarsden/css-cheat-sheet
+
+CSS – Feuilles de style en cascade
+C’est un standard du W3C.
+CSS est utilisé pour mettre en forme des pages web (et des documents XML…).
+Une feuille de style CSS est une simple liste d’éléments auxquels on applique des styles.
+Cascade introduit la notion d’héritage.
+
+CSS – Syntaxe
+
+p {
+color: red;
+font-size: 1em;
+}
+
+
+sélecteur
+propriétés
+valeurs
+une déclaration
+
+CSS – Déclaration
+
+directement sur les éléments, avec l’attribut style
+
+<p style="color: red;">Lorem, ipsum dolor sit amet</p>
+
+CSS – Déclaration
+
+directement sur les éléments, avec l’attribut style
+dans le <head/> d’une page web, avec l’aide de la balise <style/>
+
+<!DOCTYPE html><html lang="fr">  <head>
+    <title>Document</title>
+    <style>
+       p { color: red; }    </style>   </head>  <body>    <p>Lorem, ipsum dolor</p>  </body>
+</html>
+
+CSS – Déclaration
+
+directement sur les éléments, avec l’attribut style
+dans le <head/> d’une page web, avec l’aide de la balise <style/>
+dans un document distinct
+
+
+<head>
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+maPageWeb.html
+p {
+   color: red;
+}
+
+style.css
+
+Les sélecteurs
+https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors
+
+Les sélecteurs simples
+Documentation
+Exemples
+Sélecteur de type : cible les éléments qui correspondent au nom indiqué. Syntaxe : nomElement
+Sélecteur de classe : cible les éléments au regard de la valeur de leur attribut class. Syntaxe : .nomClass | nomElement.nomClass
+Sélecteur d’identifiant : cible les éléments au regard de la valeur de leur attribut id. Syntaxe : #valeurId
+Sélecteur universel : cible n’importe quel élément. Syntaxe : *
+Sélecteur d’attribut : cible les éléments qui possèdent un attribut particulier ou qui possèdent un attribut avec une valeur particulière Syntaxe : [nomAttribut] (autres possibilités dans la documentation)
+
+Les combinateurs
+Documentation
+Exemples
+Les sélecteurs de voisin direct : cible les nœuds qui suivent immédiatement un élément donné. Syntaxe : A + B
+Les sélecteurs de voisins : cible les nœuds qui suivent un élément et qui ont le même parent. Syntaxe : A ~ B
+Les sélecteurs d'éléments enfants : cible les nœuds qui sont des enfants directs d'un élément donné. Syntaxe : A > B
+Les sélecteurs d'éléments descendants : cible les nœuds qui sont des descendants (pas nécessairement des enfants directs) d'un élément donné. Syntaxe : A B
+
+Les pseudo-classes
+Documentation
+Exemples
+Une pseudo-classe est un sélecteur qui permet de cibler des éléments au regard de leur état. 
+Syntaxe : nomElément:pseudoClass
+
+:hover cible un élément lors de son survol avec le pointeur
+:first-child / :last-child cible le premier/dernier élément fils par rapport à son élément parent
+:first-of-type / :last-of-type cible le premier/dernier élément d’un type particulier par rapport à son élément parent
+:nth-child() / :nth-of-type() idem mais permettent de cibler des éléments au regard de leur position ou d’un paterne (tous les paires ou tous les impaires par exemple)
+
+Héritage, cascade et spécificité
+Documentation
+Exemples
+L’ordre d’apparition des règles à de l’importance. Quand deux règles sont applicables, c’est la dernière qui est utilisée. Il s’agit du principe de cascade.
+Lorsque des règles avec des sélecteurs différents ciblent un même élément, c’est toujours la règle la plus spécifique qui s’applique.
+Certaines règles se transmettent des éléments parents aux élément enfants. C’est le principe de l’héritage.
+
+TP CSS Diner
+Atteignez le niveau 32 de CSS Diner !
+
+		</div>
+	</div>
+	
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+		});
+	</script>
+</body>
+</html>
