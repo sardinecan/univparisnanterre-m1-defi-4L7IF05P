@@ -42,6 +42,10 @@ body.index {
   list-style:decimal-leading-zero;
 }
 
+.index>main>ul>li {
+  margin-top: 1em;
+}
+
 .bold {
   font-weight: bold;
 }
