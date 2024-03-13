@@ -1,57 +1,45 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title>reveal.js</title>
-
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/blood.css">
-
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-
-	<link rel="stylesheet" href="css/local.css">
-</head>
-
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<span class="r-fit-text">
-					<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
-					<p>Introduction aux langages HTML et CSS</p>
-				</span>
-			</section>
-
-
-			<section>
-				<span class="r-fit-text">
-					<h2>Les grilles CSS</h2>
-					<p>Documentation</p>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h2>display grid</h2>
-					<p>Nous avons vu qu’il était déjà possible d’utiliser les propriétés float et display: flex pour créer des
-						grilles. Quel est alors l’intérêt du display: grid ?</p>
-					<p>Le système grid permet en réalité de gérer la grille depuis l’élément parent (le conteneur). D’autre part,
-						il permet également définir à la fois les colonnes et les lignes !</p>
-					<p>exemple</p>
-					<p>Une fois la propriété display: grid appliquée au conteneur, deux autres propriétés deviennent accessibles :
-					</p>
-					<ul>
-						<li>grid-template-columns</li>
-						<li>grid-template-rows</li>
-					</ul>
-					<p>Elles permettent respectivement de définir les colonnes et les lignes</p>
-					<p>Syntaxe :</p>
-					<pre>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>reveal.js</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/blood.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="css/local.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<span class="r-fit-text">
+						<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
+						<p>Introduction aux langages HTML et CSS</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h2>Les grilles CSS</h2>
+						<p>Documentation</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h2>display grid</h2>
+						<p>Nous avons vu qu’il était déjà possible d’utiliser les propriétés float et display: flex pour créer des grilles. Quel est alors l’intérêt du display: grid ?</p>
+						<p>Le système grid permet en réalité de gérer la grille depuis l’élément parent (le conteneur). D’autre part, il permet également définir à la fois les colonnes et les lignes !</p>
+						<p>exemple</p>
+						<p>Une fois la propriété display: grid appliquée au conteneur, deux autres propriétés deviennent accessibles : </p>
+						<ul>
+							<li>grid-template-columns</li>
+							<li>grid-template-rows</li>
+						</ul>
+						<p>Elles permettent respectivement de définir les colonnes et les lignes</p>
+						<p>Syntaxe :</p>
+						<pre>
 			<code>
 				.conteneur {
 						grid-template-columns: 20% 60% 20%;
@@ -59,74 +47,62 @@
 				}
 			</code>
 		</pre>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Epacement et fractions</h3>
-					<p>exemple</p>
-					<p>Les propriétés gap, column-gap et row-gap permettent d’ajouter un espace entre les colonnes et les lignes
-					</p>
-					<ul>
-						<li>column-gap: 2em;</li>
-						<li>row-gap: 1em;</li>
-						<li>gap: 1em; | gap; 1em 2em;</li>
-					</ul>
-					<p>Ces espacements peuvent faire sortir nos “cellules” du cadre. Afin d’éviter cette situation, il est
-						possible d’utiliser les fractions pour la propriété grid-template-columns</p>
-					<p>Syntaxe :</p>
-					<pre>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Epacement et fractions</h3>
+						<p>exemple</p>
+						<p>Les propriétés gap, column-gap et row-gap permettent d’ajouter un espace entre les colonnes et les lignes </p>
+						<ul>
+							<li>column-gap: 2em;</li>
+							<li>row-gap: 1em;</li>
+							<li>gap: 1em; | gap; 1em 2em;</li>
+						</ul>
+						<p>Ces espacements peuvent faire sortir nos “cellules” du cadre. Afin d’éviter cette situation, il est possible d’utiliser les fractions pour la propriété grid-template-columns</p>
+						<p>Syntaxe :</p>
+						<pre>
 			<code>
 				.conteneur {
 						grid-template-columns: 1fr 2fr 3fr;
 				}
 			</code>
 		</pre>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Position des éléments</h3>
-					<p>exemple</p>
-					<p>Les grilles CSS permettent également de positionner les différents éléments disponibles dans notre
-						conteneur.</p>
-					<p>Nous disposons alors des propriétés :</p>
-					<ul>
-						<li>grid-column, grid-column-start, et grid-column-end afin de déterminer les colonnes qui doivent être
-							occupées par un élément</li>
-						<li>grid-row, grid-row-start, et grid-row-end afin de déterminer les lignes qui doivent être occupées par un
-							élément</li>
-					</ul>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h2>TP Grid - les grilles CSS</h2>
-					<p class="alignCenter">Atteignez le niveau 28 de Grid Garden !</p>
-				</span>
-			</section>
-
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Position des éléments</h3>
+						<p>exemple</p>
+						<p>Les grilles CSS permettent également de positionner les différents éléments disponibles dans notre conteneur.</p>
+						<p>Nous disposons alors des propriétés :</p>
+						<ul>
+							<li>grid-column, grid-column-start, et grid-column-end afin de déterminer les colonnes qui doivent être occupées par un élément</li>
+							<li>grid-row, grid-row-start, et grid-row-end afin de déterminer les lignes qui doivent être occupées par un élément</li>
+						</ul>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h2>TP Grid - les grilles CSS</h2>
+						<p class="alignCenter">Atteignez le niveau 28 de Grid Garden !</p>
+					</span>
+				</section>
+			</div>
 		</div>
-	</div>
-
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-	</script>
-</body>
-
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+         // More info about initialization & config:
+         // - https://revealjs.com/initialization/
+         // - https://revealjs.com/config/
+         Reveal.initialize({
+            hash: true,
+            
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins:[RevealMarkdown, RevealHighlight, RevealNotes]
+         });</script>
+	</body>
 </html>

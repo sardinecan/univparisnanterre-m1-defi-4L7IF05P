@@ -1,59 +1,48 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title>reveal.js</title>
-
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/blood.css">
-
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-
-	<link rel="stylesheet" href="css/local.css">
-</head>
-
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<span class="r-fit-text">
-					<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
-					<p class="alignCenter">Introduction aux langages HTML et CSS</p>
-				</span>
-			</section>
-
-			<section>
-				<h1>Cascading Style Sheets</h1>
-				<span>(Feuilles de style en cascade)</span>
-			</section>
-
-			<section>
-				<h2>CSS – ressources utiles</h2>
-				<ul>
-					<li>W3C https://www.w3.org/Style/CSS/</li>
-					<li>MDN https://developer.mozilla.org/fr/docs/Web/CSS</li>
-					<li>W3C CSS validator : https://jigsaw.w3.org/css-validator/</li>
-					<li>CSS cheat sheet : https://github.com/AdamMarsden/css-cheat-sheet</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>CSS – Feuilles de style en cascade</h2>
-				<p>C’est un standard du W3C.</p>
-				<p>CSS est utilisé pour mettre en forme des pages web (et des documents XML…).</p>
-				<p>Une feuille de style CSS est une simple liste d’éléments auxquels on applique des styles.</p>
-				<p>Cascade introduit la notion d’héritage.</p>
-			</section>
-
-			<section>
-				<h2>CSS – Syntaxe</h2>
-
-				<pre>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>reveal.js</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/blood.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="css/local.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<span class="r-fit-text">
+						<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
+						<p class="alignCenter">Introduction aux langages HTML et CSS</p>
+					</span>
+				</section>
+				<section>
+					<h1>Cascading Style Sheets</h1>
+					<span>(Feuilles de style en cascade)</span>
+				</section>
+				<section>
+					<h2>CSS – ressources utiles</h2>
+					<ul>
+						<li>W3C https://www.w3.org/Style/CSS/</li>
+						<li>MDN https://developer.mozilla.org/fr/docs/Web/CSS</li>
+						<li>W3C CSS validator : https://jigsaw.w3.org/css-validator/</li>
+						<li>CSS cheat sheet : https://github.com/AdamMarsden/css-cheat-sheet</li>
+					</ul>
+				</section>
+				<section>
+					<h2>CSS – Feuilles de style en cascade</h2>
+					<p>C’est un standard du W3C.</p>
+					<p>CSS est utilisé pour mettre en forme des pages web (et des documents XML…).</p>
+					<p>Une feuille de style CSS est une simple liste d’éléments auxquels on applique des styles.</p>
+					<p>Cascade introduit la notion d’héritage.</p>
+				</section>
+				<section>
+					<h2>CSS – Syntaxe</h2>
+					<pre>
 		<code>
 			/*une déclaration*/
 			p /*sélecteur*/ {
@@ -62,32 +51,22 @@
 			}
 		</code>
 	</pre>
-			</section>
-
-
-
-
-			<section>
+				</section>
 				<section>
-					CSS – Déclaration
-					<ul>
-						<li>directement sur les éléments, avec l’attribut style</li>
-					</ul>
-
-					<pre>
+					<section> CSS – Déclaration <ul>
+							<li>directement sur les éléments, avec l’attribut style</li>
+						</ul>
+						<pre>
 			<code>
 				<p style="color: red;">Lorem, ipsum dolor sit amet</p>
 			</code>
 		</pre>
-				</section>
-				<section>
-					CSS – Déclaration
-					<ul>
-						<li>directement sur les éléments, avec l’attribut style</li>
-						<li>dans le &lt;head/&gt; d’une page web, avec l’aide de la balise &lt;style/&gt;</li>
-					</ul>
-
-					<pre>
+					</section>
+					<section> CSS – Déclaration <ul>
+							<li>directement sur les éléments, avec l’attribut style</li>
+							<li>dans le &lt;head/&gt; d’une page web, avec l’aide de la balise &lt;style/&gt;</li>
+						</ul>
+						<pre>
 			<code>
 				&lt;!DOCTYPE html&gt;
 				&lt;html lang="fr"&gt;
@@ -101,21 +80,18 @@
 				&lt;/html&gt;
 			</code>
 		</pre>
-				</section>
-				<section>
-					CSS – Déclaration
-					<ul>
-						<li>directement sur les éléments, avec l’attribut style</li>
-						<li>dans le &lt;head/&gt; d’une page web, avec l’aide de la balise &lt;style/&gt;</li>
-						<li>dans un document distinct</li>
-					</ul>
-
-					<pre>
+					</section>
+					<section> CSS – Déclaration <ul>
+							<li>directement sur les éléments, avec l’attribut style</li>
+							<li>dans le &lt;head/&gt; d’une page web, avec l’aide de la balise &lt;style/&gt;</li>
+							<li>dans un document distinct</li>
+						</ul>
+						<pre>
 			<code>
 				<!--maPageWeb.html-->
 				&lt;head&gt;
 					<title>Document</title>
-					<link href="style.css" rel="stylesheet"/>
+					<link href="style.css" rel="stylesheet" />
 				&lt;/head&gt;
 				
 				<!-- style.css -->
@@ -124,105 +100,79 @@
 				}
 			</code>
 		</pre>
+					</section>
 				</section>
-			</section>
-
-
-
-			<section>
-				<h2>Les sélecteurs</h2>
-				<p class="alignCenter">https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors</p>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Les sélecteurs simples</h3>
-					<p>Documentation</p>
-					<p>Exemples</p>
-					<p>Sélecteur de type : cible les éléments qui correspondent au nom indiqué. Syntaxe : nomElement</p>
-					<p>Sélecteur de classe : cible les éléments au regard de la valeur de leur attribut class. Syntaxe : .nomClass
-						| nomElement.nomClass</p>
-					<p>Sélecteur d’identifiant : cible les éléments au regard de la valeur de leur attribut id. Syntaxe :
-						#valeurId</p>
-					<p>Sélecteur universel : cible n’importe quel élément. Syntaxe : *</p>
-					<p>Sélecteur d’attribut : cible les éléments qui possèdent un attribut particulier ou qui possèdent un
-						attribut avec une valeur particulière Syntaxe : [nomAttribut] (autres possibilités dans la documentation)
-					</p>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Les combinateurs</h3>
-					<p>Documentation</p>
-					<p>Exemples</p>
-					<p>Les sélecteurs de voisin direct : cible les nœuds qui suivent immédiatement un élément donné. Syntaxe : A +
-						B</p>
-					<p>Les sélecteurs de voisins : cible les nœuds qui suivent un élément et qui ont le même parent. Syntaxe : A ~
-						B</p>
-					<p>Les sélecteurs d'éléments enfants : cible les nœuds qui sont des enfants directs d'un élément donné.
-						Syntaxe : A > B</p>
-					<p>Les sélecteurs d'éléments descendants : cible les nœuds qui sont des descendants (pas nécessairement des
-						enfants directs) d'un élément donné. Syntaxe : A B</p>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Les pseudo-classes</h3>
-					<p>Documentation</p>
-					<p>Exemples</p>
-					<p>Une pseudo-classe est un sélecteur qui permet de cibler des éléments au regard de leur état.</p>
-					<p>Syntaxe : nomElément:pseudoClass</p>
-
-					<ul>
-						<li>:hover cible un élément lors de son survol avec le pointeur</li>
-						<li>:first-child / :last-child cible le premier/dernier élément fils par rapport à son élément parent</li>
-						<li>:first-of-type / :last-of-type cible le premier/dernier élément d’un type particulier par rapport à son
-							élément parent</li>
-						<li>:nth-child() / :nth-of-type() idem mais permettent de cibler des éléments au regard de leur position ou
-							d’un paterne (tous les paires ou tous les impaires par exemple)</li>
-					</ul>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Héritage, cascade et spécificité</h3>
-					<p>Documentation</p>
-					<p>Exemples</p>
-					<p>L’ordre d’apparition des règles à de l’importance. Quand deux règles sont applicables, c’est la dernière
-						qui est utilisée. Il s’agit du principe de cascade.</p>
-					<p>Lorsque des règles avec des sélecteurs différents ciblent un même élément, c’est toujours la règle la plus
-						spécifique qui s’applique.</p>
-					<p>Certaines règles se transmettent des éléments parents aux élément enfants. C’est le principe de l’héritage.
-					</p>
-				</span>
-			</section>
-
-			<section>
-				<h2>TP CSS Diner</h2>
-				<p class="alignCenter">Atteignez le niveau 32 de CSS Diner !</p>
-			</section>
-
+				<section>
+					<h2>Les sélecteurs</h2>
+					<p class="alignCenter">https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors</p>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Les sélecteurs simples</h3>
+						<p>Documentation</p>
+						<p>Exemples</p>
+						<p>Sélecteur de type : cible les éléments qui correspondent au nom indiqué. Syntaxe : nomElement</p>
+						<p>Sélecteur de classe : cible les éléments au regard de la valeur de leur attribut class. Syntaxe : .nomClass | nomElement.nomClass</p>
+						<p>Sélecteur d’identifiant : cible les éléments au regard de la valeur de leur attribut id. Syntaxe : #valeurId</p>
+						<p>Sélecteur universel : cible n’importe quel élément. Syntaxe : *</p>
+						<p>Sélecteur d’attribut : cible les éléments qui possèdent un attribut particulier ou qui possèdent un attribut avec une valeur particulière Syntaxe : [nomAttribut] (autres possibilités dans la documentation) </p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Les combinateurs</h3>
+						<p>Documentation</p>
+						<p>Exemples</p>
+						<p>Les sélecteurs de voisin direct : cible les nœuds qui suivent immédiatement un élément donné. Syntaxe : A + B</p>
+						<p>Les sélecteurs de voisins : cible les nœuds qui suivent un élément et qui ont le même parent. Syntaxe : A ~ B</p>
+						<p>Les sélecteurs d'éléments enfants : cible les nœuds qui sont des enfants directs d'un élément donné. Syntaxe : A > B</p>
+						<p>Les sélecteurs d'éléments descendants : cible les nœuds qui sont des descendants (pas nécessairement des enfants directs) d'un élément donné. Syntaxe : A B</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Les pseudo-classes</h3>
+						<p>Documentation</p>
+						<p>Exemples</p>
+						<p>Une pseudo-classe est un sélecteur qui permet de cibler des éléments au regard de leur état.</p>
+						<p>Syntaxe : nomElément:pseudoClass</p>
+						<ul>
+							<li>:hover cible un élément lors de son survol avec le pointeur</li>
+							<li>:first-child / :last-child cible le premier/dernier élément fils par rapport à son élément parent</li>
+							<li>:first-of-type / :last-of-type cible le premier/dernier élément d’un type particulier par rapport à son élément parent</li>
+							<li>:nth-child() / :nth-of-type() idem mais permettent de cibler des éléments au regard de leur position ou d’un paterne (tous les paires ou tous les impaires par exemple)</li>
+						</ul>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Héritage, cascade et spécificité</h3>
+						<p>Documentation</p>
+						<p>Exemples</p>
+						<p>L’ordre d’apparition des règles à de l’importance. Quand deux règles sont applicables, c’est la dernière qui est utilisée. Il s’agit du principe de cascade.</p>
+						<p>Lorsque des règles avec des sélecteurs différents ciblent un même élément, c’est toujours la règle la plus spécifique qui s’applique.</p>
+						<p>Certaines règles se transmettent des éléments parents aux élément enfants. C’est le principe de l’héritage. </p>
+					</span>
+				</section>
+				<section>
+					<h2>TP CSS Diner</h2>
+					<p class="alignCenter">Atteignez le niveau 32 de CSS Diner !</p>
+				</section>
+			</div>
 		</div>
-	</div>
-
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-	</script>
-</body>
-
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+         // More info about initialization & config:
+         // - https://revealjs.com/initialization/
+         // - https://revealjs.com/config/
+         Reveal.initialize({
+            hash: true,
+            
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins:[RevealMarkdown, RevealHighlight, RevealNotes]
+         });</script>
+	</body>
 </html>

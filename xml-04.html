@@ -28,557 +28,453 @@
       </section>
 
 
-      <section><span class="r-fit-text">XPath</span></section>
-
       <section>
         <span class="r-fit-text">
-          Retour sur la notion d’arborescence
-          Le texte peut être vu comme une hiérarchie ordonnée d’objets contenus (OHCO – ordered hierarchy of content
-          objects)1 :
-          les objets contenus sont, par exemple, des chapitres, des sections, des sous-sections, des paragraphes, des
-          citations, etc.,
-          ces objets sont « imbriqués » les uns dans les autres – une section contient plusieurs paragraphes – c’est
-          pourquoi on parle de structure hiérarchique,
-          ces mêmes objets apparaissent les uns à l’intérieur des autres, mais également les uns à la suite des autres :
-          le texte est donc ordonné ;
-          Le modèle de données de XML, arborescent, est précisément conforme à OHCO ;
-          Cette structure hiérarchique (arbre XML) est facilement compréhensible par l’homme, mais également par la
-          machine. Il est donc très aisé de manipuler ce type de données.
-          1Steve DeRose, David Durand, Elli Mylonas, and Allen Renear’s 1990 “What is text, really?”
-        </span>
-      </section>
-
-
-      <section>
-        <span class="r-fit-text">
-          Retour sur la notion d’arborescence
-          <pre>
-      <code>
-        <?xml version="1.0" encoding="UTF-8"?>
-        <personnes>
-         <personne>
-           <identité>
-             <prénom>Victor</prénom>
-             <nom>Hugo</nom>
-           </identité>
-           <!-- à l'avenue du même nom-->
-           <adresse>avenue Victor-Hugo à Paris</adresse>
-           <existence>
-             <date type="naissance">26 février 1802</date>
-             <date type="décès">22 mai 1885</date>
-           </existence>
-         </personne>
-        </personnes>
-      </code>
-    </pre>
-          Représenter l’arbre de ce document XML
-          Faire attention à l’élément racine, au texte, ainsi qu’aux attributs.
-        </span>
-      </section>
-
-
-      <section>
-        <span class="r-fit-text">
-          Retour sur la notion d’arborescence
-          personnes
-          Élément racine
-        </span>
-      </section>
-
-
-      <section>
-        <span class="r-fit-text">
-          Retour sur la notion d’arborescence
-          <?xml version="1.0" encoding="UTF-8"?>
-          <personnes>
-            <personne>
-              <identité>
-                <prénom>Victor</prénom>
-                <nom>Hugo</nom>
-              </identité>
-              <!-- à l'avenue du même nom-->
-              <adresse>avenue Victor-Hugo à Paris</adresse>
-              <existence>
-                <date type="naissance">26 février 1802</date>
-                <date type="décès">22 mai 1885</date>
-              </existence>
-            </personne>
-          </personnes>
-          Élément racine : personnes
-          Éléments imbriqués
-          personne
-          identité
-          prénom
-          nom
-          adresse
-          existence
-          date
-          date
+          <h2>XPath</h2>
         </span>
       </section>
 
       <section>
         <span class="r-fit-text">
-          Retour sur la notion d’arborescence
-          personnes
-          personne
-          Identité
-          prénom
-          nom
-          adresse
-          existence
-          date
-          date
+          <h3>Retour sur la notion d’arborescence</h3>
+          <p>Le texte peut être vu comme une hiérarchie ordonnée d’objets contenus (OHCO – ordered hierarchy of content objects)<sup>1</sup> :</p>
+          <p>
+            les objets contenus sont, par exemple, des chapitres, des sections, des sous-sections, des paragraphes, des citations, etc., ces objets sont « imbriqués » les uns dans les autres – une section contient plusieurs paragraphes – c’est
+            pourquoi on parle de structure hiérarchique,
+            ces mêmes objets apparaissent les uns à l’intérieur des autres, mais également les uns à la suite des autres :
+          </p>
+          <ul>
+            <li>le texte est donc ordonné ;</li>
+            <li>Le modèle de données de XML, arborescent, est précisément conforme à OHCO ;</li>
+          </ul>
+          <p>
+            Cette structure hiérarchique (arbre XML) est facilement compréhensible par l’homme, mais également par la
+            machine. Il est donc très aisé de manipuler ce type de données.
+          </p>
+          <cite><sup>1</sup>Steve DeRose, David Durand, Elli Mylonas, and Allen Renear’s 1990 “What is text, really?”</cite>
         </span>
       </section>
 
 
       <section>
+        <section>
+          <span class="r-fit-text">
+            <h3>Retour sur la notion d’arborescence</h3>
+            <pre>
+              <code>
+                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                <personnes>
+                 <personne>
+                   <identité>
+                     <prénom>Victor</prénom>
+                     <nom>Hugo</nom>
+                   </identité>
+                   <!-- à l'avenue du même nom -->
+                   <adresse>avenue Victor-Hugo à Paris</adresse>
+                   <existence>
+                     <date type="naissance">26 février 1802</date>
+                     <date type="décès">22 mai 1885</date>
+                   </existence>
+                 </personne>
+                </personnes>
+              </code>
+            </pre>
+            <p>
+              Représenter l’arbre de ce document XML. Faire attention à l’élément racine, au texte, ainsi qu’aux attributs.
+            </p>
+          </span>
+        </section>
+        <section>
+          <img src="assets/img/arbreXML.png" alt="Arbre XML"/>
+        </section>
+      </section>
+
+      <section>
         <span class="r-fit-text">
-          Retour sur la notion d’arborescence
-          <?xml version="1.0" encoding="UTF-8"?>
-          <personnes>
-            <personne>
-              <identité>
-                <prénom>Victor</prénom>
-                <nom>Hugo</nom>
-              </identité>
-              <!-- à l'avenue du même nom-->
-              <adresse>avenue Victor-Hugo à Paris</adresse>
-              <existence>
-                <date type="naissance">26 février 1802</date>
-                <date type="décès">22 mai 1885</date>
-              </existence>
-            </personne>
-          </personnes>
-          Et le texte ? Et le commentaire ? Et les attributs ?
+          <h3>XML Path Language : langage de chemin XML</h3>
+          <p>
+            XPath est principalement utilisé par les langages de programmation XSLT et XQuery.
+            C’est un langage de requête pour identifier des parties d’un documents XML.
+            Une requête ou expression XPath permet de rechercher des nœuds.
+            Le résultat de cette requête est une séquence de nœuds ou de valeurs atomiques.
+          </p>
         </span>
       </section>
 
       <section>
         <span class="r-fit-text">
-          Retour sur la notion d’arborescence
-          personnes
-          personne
-          Identité
-          prénom
-          nom
-          adresse
-          existence
-          date
-          date
-          avenue Victor-Hugo à Paris
-          Victore
-          Hugo
-          26 février 1802
-          22 mai 1885
-          @type
-          @type
-          Commentaire
+          <h3>Nœuds – notions</h3>
+          <blockquote>
+            <p>« Un document XML est une arborescence de nœuds. Certains nœuds contiennent d’autres nœuds. Un seul nœuds racine contient enfin tous les autres nœuds. XPath est un langage pour sélectionner des nœuds et ensembles de nœuds de cette arborescence.»<sup>1</sup></p>
+          </blockquote>
+          <p>Il existe 7 types de nœuds :</p>
+          <ul>
+            <li>le nœud racine (≠ de l’élément racine, on parle aussi de nœud document)</li>
+            <li>les nœuds éléments</li>
+            <li>les nœuds attributs</li>
+            <li>les nœuds texte</li>
+            <li>les nœuds commentaires</li>
+            <li>les nœuds instructions de traitement</li>
+            <li>les nœuds d’espace de noms</li>
+          </ul>
+          <cite><sup>1</sup>Harold, Elliotte Rusty et Means, W. Scott. « XML en concentré : manuel de référence »</cite>
         </span>
       </section>
 
       <section>
         <span class="r-fit-text">
-          XPath
-          XML est donc un langage de description de contenus XML
+          <h3>Types de données</h3>
+          <p>Toute expression XPath retourne un de ces 4 types de données</p>
+          <ul>
+            <li>nœuds : une séquence de 0 ou plusieurs nœuds</li>
+            <li>chaîne de caractères : une séquence de 0 ou plusieurs caractères unicode</li>
+            <li>nombres : les nombres XPath sont des nombres à virgule flottante, et incluent les valeurs « Inf », « -Inf » et « NaN »</li>
+            <li>booléens : une valeur binaire (true ou false)</li>
+          </ul>
         </span>
       </section>
 
       <section>
         <span class="r-fit-text">
-          Xpath
-          XML Path Language : langage de chemin XML
-          XPath est principalement utilisé par les langages de programmation XSLT et XQuery
-          C’est un langage de requête pour identifier des parties d’un documents XML
-          Une requête ou expression XPath permet de rechercher des nœuds
-          Le résultat de cette requête est une séquence de nœuds ou de valeurs atomiques
+          <h3>Chemin Xpath</h3>
+          <p>Une Expression XPath indique un chemin depuis un nœud de départ vers un nœud ou un ensemble de nœuds cibles.</p>
+          <p>Un chemin est dit absolu lorsqu’il commence à la racine, et relatif lors qu’il part d’un nœud courant ou contextuel.</p>
+          <p>Un chemin est composé d’étapes de parcours, séparées par « / ». Placé en début d’expression, le signe « / » représentant le nœud racine.</p>
         </span>
       </section>
 
       <section>
         <span class="r-fit-text">
-          Nœuds – notions
-          « Un document XML est une arborescence de nœuds. Certains nœuds contiennent d’autres nœuds. Un seul nœuds
-          racine contient enfin tous les autres nœuds. XPath est un langage pour sélectionner des nœuds et ensembles de
-          nœuds de cette arborescence.»1
-          Il existe 7 types de nœuds :
-          le nœud racine (≠ de l’élément racine, on parle aussi de nœud document)
-          les nœuds éléments
-          les nœuds attributs
-          les nœuds texte
-          les nœuds commentaires
-          les nœuds instructions de traitement
-          les nœuds d’espace de noms
-          1Harold, Elliotte Rusty et Means, W. Scott. « XML en concentré : manuel de référence »
+          <h4>Étape Xpath</h4>
+          <p>Dans une étape on trouve 3 concepts : un axe, un filtre, un ou des prédicats </p>
+          <p class="alignCenter">axe::filtre[prédicat_1][prédicat_N]</p>
+          <p>L’axe est le sens du parcours, le filtre correspond aux nœuds à atteindre et les prédicats, optionnels, sont les conditions qui doivent être remplies par les nœuds recherchés.</p>
         </span>
       </section>
 
       <section>
-        <span class="r-fit-text">
-          Types de données
-          Toute expression XPath retourne un de ces 4 types de données
-          nœuds : une séquence de 0 ou plusieurs nœuds
-          chaîne de caractères : une séquence de 0 ou plusieurs caractères unicode
-          nombres : les nombres XPath sont des nombres à virgule flottante, et incluent les valeurs « Inf », « -Inf » et
-          « NaN »
-          booléens : une valeur binaire (true ou false)
-        </span>
+        <section>
+          <span class="r-fit-text">
+            <h4>Axes Xpath</h4>
+            <ul>
+              <li>self:: : nœud courant ;</li>
+              <li>attribute:: : nœud attribut – c’est un axe particulier ;</li>
+              <li>child:: : nœud enfant – seuls les nœuds racine et éléments ont des enfants ;</li>
+              <li>parent:: : le nœud parent</li>
+              <li>descendant:: tous les nœuds contenus par le nœud courant</li>
+              <li>ancestor:: tous les nœuds qui contiennent le nœud courant</li>
+              <li>ancestor-or-self:: tous les nœuds qui contiennent le nœud courant, y compris ce dernier</li>
+              <li>descendant-or-self:: tous les nœuds contenus par le nœud courant, y compris ce dernier</li>
+              <li>following:: tous les nœuds qui suivent le nœud courant</li>
+              <li>preceding:: tous les nœuds qui précèdent le nœud courant</li>
+              <li>following-sibling:: tous les nœuds qui partagent un parent et suivent le nœud courant</li>
+              <li>preceding-sibling:: tous les nœuds qui partagent un parent et précèdent le nœud courant</li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <img src="assets/img/axesXML.png" alt="Axes"/>
+          </span>
+        </section>
       </section>
 
       <section>
         <span class="r-fit-text">
-          Chemin Xpath
-          Une Expression XPath indique un chemin depuis un nœud de départ vers un nœud ou un ensemble de nœuds cibles.
-          Un chemin est dit absolu lorsqu’il commence à la racine, et relatif lors qu’il part d’un nœud courant ou
-          contextuel.
-          Un chemin est composé d’étapes de parcours, séparées par « / ». Placé en début d’expression, le signe « / »
-          représentant le nœud racine.
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-          Étape Xpath
-          Dans une étape on trouve 3 concepts : un axe, un filtre, un ou des prédicats
-          axe::filtre[prédicat_1][prédicat_N]
-          L’axe est le sens du parcours, le filtre correspond aux nœuds à atteindre et les prédicats, optionnels, sont
-          les conditions qui doivent être remplies par les nœuds recherchés.
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-          Axes Xpath
-          self:: : nœud courant ;
-          attribute:: : nœud attribut – c’est un axe particulier ;
-          child:: : nœud enfant – seuls les nœuds racine et éléments ont des enfants ;
-          parent:: : le nœud parent
-          descendant:: tous les nœuds contenus par le nœud courant
-          ancestor:: tous les nœuds qui contiennent le nœud courant
-          ancestor-or-self:: tous les nœuds qui contiennent le nœud courant, y compris ce dernier
-          descendant-or-self:: tous les nœuds contenus par le nœud courant, y compris ce dernier
-          following:: tous les nœuds qui suivent le nœud courant
-          preceding:: tous les nœuds qui précèdent le nœud courant
-          following-sibling:: tous les nœuds qui partagent un parent et suivent le nœud courant
-          preceding-sibling:: tous les nœuds qui partagent un parent et précèdent le nœud courant
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-          Axes Xpath
-          personnes
-          personne
-          Identité
-          prénom
-          nom
-          adresse
-          existence
-          date
-          date
-          self::
-          preceding-sibling::
-          preceding::
-          parent::
-          ancestor::
-          following::
-          following-sibling::
-          node
-          child::
-          node
-          descendant::
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-          Les Jokers permettent de trouver plusieurs éléments et types de nœuds en même temps, sans connaître leur nom.
-          * : tout nœud élément quelque soit son nom
-          node() : tous les nœuds (racine, éléments, attributs, commentaires, etc.)
-          @* : tout nœud attribut quelque soit son nom
-          Filtres Xpath
-          nomElement : sélectionne les nœuds qui portent le même nom
-          text() : sélectionne les nœuds de type texte
-          comment() : sélectionne les nœuds de type commentaire
-          processing-instruction() : sélectionne les nœuds de type instruction de traitement
+          <h4>les filtres</h4>
+          <ul>
+            <li>nomElement : sélectionne les nœuds qui portent le même nom</li>
+            <li>text() : sélectionne les nœuds de type texte</li>
+            <li>comment() : sélectionne les nœuds de type commentaire</li>
+            <li>processing-instruction() : sélectionne les nœuds de type instruction de traitement</li>
+          </ul>
+          <p>Les Jokers permettent de trouver plusieurs éléments et types de nœuds en même temps, sans connaître leur nom.</p>
+          <ul>
+            <li>* : tout nœud élément quelque soit son nom</li>
+            <li>node() : tous les nœuds (racine, éléments, attributs, commentaires, etc.)</li>
+            <li>@* : tout nœud attribut quelque soit son nom</li>
+          </ul>
         </span>
       </section>
 
 
       <section>
-        <span class="r-fit-text">
-          <section>
-            Exemples XPath
-            <?xml version="1.0" encoding="UTF-8"?>
-            <?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
-            <personnes>
-              <personne>
-                <identité>
-                  <prénom>Victor</prénom>
-                  <nom>Hugo</nom>
-                </identité>
-                <!-- à l'avenue du même nom-->
-                <adresse>avenue Victor-Hugo à Paris</adresse>
-                <existence>
-                  <date type="naissance" norm="1802-02-26">26 février 1802</date>
-                  <lieu type="naissance">Besançon</lieu>
-                  <date type="décès" norm="1885-05-22">22 mai 1885</date>
-                  <lieu type="décès">Paris</lieu>
-                </existence>
-              </personne>
-            </personnes>
+        <section>
+          <span class="r-fit-text">
+            <h4>Exemple XPath</h4>
+            <pre>
+              <code>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
+                <personnes>
+                  <personne>
+                    <identité>
+                      <prénom>Victor</prénom>
+                      <nom>Hugo</nom>
+                    </identité>
+                    <!-- à l'avenue du même nom-->
+                    <adresse>avenue Victor-Hugo à Paris</adresse>
+                    <existence>
+                      <date type="naissance" norm="1802-02-26">26 février 1802</date>
+                      <lieu type="naissance">Besançon</lieu>
+                      <date type="décès" norm="1885-05-22">22 mai 1885</date>
+                      <lieu type="décès">Paris</lieu>
+                    </existence>
+                  </personne>
+                </personnes>
+              </code>
+            </pre>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <ul>
+              <li>/ : nœud racine ou document, retourne tout le document</li>
+              <li>/child::node() : tous les nœuds enfants du nœud racine</li>
+              <li>/child::personnes : l’élément personnes, enfant du nœud racine</li>
+              <li>/child::personnes/child::personne : l’élément personne, fils de personnes</li>
+              <li>/child::personnes/child::personne/child::existence/child::date/attribute::type : les attributs @type des</li>
+              <li>éléments date</li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <p>Syntaxe abrégée</p>
+            <ul>
+              <li>child:: est l’axe par défaut, il peut être omis : /child::personnes = /personnes</li>
+              <li>/descendant-or-self::node()/ (tous les descendants) peut être remplacé par « // » : /child::personnes/child::personne/child::existence/child::date = //date</li>
+              <li>attribute:: (nœud attribut) peut être remplacé par « @ » : //attribute::type = //@type</li>
+              <li>self::node() (nœud courant) peut être remplacé par « . »</li>
+              <li>parent::node() (nœud parent) peut être remplacé par « .. » : ../nœudParent</li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
             / : nœud racine ou document, retourne tout le document
-            /child::node() : tous les nœuds enfants du nœud racine
-            /child::personnes : l’élément personnes, enfant du nœud racine
-            /child::personnes/child::personne : l’élément personne, fils de personnes
-            /child::personnes/child::personne/child::existence/child::date/attribute::type : les attributs @type des
-            éléments date
+            /node() : tous les nœuds enfants du nœud racine
+            /personnes : l’élément personnes, enfant du nœud racine
+            /personnes/personne : l’élément personne, fils de personnes
+            /personnes/personne//date/@type : les attributs @type des éléments date
+          </span>
+        </section>
+      </section>
 
-          </section>
-          <section>
-            Syntaxe abrégée
-            child:: est l’axe par défaut, il peut être omis
-            /child::personnes = /personnes
-            /descendant-or-self::node()/ (tous les descendants) peut être remplacé par « // »
-            /child::personnes/child::personne/child::existence/child::date = //date
-            attribute:: (nœud attribut) peut être remplacé par « @ »
-            //attribute::type = //@type
-            self::node() (nœud courant) peut être remplacé par « . »
-            parent::node() (nœud parent) peut être remplacé par « .. »
-            ../nœudParent
-          </section>
-        </span>
+      <section>
+        <section>
+          <span class="r-fit-text">
+            <h3>Les prédicats ou conditions</h3>
+            <p>Chaque étape d’un chemin XPath peut contenir 0 ou plusieurs prédicats</p>
+            <p>Un prédicat est une expression XPath entre crochets « [] » qui suit le test d’un filtre (ou nœud)</p>
+            <p>Un prédicat correspond à une condition que doit remplir le nœud pour être retenu</p>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <h3>Exemples Prédicat</h3>
+            <pre>
+              <code>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
+                <personnes>
+                  <personne>
+                    <identité>
+                      <prénom>Victor</prénom>
+                      <nom>Hugo</nom>
+                    </identité>
+                    <!-- à l'avenue du même nom-->
+                    <adresse>avenue Victor-Hugo à Paris</adresse>
+                    <existence>
+                      <date type="naissance" norm="1802-02-26">26 février 1802</date>
+                      <lieu type="naissance">Besançon</lieu>
+                      <date type="décès" norm="1885-05-22">22 mai 1885</date>
+                      <lieu type="décès">Paris</lieu>
+                    </existence>
+                  </personne>
+                </personnes>
+              </code>
+            </pre>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <ul>
+              <li>//identité[prénom] : tous les éléments identité, s’ils possèdent un sous-élément prénom</li>
+              <li>//prénom[parent::identité] : tous les éléments prénom, s’ils possèdent un parent identité</li>
+              <li>//date[@type] : tous les éléments date s’ils possèdent un attribut type</li>
+              <li>//lieu[@type='décès'] : tous les éléments lieu, s’ils possèdent un attribut type qui a pour valeur 'décès'</li>
+            </ul>
+          </span>
+        </section>
       </section>
 
 
       <section>
-        <span class="r-fit-text">
-          Exemples XPath syntaxe abrégée
-          <?xml version="1.0" encoding="UTF-8"?>
-          <?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
-          <personnes>
-            <personne>
-              <identité>
-                <prénom>Victor</prénom>
-                <nom>Hugo</nom>
-              </identité>
-              <!-- à l'avenue du même nom-->
-              <adresse>avenue Victor-Hugo à Paris</adresse>
-              <existence>
-                <date type="naissance" norm="1802-02-26">26 février 1802</date>
-                <lieu type="naissance">Besançon</lieu>
-                <date type="décès" norm="1885-05-22">22 mai 1885</date>
-                <lieu type="décès">Paris</lieu>
-              </existence>
-            </personne>
-          </personnes>
-          / : nœud racine ou document, retourne tout le document
-          /node() : tous les nœuds enfants du nœud racine
-          /personnes : l’élément personnes, enfant du nœud racine
-          /personnes/personne : l’élément personne, fils de personnes
-          /personnes/personne//date/@type : les attributs @type des éléments date
-        </span>
+        <section>
+          <h3>Les Opérateurs</h3>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <h4>Opérateurs arithmétiques</h4>
+            <pre><code>/data/num[1] - /data/num[2]</code></pre>
+            <ul>
+              <li>addition « + »</li>
+              <li>soustraction « - »</li>
+              <li>multiplication « * »</li>
+              <li>division « div »</li>
+              <li>modulo « mod »</li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <h4>Opérateurs de comparaison</h4>
+            <pre>
+              <code>
+                //p[position() > 1]
+                //chapitre[head != 'Introduction']
+                //chapitre/[@type = 'Introduction' or @type = 'conclusion']
+              </code>
+            </pre>
+              <ul>
+                <li>inférieur* « < » inférieur ou égal* « <= » supérieur* « > »</li>
+                <li>supérieur ou égal* « >= »</li>
+                <li>égal « = »</li>
+                <li>différent « != »</li>
+                <li>et « and »</li>
+                <li>or « or »</li>
+                <li>*Dans un document XSLT on utilisera &lt; et &gt;</li>
+              </ul>
+          </span>
+        </section>
       </section>
 
       <section>
-        <span class="r-fit-text">
-          Les prédicats ou conditions
-          Chaque étape d’un chemin XPath peut contenir 0 ou plusieurs prédicats
-          Un prédicat est une expression XPath entre crochets « [] » qui suit le test d’un filtre (ou nœud)
-          Un prédicat correspond à une condition que doit remplir le nœud pour être retenu
-        </span>
-      </section>
-
-
-      <section>
-        <span class="r-fit-text">
-          Exemples Prédicat
-          <?xml version="1.0" encoding="UTF-8"?>
-          <?xml-stylesheet type="text/xsl" href="xslt.xsl"?>
-          <personnes>
-            <personne>
-              <identité>
-                <prénom>Victor</prénom>
-                <nom>Hugo</nom>
-              </identité>
-              <!-- à l'avenue du même nom-->
-              <adresse>avenue Victor-Hugo à Paris</adresse>
-              <existence>
-                <date type="naissance" norm="1802-02-26">26 février 1802</date>
-                <lieu type="naissance">Besançon</lieu>
-                <date type="décès" norm="1885-05-22">22 mai 1885</date>
-                <lieu type="décès">Paris</lieu>
-              </existence>
-            </personne>
-          </personnes>
-          //identité[prénom] : tous les éléments identité, s’ils possèdent un sous-élément prénom
-          //prénom[parent::identité] : tous les éléments prénom, s’ils possèdent un parent identité
-          //date[@type] : tous les éléments date s’ils possèdent un attribut type
-          //lieu[@type='décès'] : tous les éléments lieu, s’ils possèdent un attribut type qui a pour valeur 'décès'
-        </span>
-      </section>
-
-
-      <section>
-        <span class="r-fit-text">
-          Opérateurs arithmétiques
-          4 div 2
-
-          3*2
-
-          /data/num[1] - /data/num[2]
-          addition « + »
-          soustraction « - »
-          multiplication « * »
-          division « div »
-          modulo « mod »
-        </span>
-      </section>
-
-
-      <section>
-        <span class="r-fit-text">
-          Opérateurs de comparaison
-          //p[position() > 1]
-
-          //chapitre[head != 'Introduction']
-
-          //chapitre/[@type = 'Introduction' or @type = 'conclusion']
-          inférieur* « < » inférieur ou égal* « <= » supérieur* « > »
-            supérieur ou égal* « >= »
-            égal « = »
-            différent « != »
-            et « and »
-            or « or »
-            *Dans un document XSLT on utilisera &lt; et &gt;
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-          Types de données
-          Toute expression XPath retourne un de ces 4 types de données
-          nœuds : une séquence de 0 ou plusieurs nœuds
-          chaîne de caractères : une séquence de 0 ou plusieurs caractères unicode
-          nombres : les nombres XPath sont des nombres à virgule flottante, et incluent les valeurs « Inf », « -Inf » et
-          « NaN »
-          booléens : une valeur binaire (true ou false)
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-          Fonctions XPath 1.0
-          XML est donc un langage de description de contenus XML
-        </span>
-      </section>
-
-
-      <section>
-        <span class="r-fit-text">
-          Fonctions sur les nombres
-          <!-- <node>string</node> -->
-          number(node) => NaN
-          <!-- <node>2</node> -->
-          /node/number() => 2.0
-          <!-- <node>3.14</node> -->
-          ceiling(node) => 4.0
-          <!-- <node>3.14</node> -->
-          round(node) => 3.0
-          number number(object?) : convertit son argument en nombre
-          number sum(node-set nodes) : somme de tous les nœuds en argument
-          number floor(number x) : retourne le plus grand entier inférieur ou égal à x
-          number ceiling(number x) : retourne le plus petit entier supérieur ou égal à x
-          number round(number x) : retourne l’entier le plus proche de x
-
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-          Fonctions sur les booléens
-          <!-- <node>string</node> -->
-          boolean(node) => true
-          <!-- <node>string</node> -->
-          boolean(node/sub)=> false
-          <!-- <node>string</node> -->
-          not(boolean(node/sub))=> true
-
-          true() => true
-          boolean boolean(object o) : convertit l’argument en booléen
-          boolean not(boolean) : inverse la valeur de l’argument (vrai devient faux et faux devient vrai)
-          boolean true() : retourne toujours vrai
-          boolean false() : retourne toujours faux
-
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-          Fonctions sur les nœuds
-          <!-- <root><node/><node/></root> -->
-          //node/position() => (1, 2)
-          <!-- <root><node/><node/></root> -->
-          count(//node) => 2
-          <!--
-    <ns:root xmlns:ns="http://ns">
-    <ns:node/>
-    </ns:root>-->
-          name(/ns:root) => ns:root (préfixe + nom)
-          local-name(/ns:root) => root
-
-          number position() : position du nœud courant dans l’ensemble contextuel
-          number count(nodeset?) : compte le nombre de nœuds en argument
-          string local-name(node-set?) : retourne le nom local du nœud
-          string name(node-set?) : retourne le nom qualifié du nœud (préfixe + nom local)
-          string namespace-uri(node-set?) : retourne l’espace de nom du nœud
-        </span>
-      </section>
-
-
-      <section>
-        <span class="r-fit-text">
-          Fonctions sur les chaînes de caractères
-          <!-- <root><node>10</node></root> -->
-          /root/node/string() => '10'
-          <!-- <root><node>10</node></root> -->
-          /root/node/string-length() => 2
-
-          concat('Hello', ' World') => 'Hello World'
-          <!-- <node att="Hello">World</node> -->
-          /node/concat(@att, .) => 'HelloWorld'
-          string string(string?) : convertit un objet en chaîne de caractères
-          string normalize-space(string?) : retire les blancs en début ou fin de chaîne, et remplace les groupes
-          d’espaces ou les retour à la ligne par un espace unique
-          string concat(string, string, string*) : concatène les arguments
-          number string-length(string?) : retourne la longueur de la chaîne de caractères en argument
-          boolean starts-with(string s1, string s2) : vérifie si la chaîne s1 commence par la chaîne s2
-        </span>
-      </section>
-
-      <section>
-        <span class="r-fit-text">
-
-          Fonctions sur les chaînes de caractères
-          <!-- <root><node>Hello</node></root> -->
-          /root/node/contains(., 'Hello') => true
-
-          <!-- <root>Hello World</root> -->
-          substring-before(/root, ' World') => 'Hello'
-
-          <!-- <root>Hello World</root> -->
-          substring(/root, 7, 5) => World
-          substring(/root, 7) => World
-
-          boolean contains(string s1, string s2) : vérifie sur la chaîne s1 contient la chaîne s2
-          string substring-before(string s1, string s2) : retourne la sous-chaîne de s1 placée avant s2
-          string substring-after(string s1, string s2) : retourne la sous-chaîne de s1 placée après s2
-          string substring(string s, number index, number length?) : retourne la sous-chaîne de s commençant à l’index
-          et de longueur lenght
-          string translate(string s1, string s2, string s3) : remplace dans s1 chaque occurrence de s2 par une
-          occurrence de s3
-        </span>
+        <section>
+          <span class="r-fit-text">
+            <h3>Fonctions XPath 1.0</h3>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <h4>Fonctions sur les nombres</h4>
+            <pre>
+              <code>
+                <!-- <node>string</node> -->
+                number(node) => NaN
+                <!-- <node>2</node> -->
+                /node/number() => 2.0
+                <!-- <node>3.14</node> -->
+                ceiling(node) => 4.0
+                <!-- <node>3.14</node> -->
+                round(node) => 3.0
+              </code>
+            </pre>
+            <ul>
+              <li>number number(object?) : convertit son argument en nombre</li>
+              <li>number sum(node-set nodes) : somme de tous les nœuds en argument</li>
+              <li>number floor(number x) : retourne le plus grand entier inférieur ou égal à x</li>
+              <li>number ceiling(number x) : retourne le plus petit entier supérieur ou égal à x</li>
+              <li>number round(number x) : retourne l’entier le plus proche de x</li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <h4>Fonctions sur les booléens</h4>
+            <pre>
+              <code>
+                <!-- <node>string</node> -->
+                boolean(node) => true
+                <!-- <node>string</node> -->
+                boolean(node/sub)=> false
+                <!-- <node>string</node> -->
+                not(boolean(node/sub))=> true
+              </code>
+            </pre>
+            <ul>
+              <li>true() => true</li>
+              <li>boolean boolean(object o) : convertit l’argument en booléen</li>
+              <li>boolean not(boolean) : inverse la valeur de l’argument (vrai devient faux et faux devient vrai)</li>
+              <li>boolean true() : retourne toujours vrai</li>
+              <li>boolean false() : retourne toujours faux</li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <h4>Fonctions sur les nœuds</h4>
+            <pre>
+              <code>
+                <!-- <root><node/><node/></root> -->
+                //node/position() => (1, 2)
+                <!-- <root><node/><node/></root> -->
+                count(//node) => 2
+                <!--
+                  <ns:root xmlns:ns="http://ns">
+                  <ns:node/>
+                  </ns:root>-->
+                name(/ns:root) => ns:root (préfixe + nom)
+                local-name(/ns:root) => root
+              </code>
+            </pre>
+            <ul>
+              <li>number position() : position du nœud courant dans l’ensemble contextuel</li>
+              <li>number count(nodeset?) : compte le nombre de nœuds en argument</li>
+              <li>string local-name(node-set?) : retourne le nom local du nœud</li>
+              <li>string name(node-set?) : retourne le nom qualifié du nœud (préfixe + nom local)</li>
+              <li>string namespace-uri(node-set?) : retourne l’espace de nom du nœud</li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <h4>Fonctions sur les chaînes de caractères</h4>
+            <pre>
+              <code>
+                <!-- <root><node>10</node></root> -->
+                /root/node/string() => '10'
+                <!-- <root><node>10</node></root> -->
+                /root/node/string-length() => 2
+                concat('Hello', ' World') => 'Hello World'
+                <!-- <node att="Hello">World</node> -->
+                /node/concat(@att, .) => 'HelloWorld'
+              </code>
+            </pre>
+            <ul>
+              <li>string string(string?) : convertit un objet en chaîne de caractères</li>
+              <li>string normalize-space(string?) : retire les blancs en début ou fin de chaîne, et remplace les groupes</li>
+              <li>d’espaces ou les retour à la ligne par un espace unique</li>
+              <li>string concat(string, string, string*) : concatène les arguments</li>
+              <li>number string-length(string?) : retourne la longueur de la chaîne de caractères en argument</li>
+              <li>boolean starts-with(string s1, string s2) : vérifie si la chaîne s1 commence par la chaîne s2</li>
+            </ul>
+          </span>
+        </section>
+        <section>
+          <span class="r-fit-text">
+            <h4>Fonctions sur les chaînes de caractères</h4>
+            <pre>
+              <code>
+                <!-- <root><node>Hello</node></root> -->
+                /root/node/contains(., 'Hello') => true
+                <!-- <root>Hello World</root> -->
+                substring-before(/root, ' World') => 'Hello'
+                <!-- <root>Hello World</root> -->
+                substring(/root, 7, 5) => World
+                substring(/root, 7) => World
+              </code>
+            </pre>
+            <ul>
+              <li>boolean contains(string s1, string s2) : vérifie sur la chaîne s1 contient la chaîne s2</li>
+              <li>string substring-before(string s1, string s2) : retourne la sous-chaîne de s1 placée avant s2</li>
+              <li>string substring-after(string s1, string s2) : retourne la sous-chaîne de s1 placée après s2</li>
+              <li>string substring(string s, number index, number length?) : retourne la sous-chaîne de s commençant à l’index et de longueur lenght</li>
+              <li>string translate(string s1, string s2, string s3) : remplace dans s1 chaque occurrence de s2 par une occurrence de s3</li>
+            </ul>
+          </span>
+        </section>
       </section>
 
 

@@ -1,105 +1,87 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title>reveal.js</title>
-
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/blood.css">
-
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-
-	<link rel="stylesheet" href="css/local.css">
-</head>
-
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<span class="r-fit-text">
-					<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
-					<p class="alignCenter">Introduction aux langages HTML et CSS</p>
-				</span>
-			</section>
-			<section>
-				<span class="r-fit-text">
-					<h2>Fin du TP précédent</h2>
-					<p>Créer une page HTML pour le mois de janvier suivant le même modèle. Le contenu se trouve dans le fichier
-						janvier.txt.</p>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h2>Retour sur vos réalisations</h2>
-				</span>
-			</section>
-
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Syntaxe — balises</h3>
-
-					<p>Balise ouvrante : &lt;p&gt; | balise fermante : &lt;/p&gt;</p>
-					<p>Principe 1 : toute balise ouverte doit être fermée !</p>
-					<pre>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>reveal.js</title>
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/blood.css">
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<link rel="stylesheet" href="css/local.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<span class="r-fit-text">
+						<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
+						<p class="alignCenter">Introduction aux langages HTML et CSS</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h2>Fin du TP précédent</h2>
+						<p>Créer une page HTML pour le mois de janvier suivant le même modèle. Le contenu se trouve dans le fichier janvier.txt.</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h2>Retour sur vos réalisations</h2>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Syntaxe — balises</h3>
+						<p>Balise ouvrante : &lt;p&gt; | balise fermante : &lt;/p&gt;</p>
+						<p>Principe 1 : toute balise ouverte doit être fermée !</p>
+						<pre>
 			<code>
 				<p><em>mon contenu</em></p>
 			</code>
 		</pre>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Syntaxe — balises</h3>
-
-					<p>Principe 2 : Les éléments peuvent s’imbriquer, mais pas se chevaucher !</p>
-					<pre>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Syntaxe — balises</h3>
+						<p>Principe 2 : Les éléments peuvent s’imbriquer, mais pas se chevaucher !</p>
+						<pre>
 				<code>
 					&lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/i&gt;&lt;/p&gt;
 					&lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/p&gt;&lt;/i&gt;	
 				</code>
 			</pre>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Syntaxe — balises</h3>
-
-					<p>Principe 2 : Les éléments peuvent s’imbriquer, mais pas se chevaucher !</p>
-
-					<pre>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Syntaxe — balises</h3>
+						<p>Principe 2 : Les éléments peuvent s’imbriquer, mais pas se chevaucher !</p>
+						<pre>
 			<code>
 				✅ &lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/i&gt;&lt;/p&gt;
 				❌ &lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/p&gt;&lt;/i&gt;	
 			</code>
 		</pre>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Syntaxe — attributs</h3>
-					<p>Un attribut est une paire nom-valeur associée à la balise ouvrante d’un élément.</p>
-					<pre>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Syntaxe — attributs</h3>
+						<p>Un attribut est une paire nom-valeur associée à la balise ouvrante d’un élément.</p>
+						<pre>
 			<code>
 				<p id="monId">Lorem ipsum…</p>
 			</code>
 		</pre>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Syntaxe — attributs</h3>
-					<pre>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Syntaxe — attributs</h3>
+						<pre>
 				<code>
 					&lt;p id="monId"&gt;Lorem ipsum…&lt;/p&gt;
 					&lt;p id=monId&gt;Lorem ipsum…&lt;/p&gt;
@@ -107,16 +89,13 @@
 					&lt;p&gt;Lorem ipsum…&lt;/p id=monId&gt;
 				</code>
 			</pre>
-
-					<p>La valeur id ne prend pas d’espace : ✅ id="monId" | ❌ id="mon Id"</p>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Syntaxe — attributs</h3>
-
-					<pre>
+						<p>La valeur id ne prend pas d’espace : ✅ id="monId" | ❌ id="mon Id"</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Syntaxe — attributs</h3>
+						<pre>
 			<code>
 				✅ &lt;p id="monId"&gt;Lorem ipsum…&lt;/p&gt;
 				❌ &lt;p id=monId&gt;Lorem ipsum…&lt;/p&gt;
@@ -124,73 +103,59 @@
 				❌ &lt;p&gt;Lorem ipsum…&lt;/p id=monId&gt;
 			</code>
 		</pre>
-					<p>La valeur id ne prend pas d’espace : ✅ id="monId" | ❌ id="mon Id"</p>
-				</span>
-			</section>
-
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Confusion dans l’utilisation des balises</h3>
-					<p>La balise &lt;head&gt; contient les métadonnées et est placée avant le &lt;body&gt;</p>
-					<p>La balise &lt;header&gt; indique l’en-tête du document et est placée dans le &lt;body&gt;</p>
-					<p>La balise &lt;title&gt; précise le titre du document, dans la barre des onglets. Elle est placée dans
-						l’élément &lt;head&gt;</p>
-					<p>Les balises &lt;h1&gt; à &lt;h6&gt; indiquent des niveaux de titre dans un document. Elles sont utilisées
-						dans le &lt;body&gt; et certains sous-éléments de ce dernier (&lt;div&gt;, &lt;article&gt;, &lt;section&gt;,
-						etc.).</p>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Structuration du contenu et balisage sémantique</h3>
-					<p>Le langage HTML permet de structurer du contenu pour publier sur le web.</p>
-					<p>Il contient un grand nombre de balises dites sémantiques c’est-à-dire qu’elles apportent une indication sur
-						le type de données qu’elles contiennent.</p>
-					<p><strong>Utilisez-les !</strong></p>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h2>Langages descriptifs</h2>
-				</span>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>SGML</h3>
-					<p>Un langage de balisage descriptif est un langage qui se contente de décrire des données, sans
-						nécessairement avoir un objectif de traitement.</p>
-					<p>Dans les années 80, Charles Goldfarb, un ancien ingénieur de chez IBM, met au point le langage SGML
-						(Standard Generalized Markup Language) pour la représentation des données contenues dans un document. SGML
-						ne prend pas en compte les systèmes utilisés pour la saisie et le traitement, ni des solutions de
-						publication.</p>
-					<p>SGML est un métalangage qui introduit la notion de DTD (Document Type Definition) qui permet de décrire un
-						modèle de document.</p>
-					<p>Un document SGML se compose de 3 parties : une DTD, une ou plusieurs feuilles de style et une instance</p>
-					<p>L’application la plus connue de SGML est HTML. Toutefois, contrairement à SGML, HTML mélange des balises
-						sémantiques et des balises de présentation.</p>
-				</span>
-			</section>
-
-
-			<section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Un petit exercice de balisage…</h3>
-						<p><b>Alan Turing</b></p>
-						<p><u>23 juin 1912</u> à <em>Londres</em> (Royaume-Uni) - <u>7 juin 1954</u> à <em>Wilmslow</em>
-							(Royaume-Uni)</p>
-						<p><b>Alan Mathison Turing</b> est un mathématicien et cryptologue britannique, auteur de travaux qui
-							fondent scientifiquement l'informatique.</p>
+						<p>La valeur id ne prend pas d’espace : ✅ id="monId" | ❌ id="mon Id"</p>
 					</span>
 				</section>
 				<section>
 					<span class="r-fit-text">
-						<h3>Un petit exercice de balisage…</h3>
-						<pre><code>
+						<h3>Confusion dans l’utilisation des balises</h3>
+						<p>La balise &lt;head&gt; contient les métadonnées et est placée avant le &lt;body&gt;</p>
+						<p>La balise &lt;header&gt; indique l’en-tête du document et est placée dans le &lt;body&gt;</p>
+						<p>La balise &lt;title&gt; précise le titre du document, dans la barre des onglets. Elle est placée dans l’élément &lt;head&gt;</p>
+						<p>Les balises &lt;h1&gt; à &lt;h6&gt; indiquent des niveaux de titre dans un document. Elles sont utilisées dans le &lt;body&gt; et certains sous-éléments de ce dernier (&lt;div&gt;, &lt;article&gt;, &lt;section&gt;, etc.).</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Structuration du contenu et balisage sémantique</h3>
+						<p>Le langage HTML permet de structurer du contenu pour publier sur le web.</p>
+						<p>Il contient un grand nombre de balises dites sémantiques c’est-à-dire qu’elles apportent une indication sur le type de données qu’elles contiennent.</p>
+						<p>
+							<strong>Utilisez-les !</strong>
+						</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h2>Langages descriptifs</h2>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>SGML</h3>
+						<p>Un langage de balisage descriptif est un langage qui se contente de décrire des données, sans nécessairement avoir un objectif de traitement.</p>
+						<p>Dans les années 80, Charles Goldfarb, un ancien ingénieur de chez IBM, met au point le langage SGML (Standard Generalized Markup Language) pour la représentation des données contenues dans un document. SGML ne prend pas en compte les systèmes utilisés pour la saisie et le traitement, ni des solutions de publication.</p>
+						<p>SGML est un métalangage qui introduit la notion de DTD (Document Type Definition) qui permet de décrire un modèle de document.</p>
+						<p>Un document SGML se compose de 3 parties : une DTD, une ou plusieurs feuilles de style et une instance</p>
+						<p>L’application la plus connue de SGML est HTML. Toutefois, contrairement à SGML, HTML mélange des balises sémantiques et des balises de présentation.</p>
+					</span>
+				</section>
+				<section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Un petit exercice de balisage…</h3>
+							<p>
+								<b>Alan Turing</b>
+							</p>
+							<p><u>23 juin 1912</u> à <em>Londres</em> (Royaume-Uni) - <u>7 juin 1954</u> à <em>Wilmslow</em> (Royaume-Uni)</p>
+							<p><b>Alan Mathison Turing</b> est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Un petit exercice de balisage…</h3>
+							<pre>
+								<code>
 &lt;html&gt;
 	&lt;head/&gt;
 	&lt;body&gt;
@@ -207,27 +172,27 @@
 	&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Un petit exercice de balisage…</h3>
-						<p><b>Alan Turing</b></p>
-						<p><u>23 juin 1912</u> à <em>Londres</em> (Royaume-Uni) - <u>7 juin 1954</u> à <em>Wilmslow</em>
-							(Royaume-Uni)</p>
-						<p><b>Alan Mathison Turing</b> est un mathématicien et cryptologue britannique, auteur de travaux qui
-							fondent scientifiquement l'informatique.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Un petit exercice de balisage…</h3>
-						<pre><code>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Un petit exercice de balisage…</h3>
+							<p>
+								<b>Alan Turing</b>
+							</p>
+							<p><u>23 juin 1912</u> à <em>Londres</em> (Royaume-Uni) - <u>7 juin 1954</u> à <em>Wilmslow</em> (Royaume-Uni)</p>
+							<p><b>Alan Mathison Turing</b> est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Un petit exercice de balisage…</h3>
+							<pre><code>
 &lt;notice&gt;
 	<personne>Alan Turing</personne>
 	<date>
 		<date type="naissance" norm="1912-06-23">23 juin 1912</date> à 
-		<lieu type="naissance">Londres</lie> (Royaume-Uni) - 
+		<lieu type="naissance">Londres (Royaume-Uni) - 
 		<date type="décès" norm="1954-06-07">7 juin 1954</date> à 
 		<lieu type="décès">Wilmslow</lieu> (Royaume-Uni)
 	</date>
@@ -240,62 +205,52 @@
 	</biographie>
 &lt;/notice&gt;
 </code></pre>
+						</span>
+					</section>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Un petit exercice de balisage…</h3>
+						<p>3 étapes</p>
+						<ul>
+							<li>on identifie des données 
+							<li>on choisit des balises 
+							<li>on balise le texte (encodage) 
+						</ul>
+						<p>Avantages</p>
+						<ul>
+							<li>distinction contenu/forme 
+							<li>facilite les traitements des textes encodés 
+							<li>excellent format pivot (portabilité des documents) 
+						</ul>
 					</span>
 				</section>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Un petit exercice de balisage…</h3>
-					<p>3 étapes</p>
-					<ul>
-						<li>on identifie des données</p>
-						<li>on choisit des balises</p>
-						<li>on balise le texte (encodage)</p>
-					</ul>
-
-					<p>Avantages</p>
-					<ul>
-						<li>distinction contenu/forme</p>
-						<li>facilite les traitements des textes encodés</p>
-						<li>excellent format pivot (portabilité des documents)</p>
-					</ul>
-				</span>
-			</section>
-
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Les limites de SGML</h3>
-					<ul>
-						<li>Complexe à mettre en œuvre (nécessite la déclaration d’une DTD)</p>
-						<li>Peu adapté à l’édition sur le Web</p>
-						<li>Prise en charge limitée des jeux de caractères internationaux…</p>
-					</ul>
-				</span>
-			</section>
-
-
-			<section>
-				<span class="r-fit-text">
-					<h3>XML</h3>
-					<p>En 1998 naît XML afin de régler les difficultés posées par SGML. XML se veut plus simple à mettre en œuvre.
-						XML se borne à définir ce qu’est un document bien formé et valide.</p>
-					<p>XML ne sert pas à afficher les données mais à les décrire.</p>
-					<p>Le nom des balises n’est pas prédéfini.</p>
-					<p>On peut utiliser un schéma (optionnel), pour définir des contraintes ou s’assurer de la consistance de
-						l’encodage.</p>
-					<p>XML est auto-descriptif et lisible par l’homme.</p>
-				</span>
-			</section>
-
-
-			<section>
-				<span class="r-fit-text">
-					<figure>
-						<img src="assets/img/sgml.png" alt="chronologie SGML-XML" />
-					</figure>
-					<!--<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+				<section>
+					<span class="r-fit-text">
+						<h3>Les limites de SGML</h3>
+						<ul>
+							<li>Complexe à mettre en œuvre (nécessite la déclaration d’une DTD) 
+							<li>Peu adapté à l’édition sur le Web 
+							<li>Prise en charge limitée des jeux de caractères internationaux… 
+						</ul>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>XML</h3>
+						<p>En 1998 naît XML afin de régler les difficultés posées par SGML. XML se veut plus simple à mettre en œuvre. XML se borne à définir ce qu’est un document bien formé et valide.</p>
+						<p>XML ne sert pas à afficher les données mais à les décrire.</p>
+						<p>Le nom des balises n’est pas prédéfini.</p>
+						<p>On peut utiliser un schéma (optionnel), pour définir des contraintes ou s’assurer de la consistance de l’encodage.</p>
+						<p>XML est auto-descriptif et lisible par l’homme.</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<figure>
+							<img src="assets/img/sgml.png" alt="chronologie SGML-XML" />
+						</figure>
+						<!--<svg width="800" height="400" xmlns="http://www.w3.org/2000/svg">
 			<line x1="100" y1="200" x2="510" y2="200" stroke-width="5" stroke="white" />
 			<line x1="100" y1="210" x2="250" y2="270" stroke-width="5" stroke="white" />
 			<line x1="100" y1="190" x2="250" y2="130" stroke-width="5" stroke="white" />
@@ -333,70 +288,60 @@
 			stroke     : white;
 			fill       : white;">xHTML</text>
 		</svg>-->
-				</span>
-			</section>
-
-			<section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Imaginez un encodage pour le testament de Pierre, Albert Giret</h3>
-						<blockquote>
-							<p>Ceci est mon testament</p>
-							<p>Je soussigné Pierre, Albert Giret, fils de feu Pierre, Jean Giret et de Marie Vialette, étant
-								absolument sain de corps et d’esprit, déclare donner à ma mère Madame veuve Giret tous mes biens
-								présents et à venir, libre à elle d’en disposer à son gré.</p>
-							<p>Daté, signé et écrit de ma main en pleine liberté aux Armées d’Orient le dix-neuf novembre mil neuf
-								cent dix-sept (19 novembre 1917).</p>
-							<p>A. Giret caporal au 61e régiment d’infanterie 2e compagnie de mitrailleurs, Armée d’Orient.</p>
-							<cite>Testament de Giret, Pierre, Albert. Lien vers le <a
-									href="https://testaments-de-poilus.huma-num.fr/iiif/2/testament_AN_0779___JPEG___FRAN_Poilus_t-0779_01.jpg/full/full/0/default.jpg">facsimile</a></cite>
-						</blockquote>
 					</span>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h3>Et avec la TEI</h3>
-						<div class="r-hstack">
-							<div>
-								<h4>Structure</h4>
-								<p>En-tête/titre : &lt;head/&gt;</p>
-								<p>Paragraphe : &lt;p/&gt;</p>
-								<p>Date et lieu : &lt;dateline/&gt;</p>
-								<p>Signature : &lt;signed/&gt;</p>
+					<section>
+						<span class="r-fit-text">
+							<h3>Imaginez un encodage pour le testament de Pierre, Albert Giret</h3>
+							<blockquote>
+								<p>Ceci est mon testament</p>
+								<p>Je soussigné Pierre, Albert Giret, fils de feu Pierre, Jean Giret et de Marie Vialette, étant absolument sain de corps et d’esprit, déclare donner à ma mère Madame veuve Giret tous mes biens présents et à venir, libre à elle d’en disposer à son gré.</p>
+								<p>Daté, signé et écrit de ma main en pleine liberté aux Armées d’Orient le dix-neuf novembre mil neuf cent dix-sept (19 novembre 1917).</p>
+								<p>A. Giret caporal au 61e régiment d’infanterie 2e compagnie de mitrailleurs, Armée d’Orient.</p>
+								<cite>Testament de Giret, Pierre, Albert. Lien vers le <a href="https://testaments-de-poilus.huma-num.fr/iiif/2/testament_AN_0779___JPEG___FRAN_Poilus_t-0779_01.jpg/full/full/0/default.jpg">facsimile</a></cite>
+							</blockquote>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Et avec la TEI</h3>
+							<div class="r-hstack">
+								<div>
+									<h4>Structure</h4>
+									<p>En-tête/titre : &lt;head/&gt;</p>
+									<p>Paragraphe : &lt;p/&gt;</p>
+									<p>Date et lieu : &lt;dateline/&gt;</p>
+									<p>Signature : &lt;signed/&gt;</p>
+								</div>
+								<div>
+									<h4>Contenu</h4>
+									<p>Personne : &lt;persName/&gt;</p>
+									<p>Lieu : &lt;placeName/&gt;</p>
+									<p>Organisme : &lt;orgName/&gt;</p>
+									<p>Date : &lt;date /&gt;</p>
+									<p>Normalisation des dates : @when</p>
+									<p>Normalisation des types : @type</p>
+								</div>
 							</div>
-							<div>
-								<h4>Contenu</h4>
-								<p>Personne : &lt;persName/&gt;</p>
-								<p>Lieu : &lt;placeName/&gt;</p>
-								<p>Organisme : &lt;orgName/&gt;</p>
-								<p>Date : &lt;date /&gt;</p>
-								<p>Normalisation des dates : @when</p>
-								<p>Normalisation des types : @type</p>
-							</div>
-						</div>
-
-					</span>
+						</span>
+					</section>
 				</section>
-			</section>
-
+			</div>
 		</div>
-	</div>
-
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-	</script>
-</body>
-
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+         // More info about initialization & config:
+         // - https://revealjs.com/initialization/
+         // - https://revealjs.com/config/
+         Reveal.initialize({
+            hash: true,
+            
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins:[RevealMarkdown, RevealHighlight, RevealNotes]
+         });</script>
+	</body>
 </html>
