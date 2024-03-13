@@ -473,7 +473,7 @@
             <h5>xsl:value-of & xsl:apply-templates</h5>
             <pre>
               <code>
-                <?xml version="1.0" encoding="UTF-8"?>
+                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
                 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
                  <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
                  <!-- on cible ici le nœud racine -->
@@ -487,8 +487,8 @@
                    <xsl:value-of select="surname"/>
                  </xsl:template>
                 </xsl:stylesheet>
-                <?xml version="1.0" encoding="UTF-8"?>
-                <?xml-stylesheet href="style.xsl" type="application/xml"?>
+                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                &lt;?xml-stylesheet href="style.xsl" type="application/xml"?&gt;
                 <person>
                  <identity>
                    <surname>Hugo</surname>
@@ -518,7 +518,7 @@
             <h5>xsl:element, attribute, text & comment</h5>
             <pre>
               <code>
-                <?xml version="1.0" encoding="UTF-8"?>
+                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
                 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
                 <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
                 <xsl:template match="/">
@@ -530,8 +530,8 @@
                   </xsl:element>
                 </xsl:template>
                 </xsl:stylesheet>
-                <?xml version="1.0" encoding="UTF-8"?>
-                <?xml-stylesheet href="style.xsl" type="application/xml"?>
+                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+                &lt;?xml-stylesheet href="style.xsl" type="application/xml"?&gt;
                 <person>
                  <identity>
                    <surname>Hugo</surname>
@@ -547,7 +547,7 @@
       <h5>xsl:element, attribute, text 2</h5>
       <pre>
         <code>
-          <?xml version="1.0" encoding="UTF-8"?>
+          &lt;?xml version="1.0" encoding="UTF-8"?&gt;
           <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
           <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
           <xsl:template match="/">
@@ -555,8 +555,8 @@
             <html>Hello World</html>
           </xsl:template>
           </xsl:stylesheet>
-          <?xml version="1.0" encoding="UTF-8"?>
-          <?xml-stylesheet href="style.xsl" type="application/xml"?>
+          &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+          &lt;?xml-stylesheet href="style.xsl" type="application/xml"?&gt;
           <person>
            <identity>
              <surname>Hugo</surname>
@@ -583,7 +583,7 @@
       <h5>xsl:for-each & xsl:sort</h5>
       <pre>
         <code>
-          <?xml version="1.0" encoding="UTF-8"?>
+          &lt;?xml version="1.0" encoding="UTF-8"?&gt;
           <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
            <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
            <xsl:template match="/">
@@ -596,8 +596,8 @@
              </xsl:for-each>
            </xsl:template>
           </xsl:stylesheet>
-          <?xml version="1.0" encoding="UTF-8"?>
-          <?xml-stylesheet href="style.xsl" type="application/xml"?>
+          &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+          &lt;?xml-stylesheet href="style.xsl" type="application/xml"?&gt;
           <list>
            <item>item C</item>
            <item>item B</item>
@@ -623,7 +623,7 @@
       <h5>xsl:if & xsl:choose</h5>
       <pre>
         <code>
-          <?xml version="1.0" encoding="UTF-8"?>
+          &lt;?xml version="1.0" encoding="UTF-8"?&gt;
           <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
           <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
           <xsl:template match="/">
@@ -644,8 +644,8 @@
             </xsl:if>
           </xsl:template>
           </xsl:stylesheet>
-          <?xml version="1.0" encoding="UTF-8"?>
-          <?xml-stylesheet href="style.xsl" type="application/xml"?>
+          &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+          &lt;?xml-stylesheet href="style.xsl" type="application/xml"?&gt;
           <list>
           <item>item A</item>
           <item>item B</item>
