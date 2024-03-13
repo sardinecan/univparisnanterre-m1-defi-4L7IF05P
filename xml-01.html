@@ -1,536 +1,570 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	
+
 	<title>reveal.js</title>
-	
+
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/blood.css">
-	
+
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
 	<link rel="stylesheet" href="css/local.css">
 </head>
+
 <body>
 	<div class="reveal">
 		<div class="slides">
-<section>
-	<span class="r-fit-text">
-		<h1>Document structuré et métadonnées</h1>
-		<p class="alignCenter">Introduction au langage XML</p>
-	</span>
-</section>
+			<section>
+				<span class="r-fit-text">
+					<h1>Document structuré et métadonnées</h1>
+					<p class="alignCenter">Introduction au langage XML</p>
+				</span>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		<h2>Bibliographie</h2>
-		<ul>
-			<li>Sites de Références
-				<ul>
-					<li><a href="http://www.xml.org">www.xml.org</a></li>
-					<li><a href="https://www.w3.org/standards/xml/core">https://www.w3.org/standards/xml/core</a></li>
-				</ul>
-			</li>
-			<li>Cours en ligne
-				<ul>
-					<li>Chagnon, Gilles, « <a href="http://www.gchagnon.fr/cours/xml/">Cours de XML</a> »</li>
-					<li>Camps, Jean-Baptiste, « <a href="https://halshs.archives-ouvertes.fr/cel-01706530">Structuration des données et des documents : balisage XML</a> »</li>
-					<li>Château-Dutier, Emmanuel et Fauchié, Antoine. « <a href="https://edn6101-h2021.frama.io/edn6101/03-xml/">Édition critique avec la TEI</a> »</li>
-				</ul>
-			</li>
-			<li>Bibliographie
-				<ul>
-					<li>Harold, Elliotte Rusty et Means, W. Scott. « XML en concentré : manuel de  référence », traduction de Ensarguet, Philippe et Laurent, Frédéric 	- <a href="https://books.google.fr/books/about/XML_en_concentr%C3%A9.html?id=d0S10vbdLD0C&redir_esc=y">Introduction en ligne</a></li>
-					<li>« <a href="https://docstore.mik.ua/orelly/xml/xmlnut/index.htm">XML in a nutshell</a> » (version en anglais)</li>
-					<li>Birnbaum, David J. « <a href="https://dh.obdurodon.org/what-is-xml.xhtml">What is XML and why should humanists care? An even gentler introduction to XML</a> »</li>
-					<li>Consortium TEI. « <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/SG.html">A Gentle Introduction to XML</a> »</li>
-					<li>Morgan, Eric Lease. « <a href="https://campusbruxelles.files.wordpress.com/2014/02/xml-fr-bibliothc3a8caires.pdf">XML pour les bibliothécaires : un manuel et un atelier</a> », 78p.</li>
-					<li>Accary-Barbier, Tiphaine et Calabretto, Sylvie. « XML : syntaxe ». Text. Ref : TIP402WEB</li>
-					<li>« <a href="https://www.techniques-ingenieur.fr/base-documentaire/technologies-de-l-information-th9/management-des-systemes-d-information-42302210/xml-syntaxe-h3500/">Technologies logicielles Architectures des systèmes</a> », 10 août 2005.</li>
-				</ul>
-			</li>
-		</ul>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h2>XML</h2>
-		<p class="alignCenter">eXtensible Markup Language</p>
-		<p class="alignCenter">Langage de balisage extensibleX</p>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Langage de balisage – notions</h3>
-		<p>Ce type de langage utilise des balises pour marquer des portions de texte.</p>
-		<p>On en distingue plusieurs types.</p>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h4>Langages de balisage  procéduraux (et présentationnels)</h4>
-		<p>Le balisage indique au programme des instructions de traitements pour le formatage du document.</p>
-		<ul>
-			<li>LaTeX</li>
-			<li>HTML</li>
-			<li>RTF</li>
-			<li>Postcript…</li>
-		</ul>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h4>Langages de balisage descriptifs</h4>
-		<p>Le balisage se contente de décrire les données, sans but de traitement.</p>
-		<ul>
-			<li>TEI (SGML / XML)</li>
-			<li>MathML (XML)</li>
-			<li>RDF…</li>
-		</ul>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		Un petit exercice de balisage…
-		Alan Turing
-		23 juin 1912 à Londres (Royaume-Uni) - 7 juin 1954 à Wilmslow (Royaume-Uni)
-		Alan Mathison Turing est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique.
-	</span>
-</section>
+			<section>
+				<section>
+					<span class="r-fit-text">
+						<h2>Bibliographie</h2>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Sites de Références</h3>
+							<ul>
+								<li><a href="http://www.xml.org">www.xml.org</a></li>
+								<li><a href="https://www.w3.org/standards/xml/core">https://www.w3.org/standards/xml/core</a></li>
+							</ul>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Cours en ligne</h3>
+						<ul>
+							<li>Chagnon, Gilles, « <a href="http://www.gchagnon.fr/cours/xml/">Cours de XML</a> »</li>
+							<li>Camps, Jean-Baptiste, « <a href="https://halshs.archives-ouvertes.fr/cel-01706530">Structuration des
+									données et des documents : balisage XML</a> »</li>
+							<li>Château-Dutier, Emmanuel et Fauchié, Antoine. « <a
+									href="https://edn6101-h2021.frama.io/edn6101/03-xml/">Édition critique avec la TEI</a> »</li>
+						</ul>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Bibliographie</h3>
+						<ul>
+							<li>Harold, Elliotte Rusty et Means, W. Scott. « XML en concentré : manuel de référence », traduction de
+								Ensarguet, Philippe et Laurent, Frédéric - <a
+									href="https://books.google.fr/books/about/XML_en_concentr%C3%A9.html?id=d0S10vbdLD0C&redir_esc=y">Introduction
+									en ligne</a></li>
+							<li>« <a href="https://docstore.mik.ua/orelly/xml/xmlnut/index.htm">XML in a nutshell</a> » (version en
+								anglais)</li>
+							<li>Birnbaum, David J. « <a href="https://dh.obdurodon.org/what-is-xml.xhtml">What is XML and why should
+									humanists care? An even gentler introduction to XML</a> »</li>
+							<li>Consortium TEI. « <a href="https://tei-c.org/release/doc/tei-p5-doc/it/html/SG.html">A Gentle
+									Introduction to XML</a> »</li>
+							<li>Morgan, Eric Lease. « <a
+									href="https://campusbruxelles.files.wordpress.com/2014/02/xml-fr-bibliothc3a8caires.pdf">XML pour
+									les bibliothécaires : un manuel et un atelier</a> », 78p.</li>
+							<li>Accary-Barbier, Tiphaine et Calabretto, Sylvie. « XML : syntaxe ». Text. Ref : TIP402WEB</li>
+							<li>« <a
+									href="https://www.techniques-ingenieur.fr/base-documentaire/technologies-de-l-information-th9/management-des-systemes-d-information-42302210/xml-syntaxe-h3500/">Technologies
+									logicielles Architectures des systèmes</a> », 10 août 2005.</li>
+						</ul>
+					</span>
+				</section>
+			</section>
 
 
-<section>
-	<span class="r-fit-text">
-		Langages de balisage  descriptifs
-		Le balisage se contente de décrire les données, sans but de traitement.
-		TEI (SGML / XML)
-		MathML (XML)
-		RDF…
-		Alan Turing
-		23 juin 1912 à Londres (Royaume-Uni) - 7 juin 1954 à Wilmslow (Royaume-Uni)
-		Alan Mathison Turing est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique.
-	</span>
-</section>
+			<section>
+				<span class="r-fit-text">
+					<h2>XML</h2>
+					<p class="alignCenter">eXtensible Markup Language</p>
+					<p class="alignCenter">Langage de balisage extensible</p>
+				</span>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		Langages de balisage  descriptifs
-		Le balisage se contente de décrire les données, sans but de traitement.
-		TEI (SGML / XML)
-		MathML (XML)
-		RDF…
-	</span>
-</section>
-<section>
-	<span class="r-fit-text">
-		Intéressons-nous maintenant à la structure et au contenu du texte…
-		Alan Turing
-		23 juin 1912 à Londres (Royaume-Uni) - 7 juin 1954 à Wilmslow (Royaume-Uni)
-		Alan Mathison Turing est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique.
-	</span>
-</section>
+			<section>
+				<span class="r-fit-text">
+					<h3>Langage de balisage – notions</h3>
+					<p>Ce type de langage utilise des balises pour marquer des portions de texte.</p>
+					<p>On en distingue plusieurs types.</p>
+				</span>
+			</section>
 
+			<section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Langages de balisage procéduraux (et présentationnels)</h4>
+						<p>Le balisage indique au programme des instructions de traitements pour le formatage du document.</p>
+						<ul>
+							<li>LaTeX</li>
+							<li>HTML</li>
+							<li>RTF</li>
+							<li>Postcript…</li>
+						</ul>
+					</span>
+				</section>
+				<section>
+					<p>Exemple</p>
+					<pre><code><p>Un paragraphe contenant un <a href="#monlien">lien</a>.</p></code></pre>
+					<p>Un paragraphe contenant un <a href="">lien</a>.</p>
+				</section>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		Langages de balisage  descriptifs
-		Le balisage se contente de décrire les données, sans but de traitement.
-		TEI (SGML / XML)
-		MathML (XML)
-		RDF…
-		Alan Turing
-		23 juin 1912 à Londres (Royaume-Uni) - 7 juin 1954 à Wilmslow (Royaume-Uni)
-		Alan Mathison Turing est un mathématicien et cryptologue britannique, auteur de travaux qui fondent scientifiquement l'informatique.
-	</span>
-</section>
+			<section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Langages de balisage descriptifs</h3>
+						<p>Le balisage se contente de décrire les données, sans but de traitement.</p>
+						<ul>
+							<li>TEI (SGML / XML)</li>
+							<li>MathML (XML)</li>
+							<li>RDF…</li>
+						</ul>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>Un petit exercice de balisage…</h4>
+						<p><b>Alan Turing</b></p>
+						<p><u>23 juin 1912</u> à <em>Londres</em> (Royaume-Uni) - <u>7 juin 1954</u> à <em>Wilmslow</em>
+							(Royaume-Uni)</p>
+						<p><b>Alan Mathison Turing</b> est un mathématicien et cryptologue britannique, auteur de travaux qui
+							fondent scientifiquement l'informatique.</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<p>HTML</p>
+						<pre><code>
+						&lt;html&gt;
+							&lt;head/&gt;
+							&lt;body&gt;
+								<p><b>Alan Turing</b></p>
+								<p>
+									<u>23 juin 1912</u> à <i>Londres</i> (Royaume-Uni) - 
+									<u>7 juin 1954</u> à <i>Wilmslow</i> (Royaume-Uni)
+								</p>
+								<p>
+									<b>Alan Mathison Turing</b> est un mathématicien
+									et cryptologue britannique, auteur de travaux 
+									qui fondent scientifiquement l'informatique.
+								</p>
+							&lt;/body&gt;
+						&lt;/html&gt;
+						</code></pre>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<p><b>Alan Turing</b></p>
+						<p><u>23 juin 1912</u> à <em>Londres</em> (Royaume-Uni) - <u>7 juin 1954</u> à <em>Wilmslow</em>
+							(Royaume-Uni)</p>
+						<p><b>Alan Mathison Turing</b> est un mathématicien et cryptologue britannique, auteur de travaux qui
+							fondent scientifiquement l'informatique.</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<p>XML</p>
+						<pre><code>
+						&lt;notice&gt;
+							<personne>Alan Turing</personne>
+							<date>
+								<date type="naissance" norm="1912-06-23">23 juin 1912</date> à 
+								<lieu type="naissance">Londres</lie> (Royaume-Uni) - 
+								<date type="décès" norm="1954-06-07">7 juin 1954</date> à 
+								<lieu type="décès">Wilmslow</lieu> (Royaume-Uni)
+							</date>
+							<biographie>
+								<personne>Alan Mathison Turing</personne> est un 
+								<profession>mathématicien</profession> et
+								<profession>cryptologue</profession> britannique, 
+								auteur de travaux qui fondent scientifiquement
+								l'informatique.
+							</biographie>
+						&lt;/notice&gt;
+						</code></pre>
+					</span>
+				</section>
+			</section>
 
+			<section>
+				<span class="r-fit-text">
+					<h3>Langages de balisage descriptifs</h3>
 
-<section>
-	<span class="r-fit-text">
-		Langages de balisage  descriptifs
-		Le balisage se contente de décrire les données, sans but de traitement.
-		TEI (SGML / XML)
-		MathML (XML)
-		RDF…
-		3 étapes
-		on identifie des données
-		on choisit des balises
-		on balise le texte (encodage)
-	</span>
-</section>
+					<p>3 étapes</p>
+					<ul>
+						<li>on identifie des données</li>
+						<li>on choisit des balises</li>
+						<li>on balise le texte (encodage)</li>
+					</ul>
+					<span class="fragment">
+						<p>Avantages</p>
+						<ul>
+							<li>distinction contenu/forme</li>
+							<li>facilite les traitements des textes encodés</li>
+							<li>excellent format pivot (portabilité des documents)</li>
+						</ul>
+					</span>
+				</span>
+			</section>
 
+			<section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Arbre XML</h3>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>Arborescence – notions</h4>
+						<ul>
+							<li>les éléments : unités d’information</li>
+							<li>élément racine : unique, englobe tous les autres</li>
+							<li>parent/enfant : imbrication directe</li>
+							<li>frères : deux éléments qui ont le même parent</li>
+						</ul>
+					</span>
+				</section>
+				<section>
+					<img src="assets/img/arbre.png" alt="Arborescence XML"/>
+				</section>
+			</section>
 
+			<section>
+				<section>
+					<span class="r-fit-text">
+						<h3>eXtensible</h3>
+							<p>
+								Metalangage de balisage
+							</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>Métalangage de balisage – notions</h4>
+						<p>Langage conçu pour définir d'autres langages.</p>
+						<blockquote>
+							<p>pas de jeu de balises prédéfini.</p>
+							<cite>Harold, Elliotte Rusty et Means, W. Scott. « XML en concentré : manuel de référence ».</cite>
+						</blockquote>
+						<p>Un ensemble de règles pour définir des applications.</p>
+					</span>
+				</section>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		Langage de balisage  descriptif
-		<p>3 étapes</p>
-		<ul>
-			<li>on identifie des données</li>
-			<li>on choisit des balises</li>
-			<li>on balise le texte (encodage)</li>
-		</ul>
-		<p>Avantages</p>
-		<ul>
-			<li>distinction contenu/forme</li>
-			<li>facilite les traitements des textes encodés</li>
-			<li>excellent format pivot (portabilité des documents)</li>
-		</ul>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h2>Arbre XML</h2>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Arborescence – notions</h3>
-		<ul>
-			<li>les éléments : unités d’information</li>
-			<li>élément racine : unique, englobe tous les autres</li>
-			<li>parent/enfant : imbrication directe</li>
-			<li>frères : deux éléments qui ont le même parent</li>
-		</ul>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h2>Metalangage de balisage</h2>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Métalangage de balisage – notions</h3>
-		<p>Langage conçu pour définir d'autres langages.</p>
-		<blockquote>
-			<p>pas de jeu de balises prédéfini.</p>
-			<cite>Harold, Elliotte Rusty et Means, W. Scott. « XML en concentré : manuel de  référence ».</cite>
-		</blockquote>
-		<p>Un ensemble de règles pour définir des applications.</p>
-	</span>
-</section>
-<section>
-	<h2>Il était une fois XML</h2>
-</section>
-<section>
-	<span class="r-fit-text">
-		<h2>Standard Generalized Markup Language</h2>
-		<ul>
-			<li>1969 : Charles Goldfarb, Edward Mosher et Raymond Lorie, alors chez IBM, mettent au point GML (Generalized Markup Language)</li>
-			<li>1980’s : Charles Goldfarb développe SGML</li>
-			<li>1986 : SGML est publié comme norme internationale ISO 8879:1986</li>
-			<li>1989 : Naissance de HTML, une application SGML</li>
-			<li>1998 : Naissance de XML</li>
-		</ul>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Standard Generalized Markup Language</h3>
-		<p>Objectif : représenter des données contenues dans un document sans tenir compte des systèmes utilisés pour la saisie et le traitement, ni des solutions de publication.</p>
-		<p>SGML est un métalangage qui introduit la notion de DTD (Document Type Definition) qui permet de décrire un modèle de document.</p>
-		<p>Un document SGML se compose de 3 parties : une DTD, une ou plusieurs feuilles de style et une instance</p>
-	</span>
-</section>
-<section>
-	<span class="r-fit-text">
-		<h3>HyperText Markup Language une application SGML</h3>
-		<p>Langage de publication pour le web fondé sur l’utilisation de liens hypertextuels entre les documents et sur le protocole HTTP (Hypertext Transfer Protocol).</p>
-		<p>Développé au CERN par Tim Berners-Lee, c’est une application SGML.</p>
-		<p>Contrairement à SGML, HTML mélange des balises de structure et des balises de présentation.</p>
-	</span>
-</section>
-
-<section><span class="r-fit-text">HTML – exemple</span></section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Limites de SGML</h3>
-		
-		<ul>
-			<li>Complexe à mettre en œuvre nécessite la déclaration d’une DTD</li>
-			<li>Peu adapté à l’édition sur le Web</li>
-			<li>Prise en charge limité des jeux de caractères internationaux…</li>
-		</ul>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h3>XML – le cahier des charges</h3>
-		<blockquote>
-			<ul>
-				<li>XML shall be straightforwardly usable over the Internet.</li>
-				<li>XML shall support a wide variety of applications.</li>
-				<li>XML shall be compatible with SGML.</li>
-				<li>It shall be easy to write programs which process XML documents.</li>
-				<li>The number of optional features in XML is to be kept to the absolute minimum, ideally zero.</li>
-				<li>XML documents should be human-legible and reasonably clear.</li>
-				<li>The XML design should be prepared quickly.</li>
-				<li>The design of XML shall be formal and concise.</li>
-				<li>XML documents shall be easy to create.</li>
-				<li>Terseness in XML markup is of minimal importance.</li>
-			</ul>
-			<cite>W3C Recommendation, Extensible Markup Language (XML) 1.0 (Fifth Edition)</cite>
-		</blockquote>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h3>XML en 4 points</h3>
-		<ul>
-			<li>XML ne sert pas à afficher les données mais à les décrire.</li>
-			<li>Le nom des balises n’est pas prédéfini.</li>
-			<li>On peut utiliser une "grammaire" de balises (un schéma), pour définir des contraintes ou s’assurer de la consistance de l’encodage.</li>
-			<li>XML est auto-descriptif et lisible par l’homme.</li>
-		</ul>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>L’élément XML</h3>
-		<code>Alan Turing est né <date>le 23 juin 1912</date></code>
-		
-		Balise ouvrante
-		Balise fermante
-		Contenu de l’élément
-		élément XML
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>L’attribut XML</h3>
-		<code>Alan Turing est né <date when="1912-06-23">le 23 juin 1912</date></code>
-		
-		Nom
-		Valeur
-		Attribut
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Le prologue</h3>
-		<pre>
-			<code>
-				<?xml version="1.0" encoding="UTF-8"?>
-				<notice>
-					<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
-				</notice>
-			</code>
-		</pre>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h3>Syntaxe XML</h3>
-		<p>Les signes &lt;, &gt; et &lt;/ délimitent les balises ouvrantes et fermantes : <code>&lt;p&gt;&lt;/p&gt;</code></p>
-		<p>Le nom d’un attribut est séparé de sa valeur par le signe “=”.</p>
-		<p>La valeur d’un attribut est placée entre guillemets simples ou doubles. (attribut='valeur' est équivalent à attribut="valeur")</p>
-		<p>Les éléments vides peuvent s’écrire <code>&lt;div&gt;&lt;/div&gt;</code> ou <code>&lt;div/&gt;</code></p>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h3>Arbre d’éléments</h3>
-		<p>Comme nous l’avons vu, un document XML est une arborescence :</p>
-		<p>Un arbre XML possède un seul élément racine qui contient tous les autres éléments</p>
-		<pre>
-			<code>
-				<racine>
-					<element>Alan Turing</element>
-					<element/>
-				</racine>
-			</code>
-		</pre>
-		<p>Un élément peut contenir du texte et/ou d’autres éléments (contenu mixte), ou être vide.</p>
-		<pre>
-			<code>
-				<p>
-					<personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.
-				</p>
-			</code>
-		</pre>
-		<p>Il existe un et un seul élément englobant tous les autres, encodé en premier, juste après le prologue : c’est l’élément racine.</p>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Les attributs</h3>
-		<p>Les attributs précisent la signification des éléments, leur ajoutent des caractéristiques, des métadonnées.</p>
-		
-		<pre>
-			<code>
-				<date when="1912-06-23">le 23 juin 1912</date>
-			</code>
-		</pre>
-		
-		<p>L’attribut est toujours saisi à l’intérieur de la balise ouvrante de l’élément.</p>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Les noms XML</h3>
-		<p>Les noms d’éléments et d’attributs peuvent contenir (et uniquement) :</p>
-		<ul>
-			<li>tous les caractères alphanumériques (a-z, A-Z, 0-9) – y compris avec accent</p>
-			<li>le tiret bas (underscore) « _ »</p>
-			<li>le trait d’union « - »</p>
-			<li>le point « . »</p>
-			<li>Un nom ne peut pas commencer par un nombre, ni par un point, ni par un trait d’union, ni par xml (quelle que soit la casse utilisée).</p>
-			<li>XML est sensible à la casse ! (&lt;p/&gt; ≠ &lt;P/&gt;)</p>
-		</ul>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h3>Les entités</h3>
-		<p>Avec XML, il y a 5 entités de caractère prédéfinies. Elles servent à représenter des caractères réservés, c’est-à-dire utilisée pour la syntaxe XML : « &amp; » (&amp;amp;), « &lt; » (&amp;lt;), « &gt; » (&amp;gt;), « " » (&amp;quot;) et « ' » (&amp;apos;).</p>
-		<p>Il est possible d’en définir d’autres dans des DTD.</p>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h3>Les commentaires</h3>
-		<p>Les commentaires commencent par “&lt;!--” et se terminent par “--&gt;”. Ils ne peuvent contenir de double trait d’union.</p>
-		<pre>
-			<code>
-				<?xml version="1.0" encoding="UTF-8"?>
-				<!-- un commentaire -->
-				<notice>
-					<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
-				</notice>
-			</code>
-		</pre>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Les instructions de traitement</h3>
-		<p>Elles donnent des instructions pour un programme (p. ex. pour l’application d’une feuille de transformation XSLT, ou une feuille de style CSS). Les instructions de traitement commencent par &lt;? et se terminent par ?&gt;.</p>
-		<pre>
-			<code>
-				<?xml version="1.0" encoding="UTF-8"?>
-				<?xml-stylesheet href="mon-style.css"?>
-				<notice>
-					<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
-				</notice>
-			</code>
-		</pre>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Les sections CDATA</h3>
-		<p>Les sections CDATA commencent par &lt;![CDATA[ se terminent par ]]&gt;</p>
-		<p>Elles indiquent que leur contenu ne doit pas être interprété comme du XML.</p>
-		<pre>
-			<code>
-				<xml>
-					&lt;![CDATA[
-						Je peux donc mettre ici du code javascript ou python, ou encore des &, et des <, >… 
-					]]&gt;
-					</xml>
-			</code>
-		</pre>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Les espaces de nom</h3>
-		<p>Utilisation d’éléments et d’attributs issus de plusieurs langages XML. Ils peuvent être préfixés ou non.</p>
-		<pre>
-			<code>
-				<!-- espace de nom par défaut-->
-				<doc xmlns="monUri">
-					<para>
-						Mon paragraphe contenant une formule mathématique encodée avec MathML
-						<!-- espace de nom par préfixé-->
-						<m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
-							<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
-						</m:math>
-					</para>
-				</doc>
-			</code>
-		</pre>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Attributs par défaut</h3>
-		<p>XML propose des attributs par défaut, sous l’espace de nom xml (déclaré par défaut), comme par exemple xml:id ou xml:lang.</p>
-	</span>
-</section>
-
-
-<section>
-	<span class="r-fit-text">
-		<h3>Document XML bien formé</h3>
-		<p>On dit d’un document XML qu’il est bien formé lorsqu’il répond aux différentes contraintes syntaxiques que nous venons de voir.</p>
-		<ul>
-			<li>respect des règles concernant les noms XML</p>
-			<li>élément racine unique englobant tous les autres</p>
-			<li>présence des balises ouvrantes et fermantes</p>
-			<li>pas de chevauchement de balises (&lt;balise1&gt;&lt;balise2&gt;&lt;/balise1&gt;&lt;/balise2&gt;)</p>
-			<li>respect des entités XML</p>
-			<li>les attributs sont déclarés dans les balises ouvrantes</p>
-			<li>unicité des attributs pour un même élément</p>
-			<li>pas d’attribut vide…</p>
-		</ul>
-	</span>
-</section>
-
-<section>
-	<span class="r-fit-text">
-		<h3>Utiliser XML</h3>
-		<ul>
-			<li>Initialement pensé pour l’encodage de documents textuels (narratifs)…</li>
-			<li>…mais utilisé comme format de données pour des données structurées, sous forme de bases.</li>
-		</ul>
-	</span>
-</section>
+			
+			<section>
+				<section>
+					<h3>Il était une fois XML</h3>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>Standard Generalized Markup Language</h4>
+						<ul>
+							<li>1969 : Charles Goldfarb, Edward Mosher et Raymond Lorie, alors chez IBM, mettent au point GML
+								(Generalized Markup Language)</li>
+							<li>1980’s : Charles Goldfarb développe SGML</li>
+							<li>1986 : SGML est publié comme norme internationale ISO 8879:1986</li>
+							<li>1989 : Naissance de HTML, une application SGML</li>
+							<li>1998 : Naissance de XML</li>
+						</ul>
+					</span>
+				</section>
+	
+				<section>
+					<span class="r-fit-text">
+						<h4>Standard Generalized Markup Language</h4>
+						<p>Objectif : représenter des données contenues dans un document sans tenir compte des systèmes utilisés pour
+							la saisie et le traitement, ni des solutions de publication.</p>
+						<p>SGML est un métalangage qui introduit la notion de DTD (Document Type Definition) qui permet de décrire un
+							modèle de document.</p>
+						<p>Un document SGML se compose de 3 parties : une DTD, une ou plusieurs feuilles de style et une instance</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h5>HyperText Markup Language une application SGML</h5>
+						<p>Langage de publication pour le web fondé sur l’utilisation de liens hypertextuels entre les documents et
+							sur le protocole HTTP (Hypertext Transfer Protocol).</p>
+						<p>Développé au CERN par Tim Berners-Lee, c’est une application SGML.</p>
+						<p>Contrairement à SGML, HTML mélange des balises de structure et des balises de présentation.</p>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>Limites de SGML</h4>
+						<ul>
+							<li>Complexe à mettre en œuvre nécessite la déclaration d’une DTD</li>
+							<li>Peu adapté à l’édition sur le Web</li>
+							<li>Prise en charge limité des jeux de caractères internationaux…</li>
+						</ul>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>XML – le cahier des charges</h4>
+						<blockquote>
+							<ul>
+								<li>XML shall be straightforwardly usable over the Internet.</li>
+								<li>XML shall support a wide variety of applications.</li>
+								<li>XML shall be compatible with SGML.</li>
+								<li>It shall be easy to write programs which process XML documents.</li>
+								<li>The number of optional features in XML is to be kept to the absolute minimum, ideally zero.</li>
+								<li>XML documents should be human-legible and reasonably clear.</li>
+								<li>The XML design should be prepared quickly.</li>
+								<li>The design of XML shall be formal and concise.</li>
+								<li>XML documents shall be easy to create.</li>
+								<li>Terseness in XML markup is of minimal importance.</li>
+							</ul>
+							<cite>W3C Recommendation, Extensible Markup Language (XML) 1.0 (Fifth Edition)</cite>
+						</blockquote>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>XML en 4 points</h4>
+						<ul>
+							<li>XML ne sert pas à afficher les données mais à les décrire.</li>
+							<li>Le nom des balises n’est pas prédéfini.</li>
+							<li>On peut utiliser une "grammaire" de balises (un schéma), pour définir des contraintes ou s’assurer de la
+								consistance de l’encodage.</li>
+							<li>XML est auto-descriptif et lisible par l’homme.</li>
+						</ul>
+					</span>
+				</section>
+			</section>
 
 
 
+			<section>
+				<section>
+					<h3>Syntaxe XML</h3>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>L’élément XML</h4>
+						<img src="assets/img/syntaxeHTML.png" alt="Syntaxe élément"/>
+					</span>
+				</section>
+				<section>
+					<span class="r-fit-text">
+						<h4>L’attribut XML</h4>
+						<img src="assets/img/syntaxeAttributs.png" alt="Syntaxe attributs xml"/>
+					</span>
+				</section>
+
+				<section>
+					<span class="r-fit-text">
+						<h4>Le prologue</h4>
+						<pre>
+							<code>
+								&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+								<notice>
+									<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
+								</notice>
+							</code>
+						</pre>
+					</span>
+				</section>
+
+				<section>
+					<span class="r-fit-text">
+						<h4>Syntaxe XML</h4>
+						<p>Les signes &lt;, &gt; et &lt;/ délimitent les balises ouvrantes et fermantes :
+							<code>&lt;p&gt;&lt;/p&gt;</code></p>
+						<p>Le nom d’un attribut est séparé de sa valeur par le signe “=”.</p>
+						<p>La valeur d’un attribut est placée entre guillemets simples ou doubles. (attribut='valeur' est équivalent à
+							attribut="valeur")</p>
+						<p>Les éléments vides peuvent s’écrire <code>&lt;div&gt;&lt;/div&gt;</code> ou <code>&lt;div/&gt;</code></p>
+					</span>
+				</section>
+
+				<section>
+					<span class="r-fit-text">
+						<h4>Arbre d’éléments</h4>
+						<p>Comme nous l’avons vu, un document XML est une arborescence :</p>
+						<p>Un arbre XML possède un seul et un seul élément racine qui contient tous les autres éléments</p>
+						<pre>
+							<code>
+								<racine>
+									<element>Alan Turing</element>
+									<element></element>
+								</racine>
+							</code>
+						</pre>
+						<p>Un élément peut contenir du texte et/ou d’autres éléments (contenu mixte), ou être vide.</p>
+						<pre>
+							<code>
+								<p>
+									<personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.
+								</p>
+							</code>
+						</pre>
+					</span>
+				</section>
+	
+				<section>
+					<span class="r-fit-text">
+						<h4>Les attributs</h4>
+						<p>Les attributs précisent la signification des éléments, leur ajoutent des caractéristiques, des métadonnées.</p>
+						<pre>
+							<code>
+								<date when="1912-06-23">le 23 juin 1912</date>
+							</code>
+						</pre>
+						<p>L’attribut est toujours saisi à l’intérieur de la balise ouvrante de l’élément.</p>
+					</span>
+				</section>
+
+				<section>
+					<span class="r-fit-text">
+						<h4>Les noms XML</h4>
+						<p>Les noms d’éléments et d’attributs peuvent contenir (et uniquement) :</p>
+						<ul>
+							<li>tous les caractères alphanumériques (a-z, A-Z, 0-9) – y compris avec accent</li>
+							<li>le tiret bas (underscore) « _ »</li>
+							<li>le trait d’union « - »</li>
+							<li>le point « . »</li>
+						</ul>
+						<p>Un nom ne peut pas commencer par un nombre, ni par un point, ni par un trait d’union, ni par xml (quelle
+							que soit la casse utilisée).</p>
+						<p>XML est sensible à la casse ! (&lt;p/&gt; ≠ &lt;P/&gt;)</p>
+					</span>
+				</section>
+
+				<section>
+					<span class="r-fit-text">
+						<h4>Les entités</h4>
+						<p>Avec XML, il y a 5 entités de caractère prédéfinies. Elles servent à représenter des caractères réservés,
+							c’est-à-dire utilisés pour la syntaxe XML : « &amp; » (&amp;amp;), « &lt; » (&amp;lt;), « &gt; » (&amp;gt;),
+							« " » (&amp;quot;) et « ' » (&amp;apos;).</p>
+						<p>Il est possible d’en définir d’autres dans des DTD.</p>
+					</span>
+				</section>
+
+				<section>
+					<span class="r-fit-text">
+						<h4>Les commentaires</h4>
+						<p>Les commentaires commencent par “&lt;!--” et se terminent par “--&gt;”. Ils ne peuvent contenir de double
+							trait d’union.</p>
+						<pre>
+							<code>
+								&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+								<!-- un commentaire -->
+								<notice>
+									<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
+								</notice>
+							</code>
+						</pre>
+					</span>
+				</section>
+				
+				<section>
+					<span class="r-fit-text">
+						<h4>Les instructions de traitement</h4>
+						<p>Elles donnent des instructions pour un programme (p. ex. pour l’application d’une feuille de transformation
+							XSLT, ou une feuille de style CSS). Les instructions de traitement commencent par &lt;? et se terminent par
+							?&gt;.</p>
+						<pre>
+							<code>
+								&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+								&lt;?xml-stylesheet href="mon-style.css"?&gt;								
+								<notice>
+									<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
+								</notice>
+							</code>
+						</pre>
+					</span>
+				</section>
+				
+				<section>
+					<span class="r-fit-text">
+						<h4>Les sections CDATA</h4>
+						<p>Les sections CDATA commencent par &lt;![CDATA[ se terminent par ]]&gt;</p>
+						<p>Elles indiquent que leur contenu ne doit pas être interprété comme du XML.</p>
+						<pre>
+							<code>
+								<xml>
+									&lt;![CDATA[
+										Je peux donc mettre ici du code javascript ou python, ou encore des &, et des <, >… 
+									]]&gt;
+									</xml>
+							</code>
+						</pre>
+					</span>
+				</section>
+				
+				<section>
+					<span class="r-fit-text">
+						<h4>Les espaces de nom</h4>
+						<p>Ils permettent l'utilisation d’éléments et d’attributs issus de plusieurs langages XML. Ils peuvent être préfixés ou non.
+						</p>
+						<pre>
+							<code>
+								<!-- espace de nom par défaut-->
+								<doc xmlns="monUri">
+									<para>
+										Mon paragraphe contenant une formule mathématique encodée avec MathML
+										<!-- espace de nom préfixé-->
+										<m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+											<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+										</m:math>
+									</para>
+								</doc>
+							</code>
+						</pre>
+					</span>
+				</section>
+				
+				<section>
+					<span class="r-fit-text">
+						<h3>Attributs par défaut</h3>
+						<p>XML propose des attributs par défaut, sous l’espace de nom xml (déclaré par défaut), comme par exemple
+							xml:id ou xml:lang.</p>
+					</span>
+				</section>
+			</section>
+
+
+
+			<section>
+				<span class="r-fit-text">
+					<h3>Document XML bien formé</h3>
+					<p>On dit d’un document XML qu’il est bien formé lorsqu’il répond aux différentes contraintes syntaxiques que
+						nous venons de voir.</p>
+					<ul>
+						<li>respect des règles concernant les noms XML</p>
+						<li>élément racine unique englobant tous les autres</p>
+						<li>présence des balises ouvrantes et fermantes</p>
+						<li>pas de chevauchement de balises (&lt;balise1&gt;&lt;balise2&gt;&lt;/balise1&gt;&lt;/balise2&gt;)</p>
+						<li>respect des entités XML</p>
+						<li>les attributs sont déclarés dans les balises ouvrantes</p>
+						<li>unicité des attributs pour un même élément</p>
+						<li>pas d’attribut vide…</p>
+					</ul>
+				</span>
+			</section>
+
+			<section>
+				<span class="r-fit-text">
+					<h3>Utiliser XML</h3>
+					<ul>
+						<li>Initialement pensé pour l’encodage de documents textuels (narratifs)…</li>
+						<li>…mais utilisé comme format de données structurées, sous forme de bases.</li>
+					</ul>
+				</span>
+			</section>
 		</div>
 	</div>
-	
+
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
@@ -541,10 +575,11 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-			
+
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 	</script>
 </body>
+
 </html>

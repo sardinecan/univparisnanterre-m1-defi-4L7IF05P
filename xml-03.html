@@ -1,89 +1,99 @@
 <!doctype html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	
-	<title>reveal.js</title>
-	
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/blood.css">
-	
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
-	<link rel="stylesheet" href="css/local.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>reveal.js</title>
+
+  <link rel="stylesheet" href="dist/reset.css">
+  <link rel="stylesheet" href="dist/reveal.css">
+  <link rel="stylesheet" href="dist/theme/blood.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+  <link rel="stylesheet" href="css/local.css">
 </head>
+
 <body>
-	<div class="reveal">
-		<div class="slides">
+  <div class="reveal">
+    <div class="slides">
       <section>
         <span class="r-fit-text">
           <h1>Document structuré et métadonnées</h1>
           <p class="alignCenter">Introduction au langage XML</p>
         </span>
       </section>
-			
-
-			<section><span class="r-fit-text">Document valide</span></section>
-
-<section>
-  <span class="r-fit-text">
-    De : M Martin <martin@parisnanterre.fr> A : Camille Claverie <cclaveri@parisnanterre.fr> ; Cécile Payeur<cpayeur@parisnanterre.fr > CC : secretariat-infocom@parisnanterre.fr Sujet : Emploi du temps date : 05/02/2021 pièce(s) jointe(s) : emploi-du-temps.xls
-    Bonjour, Vous trouverez ci-joint vos emplois du temps pour le second semestre. Cordialement, M. Martin Secrétariat Infocom Bat L - Université Paris Nanterre
-    Retour sur la séance précédente – correction exercice 2
-    
-    Retour sur la séance précédente – correction exercice 2
-    e-mail expéditeur De : M Martin <martin@parisnanterre.fr> destinataires A : Camille Claverie <cclaveri@parisnanterre.fr> ; Cécile Payeur<cpayeur@parisnanterre.fr >  copie carbone CC : secretariat-infocom@parisnanterre.fr objet  Sujet : Emploi du temps date d’envoi date : 05/02/2021 documents attachés pièce(s) jointe(s) : emploi-du-temps.xls
-    message Bonjour, Vous trouverez ci-joint vos emplois du temps pour le second semestre. Cordialement, M. Martin Secrétariat Infocom Bat L - Université Paris Nanterre
-  </span>
-</section>
-
-<section><span class="r-fit-text">Document valide</span></section>
-
-<section>
-  <span class="r-fit-text">
-    Document valide et schéma - notions
-    un document XML est un document bien formé !
-    respecte les règles syntaxiques strictes de XML… cf. CM 1
-    un document XML – donc bien formé – peut être valide !
-    respecte une grammaire de document, qui s’exprime à travers une DTD ou un schéma
-  </span>
-</section>
-
-<section>
-  <span class="r-fit-text">
-    Une DTD (Document Type Definition) ou un schéma définit une classe de document XML, c’est-à-dire la liste des éléments et attributs autorisés, ainsi que le contexte dans lequel ils peuvent être appelés.
-    Il existe plusieurs syntaxes :
-    DTD (héritage de SGML)
-    XML Schema (W3C)
-    RelaxNG (norme ISO)
-    Document valide et schéma - notions
-  </span>
-</section>
 
 
+      <section><span class="r-fit-text">Document valide</span></section>
+
+      <section>
+        <span class="r-fit-text">
+          De : M Martin <martin@parisnanterre.fr> A : Camille Claverie <cclaveri@parisnanterre.fr> ; Cécile Payeur
+              <cpayeur@parisnanterre.fr> CC : secretariat-infocom@parisnanterre.fr Sujet : Emploi du temps date :
+                05/02/2021 pièce(s) jointe(s) : emploi-du-temps.xls
+                Bonjour, Vous trouverez ci-joint vos emplois du temps pour le second semestre. Cordialement, M. Martin
+                Secrétariat Infocom Bat L - Université Paris Nanterre
+                Retour sur la séance précédente – correction exercice 2
+
+                Retour sur la séance précédente – correction exercice 2
+                e-mail expéditeur De : M Martin <martin@parisnanterre.fr> destinataires A : Camille Claverie
+                  <cclaveri@parisnanterre.fr> ; Cécile Payeur<cpayeur@parisnanterre.fr> copie carbone CC :
+                      secretariat-infocom@parisnanterre.fr objet Sujet : Emploi du temps date d’envoi date : 05/02/2021
+                      documents attachés pièce(s) jointe(s) : emploi-du-temps.xls
+                      message Bonjour, Vous trouverez ci-joint vos emplois du temps pour le second semestre.
+                      Cordialement, M. Martin Secrétariat Infocom Bat L - Université Paris Nanterre
+        </span>
+      </section>
+
+      <section><span class="r-fit-text">Document valide</span></section>
+
+      <section>
+        <span class="r-fit-text">
+          Document valide et schéma - notions
+          un document XML est un document bien formé !
+          respecte les règles syntaxiques strictes de XML… cf. CM 1
+          un document XML – donc bien formé – peut être valide !
+          respecte une grammaire de document, qui s’exprime à travers une DTD ou un schéma
+        </span>
+      </section>
+
+      <section>
+        <span class="r-fit-text">
+          Une DTD (Document Type Definition) ou un schéma définit une classe de document XML, c’est-à-dire la liste des
+          éléments et attributs autorisés, ainsi que le contexte dans lequel ils peuvent être appelés.
+          Il existe plusieurs syntaxes :
+          DTD (héritage de SGML)
+          XML Schema (W3C)
+          RelaxNG (norme ISO)
+          Document valide et schéma - notions
+        </span>
+      </section>
 
 
-<section><span class="r-fit-text">Document Type Definition</span></section>
 
-<section>
-  <span class="r-fit-text">
-    Document Type Definition
-    La DTD est un héritage de SGML, mais cette technologie est aujourd’hui obsolète :
-    seule syntaxe disponible au lancement de XML en 1999
-    ne repose pas sur la syntaxe XML
-    ne supporte pas les espaces de nom (pas extensible)
-    pas de typage des données
-    expressivité limitée
-  </span>
-</section>
 
-<section>
-  <span class="r-fit-text">
-    Document Type Definition - exemple
-    <pre>
+      <section><span class="r-fit-text">Document Type Definition</span></section>
+
+      <section>
+        <span class="r-fit-text">
+          Document Type Definition
+          La DTD est un héritage de SGML, mais cette technologie est aujourd’hui obsolète :
+          seule syntaxe disponible au lancement de XML en 1999
+          ne repose pas sur la syntaxe XML
+          ne supporte pas les espaces de nom (pas extensible)
+          pas de typage des données
+          expressivité limitée
+        </span>
+      </section>
+
+      <section>
+        <span class="r-fit-text">
+          Document Type Definition - exemple
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <!DOCTYPE person[
@@ -103,56 +113,58 @@
         </person>
       </code>
     </pre>
-  </span>
-</section>
+        </span>
+      </section>
 
 
-<section><span class="r-fit-text">Les Schémas</span></section>
+      <section><span class="r-fit-text">Les Schémas</span></section>
 
-<section>
-  <span class="r-fit-text">
-    Les schémas – notions
-    rédigés en XML
-    introduction des types XML
-    support des espaces de noms
-    plus expressifs que les DTD
-    documentation
-    Définissent les contraintes que doit respecter une certaine classe de documents
-    Le but d'un schéma est de définir une classe de documents XML. Il permet de décrire les autorisations d'imbrication et l'ordre d'apparition des éléments et de leurs attributs, tout comme une DTD. Mais il permet aussi d'aller au-delà.
-    Another great strength about XML Schemas is that they are written in XML:
-    You don't have to learn a new language
-    You can use your XML editor to edit your Schema files
-    You can use your XML parser to parse your Schema files
-    You can manipulate your Schemas with the XML DOM
-    You can transform your Schemas with XSLT
-    One of the greatest strengths of XML Schemas is the support for data types:
-    It is easier to describe document content
-    It is easier to define restrictions on data
-    It is easier to validate the correctness of data
-    It is easier to convert data between different data types
-    espaces de nom = réutilisation de langage spécialisé et déjà existant.
-    contrainte plus fine : Les indicateurs d'occurrences des éléments peuvent être tout nombre non négatif
-  </span>
-</section>
+      <section>
+        <span class="r-fit-text">
+          Les schémas – notions
+          rédigés en XML
+          introduction des types XML
+          support des espaces de noms
+          plus expressifs que les DTD
+          documentation
+          Définissent les contraintes que doit respecter une certaine classe de documents
+          Le but d'un schéma est de définir une classe de documents XML. Il permet de décrire les autorisations
+          d'imbrication et l'ordre d'apparition des éléments et de leurs attributs, tout comme une DTD. Mais il permet
+          aussi d'aller au-delà.
+          Another great strength about XML Schemas is that they are written in XML:
+          You don't have to learn a new language
+          You can use your XML editor to edit your Schema files
+          You can use your XML parser to parse your Schema files
+          You can manipulate your Schemas with the XML DOM
+          You can transform your Schemas with XSLT
+          One of the greatest strengths of XML Schemas is the support for data types:
+          It is easier to describe document content
+          It is easier to define restrictions on data
+          It is easier to validate the correctness of data
+          It is easier to convert data between different data types
+          espaces de nom = réutilisation de langage spécialisé et déjà existant.
+          contrainte plus fine : Les indicateurs d'occurrences des éléments peuvent être tout nombre non négatif
+        </span>
+      </section>
 
 
 
-<section>
-  <span class="r-fit-text">
-    XML schema
-    XML est donc un langage de description de contenus XML
-  </span>
-</section>
+      <section>
+        <span class="r-fit-text">
+          XML schema
+          XML est donc un langage de description de contenus XML
+        </span>
+      </section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Structure de base
-    Un document XML schema est un fichier xml :
-    prologue XML
-    élément racine &lt;xs:schema/&gt;
-    espace de nom préfixé “xs”
-    <pre>
+
+      <section>
+        <span class="r-fit-text">
+          Structure de base
+          Un document XML schema est un fichier xml :
+          prologue XML
+          élément racine &lt;xs:schema/&gt;
+          espace de nom préfixé “xs”
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?> <!-- Prologue-->
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">  
@@ -160,13 +172,13 @@
         </xs:schema>
       </code>
     </pre>
-        
-    Les éléments sont déclarés avec la balise &lt;xs:element/&gt;.
-    Deux attributs de base :
-    @name (obligatoire) pour indiquer le nom de la balise ;
-    @type pour spécifier le type de données.
-    Déclarations des éléments
-    <pre>
+
+          Les éléments sont déclarés avec la balise &lt;xs:element/&gt;.
+          Deux attributs de base :
+          @name (obligatoire) pour indiquer le nom de la balise ;
+          @type pour spécifier le type de données.
+          Déclarations des éléments
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -175,19 +187,19 @@
         </xs:schema>
       </code>
     </pre>
-  </span>
-</section>
+        </span>
+      </section>
 
 
- 
-<section>
-  <span class="r-fit-text">
-    Déclarations des attributs
-    Les attributs sont déclarés avec la balise &lt;xs:attribute/&gt;.
-    Deux attributs de base :
-    @name (obligatoire) pour indiquer le nom de la balise ;
-    @type pour spécifier le type de données.
-    <pre>
+
+      <section>
+        <span class="r-fit-text">
+          Déclarations des attributs
+          Les attributs sont déclarés avec la balise &lt;xs:attribute/&gt;.
+          Deux attributs de base :
+          @name (obligatoire) pour indiquer le nom de la balise ;
+          @type pour spécifier le type de données.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -196,25 +208,26 @@
         </xs:schema>
       </code>
     </pre>
-  </span>
-</section>
+        </span>
+      </section>
 
 
-<section>
-  <span class="r-fit-text">
-    les types simples
-    Les types
-    les types complexes
-    “Un schéma fournit un type à chaque élément et attribut qu’il déclare.”1
-    Deux types sont supportés pour les éléments par XML schema :
-    1Harold, Elliotte Rusty et Means, W. Scott. « XML en concentré : manuel de  référence »
-    
-    un élément de type simple contient uniquement du texte
-    un élément de type simple ne peut pas posséder d’attributs ou contenir d’autres éléments
-    les attributs sont toujours de type simple
-    les principaux types simples prédéfinis sont : xs:string, xs:boolean, xs:date, xs:dateTime, xs:integer, xs:anyURI, etc.1
-    il est possible de dériver des types simples existants pour en créer d’autres (listes, unions, facettes).
-    <pre>
+      <section>
+        <span class="r-fit-text">
+          les types simples
+          Les types
+          les types complexes
+          “Un schéma fournit un type à chaque élément et attribut qu’il déclare.”1
+          Deux types sont supportés pour les éléments par XML schema :
+          1Harold, Elliotte Rusty et Means, W. Scott. « XML en concentré : manuel de référence »
+
+          un élément de type simple contient uniquement du texte
+          un élément de type simple ne peut pas posséder d’attributs ou contenir d’autres éléments
+          les attributs sont toujours de type simple
+          les principaux types simples prédéfinis sont : xs:string, xs:boolean, xs:date, xs:dateTime, xs:integer,
+          xs:anyURI, etc.1
+          il est possible de dériver des types simples existants pour en créer d’autres (listes, unions, facettes).
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -223,20 +236,21 @@
         </xs:schema>
       </code>
     </pre>
-  </span>
-</section>
+        </span>
+      </section>
 
-<section>
-  <span class="r-fit-text">
-    Les types simples
-    1 Liste des types https://www.w3.org/TR/xmlschema-0/#CreatDt
-    </span></section>
-    <section>
-      <span class="r-fit-text">
-        Les types simple - listes
-    Une liste définit un type simple (préexistant ou dérivé) comme une liste de valeur d’un type de données.
-    N. B. : xs:NMTOKENS, xs:ENTITIES et xs:IDREFS sont déjà des type de liste.
-    <pre>
+      <section>
+        <span class="r-fit-text">
+          Les types simples
+          1 Liste des types https://www.w3.org/TR/xmlschema-0/#CreatDt
+        </span>
+      </section>
+      <section>
+        <span class="r-fit-text">
+          Les types simple - listes
+          Une liste définit un type simple (préexistant ou dérivé) comme une liste de valeur d’un type de données.
+          N. B. : xs:NMTOKENS, xs:ENTITIES et xs:IDREFS sont déjà des type de liste.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -249,13 +263,14 @@
         </xs:schema>
       </code>
     </pre>
-  </span>
-</section>
+        </span>
+      </section>
 
-<section>
-  <span class="r-fit-text">
-    L’élément xs:union est utilisé si on souhaite que le contenu d’un élément puisse être issu d’une collection de type de données
-    <pre>
+      <section>
+        <span class="r-fit-text">
+          L’élément xs:union est utilisé si on souhaite que le contenu d’un élément puisse être issu d’une collection de
+          type de données
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -269,15 +284,18 @@
         </xs:schema>
       </code>
     </pre>
-    Les types simples – unions
-  </span>
-</section>
+          Les types simples – unions
+        </span>
+      </section>
 
-<section>
-  <span class="r-fit-text">
-    Les facettes, ou restrictions, permettent de spécifier des valeurs de manière plus précise. On utilise alors l’élément xs:restriction et l’attribut base, avec lequel on précise le type simple que l’on souhaite restreindre
-    Avec les facettes on peut par exemple contraindre la longueur d’une chaîne de caractère, spécifier une liste de valeurs possibles, ou encore imposer un pattern avec des expressions régulières.
-    <pre>
+      <section>
+        <span class="r-fit-text">
+          Les facettes, ou restrictions, permettent de spécifier des valeurs de manière plus précise. On utilise alors
+          l’élément xs:restriction et l’attribut base, avec lequel on précise le type simple que l’on souhaite
+          restreindre
+          Avec les facettes on peut par exemple contraindre la longueur d’une chaîne de caractère, spécifier une liste
+          de valeurs possibles, ou encore imposer un pattern avec des expressions régulières.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -293,8 +311,8 @@
         </xs:schema>
       </code>
     </pre>
-    
-    <pre>
+
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -309,15 +327,16 @@
         </xs:schema>
       </code>
     </pre>
-    Les types simples – facettes
-  </span>
-</section>
+          Les types simples – facettes
+        </span>
+      </section>
 
-<section>
-  <span class="r-fit-text">
-    Pour établir une liste de valeurs possibles, on utilisera l’élément xs:enumeration.
-    Dans l’exemple ci-contre, l’élément elem1 dispose d’un attribut att qui peut prendre comme valeur, exclusivement, valeur1, valeur2 ou valeur3.
-    <pre>
+      <section>
+        <span class="r-fit-text">
+          Pour établir une liste de valeurs possibles, on utilisera l’élément xs:enumeration.
+          Dans l’exemple ci-contre, l’élément elem1 dispose d’un attribut att qui peut prendre comme valeur,
+          exclusivement, valeur1, valeur2 ou valeur3.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -338,17 +357,17 @@
         </xs:schema>
       </code>
     </pre>
-    
-    Les types simples – facettes 2
-  </span>
-</section>
 
-<section>
-  <span class="r-fit-text">
-    Pour établir un motif, ou pattern, à l’aide d’une expression régulière on utilisera l’élément xs:pattern.
-    Pour voir quelles facettes sont applicables à chaque type simple voir Simple Types & their Facets.
-    
-    <pre>
+          Les types simples – facettes 2
+        </span>
+      </section>
+
+      <section>
+        <span class="r-fit-text">
+          Pour établir un motif, ou pattern, à l’aide d’une expression régulière on utilisera l’élément xs:pattern.
+          Pour voir quelles facettes sont applicables à chaque type simple voir Simple Types & their Facets.
+
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -363,17 +382,18 @@
         </xs:schema>
       </code>
     </pre>
-    
-    Les types simples – facettes 3
-  </span>
-</section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Les types complexes permettent d’introduire des contraintes d'occurrence, des séquences d’éléments, des choix d’éléments, des contenus complexes, etc.
-    Les types complexes sont définis avec l’élément xs:complexType.
-    <pre>
+          Les types simples – facettes 3
+        </span>
+      </section>
+
+
+      <section>
+        <span class="r-fit-text">
+          Les types complexes permettent d’introduire des contraintes d'occurrence, des séquences d’éléments, des choix
+          d’éléments, des contenus complexes, etc.
+          Les types complexes sont définis avec l’élément xs:complexType.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -386,15 +406,15 @@
         </xs:schema>
       </code>
     </pre>
-    Les types complexes
-  </span>
-</section>
+          Les types complexes
+        </span>
+      </section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Les éléments apparaissent dans l’ordre définit par xs:sequence.
-    <pre>
+
+      <section>
+        <span class="r-fit-text">
+          Les éléments apparaissent dans l’ordre définit par xs:sequence.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -410,16 +430,16 @@
         </xs:schema>
       </code>
     </pre>
-    
-    Les types complexes – séquences
-  </span>
-</section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Un seul élément parmis plusieurs possibilité : xs:choice.
-    <pre>
+          Les types complexes – séquences
+        </span>
+      </section>
+
+
+      <section>
+        <span class="r-fit-text">
+          Un seul élément parmis plusieurs possibilité : xs:choice.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -438,17 +458,19 @@
         </xs:schema>
       </code>
     </pre>
-    
-    Les types complexes – choix d’éléments
-  </span>
-</section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Avec xs:all tous les éléments enfants peuvent être appelés 0 fois (si on utilise l’attribut minOccurs=’0’) ou 1 fois, dans n’importe quel ordre.
-    À la différence des éléments xs:sequence et xs:choice qui peuvent être imbriqués, xs:all doit être un enfant directe de xs:complexType.
-    <pre>
+          Les types complexes – choix d’éléments
+        </span>
+      </section>
+
+
+      <section>
+        <span class="r-fit-text">
+          Avec xs:all tous les éléments enfants peuvent être appelés 0 fois (si on utilise l’attribut minOccurs=’0’) ou
+          1 fois, dans n’importe quel ordre.
+          À la différence des éléments xs:sequence et xs:choice qui peuvent être imbriqués, xs:all doit être un enfant
+          directe de xs:complexType.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -464,25 +486,25 @@
         </xs:schema>
       </code>
     </pre>
-    
-    Les types complexes – xs:all
-  </span>
-</section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Il est possible d’établir des contraintes d’occurrence.
-    éléments, avec l’utilisation des attributs
-    minOccurs (nombre minimum)
-    maxOccurs (nombre maximum)
-    la valeur ‘unbounded’ indique un nombre indéterminé.
-    attributs
-    use (utilisation optionnelle ou requise)
-    ‘optional’ | ‘required’
-    default (valeur par défaut)
-    fixed (valeur fixe)
-    <pre>
+          Les types complexes – xs:all
+        </span>
+      </section>
+
+
+      <section>
+        <span class="r-fit-text">
+          Il est possible d’établir des contraintes d’occurrence.
+          éléments, avec l’utilisation des attributs
+          minOccurs (nombre minimum)
+          maxOccurs (nombre maximum)
+          la valeur ‘unbounded’ indique un nombre indéterminé.
+          attributs
+          use (utilisation optionnelle ou requise)
+          ‘optional’ | ‘required’
+          default (valeur par défaut)
+          fixed (valeur fixe)
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -503,15 +525,16 @@
         
       </code>
     </pre>
-    Les types complexes – occurrences
-  </span>
-</section>
+          Les types complexes – occurrences
+        </span>
+      </section>
 
- 
-<section>
-  <span class="r-fit-text">
-    L’attribut @mixed de valeur ‘true’ associé à l’élément xs:complexType indique que l’élément peut contenir des données textuelles et des éléments et/ou des attributs.
-    <pre>
+
+      <section>
+        <span class="r-fit-text">
+          L’attribut @mixed de valeur ‘true’ associé à l’élément xs:complexType indique que l’élément peut contenir des
+          données textuelles et des éléments et/ou des attributs.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -526,16 +549,17 @@
         </xs:schema>
       </code>
     </pre>
-    
-    Les types complexes – contenu mixte
-  </span>
-</section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Dans l’exemple ci-contre, elem1 peut contenir du texte et autant de fois qu’on le souhaite les éléments elem2 et elem3, dans n’importe quel ordre.
-    <pre>
+          Les types complexes – contenu mixte
+        </span>
+      </section>
+
+
+      <section>
+        <span class="r-fit-text">
+          Dans l’exemple ci-contre, elem1 peut contenir du texte et autant de fois qu’on le souhaite les éléments elem2
+          et elem3, dans n’importe quel ordre.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -550,15 +574,18 @@
         </xs:schema>
       </code>
     </pre>
-    Les types complexes – contenu mixte 2
-  </span>
-</section>
+          Les types complexes – contenu mixte 2
+        </span>
+      </section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Dans l’exemple ci-contre, elem1 est un élément de type complexe qui peut contenir une chaîne de caractères pouvant contenir au maximum 10 caractères et un attribut att. Sans la définition d’un type simple simpleType et l’utilisation des éléments simpleContent et extension pour étendre ce type et autoriser l’utilisation d’un attribut att, il n’est pas possible de contrôler le contenu textuel d’un élément de type complexe.
-    <pre>
+
+      <section>
+        <span class="r-fit-text">
+          Dans l’exemple ci-contre, elem1 est un élément de type complexe qui peut contenir une chaîne de caractères
+          pouvant contenir au maximum 10 caractères et un attribut att. Sans la définition d’un type simple simpleType
+          et l’utilisation des éléments simpleContent et extension pour étendre ce type et autoriser l’utilisation d’un
+          attribut att, il n’est pas possible de contrôler le contenu textuel d’un élément de type complexe.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -579,13 +606,13 @@
         </xs:schema>
       </code>
     </pre>
-    Les types (très) complexes
-  </span>
-</section>
+          Les types (très) complexes
+        </span>
+      </section>
 
-<section>
-  <span class="r-fit-text">
-    <pre>
+      <section>
+        <span class="r-fit-text">
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -606,12 +633,12 @@
         </xs:schema>
       </code>
     </pre>
-  </span>
-</section>
+        </span>
+      </section>
 
-<section>
-  <span class="r-fit-text">
-    <pre>
+      <section>
+        <span class="r-fit-text">
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -633,21 +660,24 @@
         </xs:schema>
       </code>
     </pre>
-  </span>
-</section>
- 
-<section>
-  <span class="r-fit-text">
-    Pour faciliter la maintenance du code et le rendre plus lisible, en évitant de multiplier les déclarations similaires (doublons) et les imbrications, il est possible de déclarer des éléments, des attributs, des types complexes et des types simples à un haut niveau.
-    Bonnes pratiques
-  </span>
-</section>
+        </span>
+      </section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Même chose avec le types simples ou complexes, afin de les définir une seule fois et les appeler lorsque c’est nécessaire.
-    <pre>
+      <section>
+        <span class="r-fit-text">
+          Pour faciliter la maintenance du code et le rendre plus lisible, en évitant de multiplier les déclarations
+          similaires (doublons) et les imbrications, il est possible de déclarer des éléments, des attributs, des types
+          complexes et des types simples à un haut niveau.
+          Bonnes pratiques
+        </span>
+      </section>
+
+
+      <section>
+        <span class="r-fit-text">
+          Même chose avec le types simples ou complexes, afin de les définir une seule fois et les appeler lorsque c’est
+          nécessaire.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -666,17 +696,19 @@
         </xs:schema>
       </code>
     </pre>
-    
-    Bonnes pratiques
-  </span>
-</section>
 
- 
-<section>
-  <span class="r-fit-text">
-    Les groupes d’attributs
-    De la même manière, lorsque des attributs peuvent être utilisés avec plusieurs éléments, il est intéressant de déclarer des groupes d’attributs avec l’élément <xs:attributeGroup/>.
-    <pre>
+          Bonnes pratiques
+        </span>
+      </section>
+
+
+      <section>
+        <span class="r-fit-text">
+          Les groupes d’attributs
+          De la même manière, lorsque des attributs peuvent être utilisés avec plusieurs éléments, il est intéressant de
+          déclarer des groupes d’attributs avec l’élément
+          <xs:attributeGroup />.
+          <pre>
       <code>
         <?xml version="1.0" encoding="UTF-8"?>
         <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
@@ -692,59 +724,60 @@
         </xs:schema>
       </code>
     </pre>
-  </span>
-</section>
+        </span>
+      </section>
 
 
-<section>
-  <span class="r-fit-text">
-    Validation
-    XML est donc un langage de description de contenus XML
-    
-    Déclarer un schéma dans un fichier XML
-    <pre><code><?xml-model href="schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?></code></pre>
-    On place une instruction de traitement &lt;?xml-model ?&gt; dans le prologue du document XML :
-    l’attribut href : lien vers le schéma
-    l’attribut type : type de fichier
-    l’attribut schematypens : espace de nom du schéma
-  </span>
-</section>
+      <section>
+        <span class="r-fit-text">
+          Validation
+          XML est donc un langage de description de contenus XML
 
-<section>
-  <span class="r-fit-text">
-    Valider un fichier XML
-    Avec un éditeur de texte qui prend (vraiment) en charge XML :
-    Visual studio Code (https://code.visualstudio.com/) et les packages suivants :
-    XML : https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml
-    XML Tools : https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml
-    XSLT Transform : https://marketplace.visualstudio.com/items?itemName=WashirePie.vscode-xsl-transform
-    mais aussi Atom, Sublime Text, OxygenXML, WebStorm…
-    En ligne :
-    http://www.softwarebytes.org/xmlvalidation/
-    https://www.xmlvalidation.com/
-    En ligne de commande.
-  </span>
-</section>
+          Déclarer un schéma dans un fichier XML
+          <pre><code><?xml-model href="schema.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?></code></pre>
+          On place une instruction de traitement &lt;?xml-model ?&gt; dans le prologue du document XML :
+          l’attribut href : lien vers le schéma
+          l’attribut type : type de fichier
+          l’attribut schematypens : espace de nom du schéma
+        </span>
+      </section>
+
+      <section>
+        <span class="r-fit-text">
+          Valider un fichier XML
+          Avec un éditeur de texte qui prend (vraiment) en charge XML :
+          Visual studio Code (https://code.visualstudio.com/) et les packages suivants :
+          XML : https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml
+          XML Tools : https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml
+          XSLT Transform : https://marketplace.visualstudio.com/items?itemName=WashirePie.vscode-xsl-transform
+          mais aussi Atom, Sublime Text, OxygenXML, WebStorm…
+          En ligne :
+          http://www.softwarebytes.org/xmlvalidation/
+          https://www.xmlvalidation.com/
+          En ligne de commande.
+        </span>
+      </section>
 
 
 
-		</div>
-	</div>
-	
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-			
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-		});
-	</script>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+  </script>
 </body>
+
 </html>

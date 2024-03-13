@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	
+
 	<title>reveal.js</title>
-	
+
 	<link rel="stylesheet" href="dist/reset.css">
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/blood.css">
-	
+
 	<!-- Theme used for syntax highlighted code -->
 	<link rel="stylesheet" href="plugin/highlight/monokai.css">
 
 	<link rel="stylesheet" href="css/local.css">
 </head>
+
 <body>
 	<div class="reveal">
 		<div class="slides">
@@ -24,120 +26,136 @@
 					<p class="alignCenter">Introduction aux langages HTML et CSS</p>
 				</span>
 			</section>
-<section>
-	<h2>Évaluations</h2>
-	<p>13 octobre 2023 : Évaluation HTML (questions et réalisation d’une page Web) (± 1h - 1h30)</p>
-	<p>8 décembre 2023 : Évaluation HTML-CSS (questions et réalisation d’un mini site Web) (± 3h)</p>
-</section>
+			<section>
+				<h2>Évaluations</h2>
+				<p>13 octobre 2023 : Évaluation HTML (questions et réalisation d’une page Web) (± 1h - 1h30)</p>
+				<p>8 décembre 2023 : Évaluation HTML-CSS (questions et réalisation d’un mini site Web) (± 3h)</p>
+			</section>
 
-<section>
-	<h2>Déboguer HTML</h2>
-</section>
+			<section>
+				<h2>Déboguer HTML</h2>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		<h3>HTML - retour sur la syntaxe - la casse</h3>
-		<p>À de rares exceptions près, HTML n’est pas sensible à la casse !</p>
-		
-		<blockquote>
-			<p>Many strings in the HTML syntax (e.g. the names of elements and their attributes) are case-insensitive, but only for ASCII upper alphas and ASCII lower alphas. For convenience, in this section this is just referred to as "case-insensitive".</p>
-			<cite>WATHWG, HTML Living Standard, https://html.spec.whatwg.org/multipage/syntax.html#syntax</cite>
-		</blockquote>
-		
-		<p>Au tout début de HTML, on utilisait des capitales pour les noms de balises, aujourd’hui on utilise plus volontiers le bas de casse. Pour autant, les anciennes pages web s’affichent toujours dans les navigateurs, à l’image de la première !</p>
-		<p>On peut donc écrire indifféremment :</p>
-		<pre>
+			<section>
+				<span class="r-fit-text">
+					<h3>HTML - retour sur la syntaxe - la casse</h3>
+					<p>À de rares exceptions près, HTML n’est pas sensible à la casse !</p>
+
+					<blockquote>
+						<p>Many strings in the HTML syntax (e.g. the names of elements and their attributes) are case-insensitive,
+							but only for ASCII upper alphas and ASCII lower alphas. For convenience, in this section this is just
+							referred to as "case-insensitive".</p>
+						<cite>WATHWG, HTML Living Standard, https://html.spec.whatwg.org/multipage/syntax.html#syntax</cite>
+					</blockquote>
+
+					<p>Au tout début de HTML, on utilisait des capitales pour les noms de balises, aujourd’hui on utilise plus
+						volontiers le bas de casse. Pour autant, les anciennes pages web s’affichent toujours dans les navigateurs,
+						à l’image de la première !</p>
+					<p>On peut donc écrire indifféremment :</p>
+					<pre>
 			<code>
 				<p>Mon paragraphe.</p> ou <P>Mon paragraphe.</P> voire <p>Mon paragraphe.</P>
 			</code>
 		</pre>
-	</span>
-</section>
-<section>
-	<span class="r-fit-text">
-		<h3>HTML - retour sur la syntaxe - Les noms de balises</h3>
-		<p>Certaines balises ont des :</p>
-		<p>noms courts  (&lt;p/&gt;, &lt;a/&gt;, &lt;i/&gt;, &lt;b/&gt;, etc.), héritage d’une époque où il était nécessaire d’économiser les ressources informatiques…</p>
-		<p>Un PC moyen en 1990 c'est un processeur de 16 MHz, un disque dur de 80 Mo et une mémoire vive de 2 Mo.</p>
-		<p>noms longs (&lt;video/&gt;, &lt;blockquote/&gt;, &lt;article/&gt;, etc.) plus explicites et facilement compréhensibles par l’humain.</p>
-		<p>La taille des balises est un (relativement) bon indicateur de leur ancienneté !</p>
-	</span>
-</section>
+				</span>
+			</section>
+			<section>
+				<span class="r-fit-text">
+					<h3>HTML - retour sur la syntaxe - Les noms de balises</h3>
+					<p>Certaines balises ont des :</p>
+					<p>noms courts (&lt;p/&gt;, &lt;a/&gt;, &lt;i/&gt;, &lt;b/&gt;, etc.), héritage d’une époque où il était
+						nécessaire d’économiser les ressources informatiques…</p>
+					<p>Un PC moyen en 1990 c'est un processeur de 16 MHz, un disque dur de 80 Mo et une mémoire vive de 2 Mo.</p>
+					<p>noms longs (&lt;video/&gt;, &lt;blockquote/&gt;, &lt;article/&gt;, etc.) plus explicites et facilement
+						compréhensibles par l’humain.</p>
+					<p>La taille des balises est un (relativement) bon indicateur de leur ancienneté !</p>
+				</span>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		<h3>HTML - retour sur la syntaxe - Fermer les balises ?</h3>
-		<p>Aujourd’hui, toutes les balises fonctionnent par paire : une balise ouvrante et une balise fermante ! Mais il fut un temps où l’on considérait que si une balise fermante n’était pas nécessaire, alors pourquoi en utiliser une ? C’était le cas pour &lt;br&gt; (saut de ligne) et &lt;img&gt; (image) par exemple, qui sont des balises vides, sans contenu. Avec l’arrivée de la syntaxe XML et XHTML, on a pensé qu’il était mieux d’indiquer que ces balises étaient auto-fermantes en ajoutant un slash (/).</p>
-		<p>En réalité aujourd’hui plus personne ne se préoccupe de cette question !</p>
-	</span>
-</section>
-<section>
-	<span class="r-fit-text">
-		<h3>HTML - Débogage</h3>
-		<p>HTML est donc un langage robuste et résilient, qui supporte beaucoup d’abus sans pour autant rencontrer de situation bloquante empêchant, par exemple, une page de s’afficher.</p>
-		<p>Pour autant, des erreurs restent possibles qui peuvent gêner la lecture d’une ressource. Il faut donc être capable de les déboguer.</p>
-		<p>On dispose principalement de 3 outils :</p>
-		<ul>
-			<li>les outils de développement web des navigateurs</li>
-			<li>la validation HTML</li>
-			<li>les aides logicielles</li>
-		</ul>
-	</span>
-</section>
+			<section>
+				<span class="r-fit-text">
+					<h3>HTML - retour sur la syntaxe - Fermer les balises ?</h3>
+					<p>Aujourd’hui, toutes les balises fonctionnent par paire : une balise ouvrante et une balise fermante ! Mais
+						il fut un temps où l’on considérait que si une balise fermante n’était pas nécessaire, alors pourquoi en
+						utiliser une ? C’était le cas pour &lt;br&gt; (saut de ligne) et &lt;img&gt; (image) par exemple, qui sont
+						des balises vides, sans contenu. Avec l’arrivée de la syntaxe XML et XHTML, on a pensé qu’il était mieux
+						d’indiquer que ces balises étaient auto-fermantes en ajoutant un slash (/).</p>
+					<p>En réalité aujourd’hui plus personne ne se préoccupe de cette question !</p>
+				</span>
+			</section>
+			<section>
+				<span class="r-fit-text">
+					<h3>HTML - Débogage</h3>
+					<p>HTML est donc un langage robuste et résilient, qui supporte beaucoup d’abus sans pour autant rencontrer de
+						situation bloquante empêchant, par exemple, une page de s’afficher.</p>
+					<p>Pour autant, des erreurs restent possibles qui peuvent gêner la lecture d’une ressource. Il faut donc être
+						capable de les déboguer.</p>
+					<p>On dispose principalement de 3 outils :</p>
+					<ul>
+						<li>les outils de développement web des navigateurs</li>
+						<li>la validation HTML</li>
+						<li>les aides logicielles</li>
+					</ul>
+				</span>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		<h4>les outils de développement web</h4>
-		<p>Les outils du développement web sont présents dans tous les navigateurs récents. Ils permettent :</p>
-		<ul>
-			<li>d'inspecter le code HTML</li>
-			<li>d'inspecter le code CSS</li>
-			<li>de déboguer le code JS et d'accéder à la console</li>
-			<li>de visualiser les accès réseaux et autres requêtes HTTP, etc.</li>
-		</ul>
-		<p>Pour y accéder :</p>
-		<p>Firefox : Outils/Outils du navigateur/Outils de développement web</p>
-		<p>Safari : Developpement/Afficher l'inspecteur web</p>
-		<p>Chrome : Afficher/Options pour les développeurs/Outils de développement</p>
-		<p>Edge : Paramètres et bien plus encore (...)/Autres outils/Outils de développement</p>
-		<p>Ou, pour tous les navigateurs, clique droit sur la page ou sur un élément et sélectionner Inspecter ou Inspecter l’élément</p>
-	</span>
-</section>
+			<section>
+				<span class="r-fit-text">
+					<h4>les outils de développement web</h4>
+					<p>Les outils du développement web sont présents dans tous les navigateurs récents. Ils permettent :</p>
+					<ul>
+						<li>d'inspecter le code HTML</li>
+						<li>d'inspecter le code CSS</li>
+						<li>de déboguer le code JS et d'accéder à la console</li>
+						<li>de visualiser les accès réseaux et autres requêtes HTTP, etc.</li>
+					</ul>
+					<p>Pour y accéder :</p>
+					<p>Firefox : Outils/Outils du navigateur/Outils de développement web</p>
+					<p>Safari : Developpement/Afficher l'inspecteur web</p>
+					<p>Chrome : Afficher/Options pour les développeurs/Outils de développement</p>
+					<p>Edge : Paramètres et bien plus encore (...)/Autres outils/Outils de développement</p>
+					<p>Ou, pour tous les navigateurs, clique droit sur la page ou sur un élément et sélectionner Inspecter ou
+						Inspecter l’élément</p>
+				</span>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		<h4>les outils de développement web : l’inspecteur HTML</h4>
-		<p>exemple</p>
-		<h3>exercice</h3>
-		<p>Le code que l'on voit est en réalité le DOM (Document Object Model) créé par le navigateur :</p>
-		<ul>
-			<li>quand un navigateur reçoit une ressource HTML, il la lit ;</li>
-			<li>il la révise, par exemple pour corriger quelques erreurs qui pourraient être présentes ;</li>
-			<li>il crée ensuite sa propre version, la version DOM.</li>
-		</ul>
-	</span>
-</section>
+			<section>
+				<span class="r-fit-text">
+					<h4>les outils de développement web : l’inspecteur HTML</h4>
+					<p>exemple</p>
+					<h3>exercice</h3>
+					<p>Le code que l'on voit est en réalité le DOM (Document Object Model) créé par le navigateur :</p>
+					<ul>
+						<li>quand un navigateur reçoit une ressource HTML, il la lit ;</li>
+						<li>il la révise, par exemple pour corriger quelques erreurs qui pourraient être présentes ;</li>
+						<li>il crée ensuite sa propre version, la version DOM.</li>
+					</ul>
+				</span>
+			</section>
 
-<section>
-	<span class="r-fit-text">
-		<h4>La validation</h4>
-		<p><a href="https://validator.w3.org/">https://validator.w3.org/</a></p>
-		<p>exemple</p>
-		<h5>exercice</h5>
-			<p>Valider une page web c’est s’assurer que l’on est conforme aux spécifications du W3C. Mais ce n’est pas qu’une question de syntaxe.</p>
-			<p>Un code « propre » est plus facile à lire, à maintenir et est plus performant, tout en assurant une bonne compatibilité avec tous les navigateurs.</p>
-			<p>Attention, la validation ne corrige pas tout !</p>
-	</span>
-</section>
-<section>
-	<h3>Les solutions logicielles</h3>
-	<p>Linter ou Hint, ce ne sont ni plus ni moins que des systèmes de validation intégrés à des éditeurs de texte.</p>
-	<p>Il en existe pour tous les langages (HTML, CSS, Javascript, etc.).</p>
-</section>
+			<section>
+				<span class="r-fit-text">
+					<h4>La validation</h4>
+					<p><a href="https://validator.w3.org/">https://validator.w3.org/</a></p>
+					<p>exemple</p>
+					<h5>exercice</h5>
+					<p>Valider une page web c’est s’assurer que l’on est conforme aux spécifications du W3C. Mais ce n’est pas
+						qu’une question de syntaxe.</p>
+					<p>Un code « propre » est plus facile à lire, à maintenir et est plus performant, tout en assurant une bonne
+						compatibilité avec tous les navigateurs.</p>
+					<p>Attention, la validation ne corrige pas tout !</p>
+				</span>
+			</section>
+			<section>
+				<h3>Les solutions logicielles</h3>
+				<p>Linter ou Hint, ce ne sont ni plus ni moins que des systèmes de validation intégrés à des éditeurs de texte.
+				</p>
+				<p>Il en existe pour tous les langages (HTML, CSS, Javascript, etc.).</p>
+			</section>
 
 		</div>
 	</div>
-	
+
 	<script src="dist/reveal.js"></script>
 	<script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
@@ -148,10 +166,11 @@
 		// - https://revealjs.com/config/
 		Reveal.initialize({
 			hash: true,
-			
+
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 	</script>
 </body>
+
 </html>
