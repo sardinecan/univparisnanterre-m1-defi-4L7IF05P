@@ -18,336 +18,469 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section>
-				<span class="r-fit-text">
-					<h1>Communiquer, collaborer, échanger à l'ère numérique</h1>
-					<p>Introduction aux langages HTML et CSS</p>
-				</span>
-			</section>
+      <section>
+        <span class="r-fit-text">
+          <h1>Document structuré et métadonnées</h1>
+          <p class="alignCenter">Introduction au langage XML</p>
+        </span>
+      </section>
 			
 
-			Publier des documents XML
+			<section><span class="r-fit-text">Publier des documents XML</span></section>
 
-Transformation & présentation
-Dans un document XML, on décrit la structure d’un document, mais pas (toujours) sa forme, la façon dont il doit être présenté.
-Même si un document XML n’est que du texte et qu’on peut le lire tel quel, il est généralement transformé afin d’être publié. 
-On distingue alors le format de saisie (ou d’entrée), qui répond aux besoins de l’auteur, et le format de sortie, pour le confort du lecteur. 
+<section>
+  <span class="r-fit-text">
+    Transformation & présentation
+    Dans un document XML, on décrit la structure d’un document, mais pas (toujours) sa forme, la façon dont il doit être présenté.
+    Même si un document XML n’est que du texte et qu’on peut le lire tel quel, il est généralement transformé afin d’être publié.
+    On distingue alors le format de saisie (ou d’entrée), qui répond aux besoins de l’auteur, et le format de sortie, pour le confort du lecteur.
+  </span>
+</section>
 
-Transformation & présentation
-Transformation d’un document XML : 
-vers un autre vocabulaire XML (p. ex. XHTML)
-vers un format non XML
-Pour une publication Web, la transformation peut intervenir soit côté client, dans le navigateur, soit côté serveur.
+<section>
+  <span class="r-fit-text">
+    Transformation & présentation
+    Transformation d’un document XML :
+    vers un autre vocabulaire XML (p. ex. XHTML)
+    vers un format non XML
+    Pour une publication Web, la transformation peut intervenir soit côté client, dans le navigateur, soit côté serveur.
+  </span>
+</section>
 
-Transformation & présentation
-Les principaux langages de transformation et de publication des documents XML
-CSS (côté client)
-XSL (côté client et côté serveur)
-XQuery
+<section>
+  <span class="r-fit-text">
+    Transformation & présentation
+    Les principaux langages de transformation et de publication des documents XML
+    CSS (côté client)
+    XSL (côté client et côté serveur)
+    XQuery
+  </span>
+</section>
 
-Cascading Style Sheets
+<section><span class="r-fit-text">Cascading Style Sheets</span></section>
 
-CSS – feuilles de style en cascade
-C’est un standard du W3C.
-CSS est une syntaxe non XML pour décrire la présentation de documents HTML et XML.
-Une feuille de style CSS est une simple liste d’éléments auxquels on applique des styles.
-CSS est très simple à utiliser, aucune transformation n’est effectuée. Il suffit de lier un document XML à une feuille de style par l’intermédiaire d’une instruction de traitement. Cette instruction est reconnue par le navigateur qui applique les styles aux éléments XML.
-<?xml-stylesheet type="text/css" href="mon/fichier/css.css"?>
+<section>
+  <span class="r-fit-text">
+    CSS – feuilles de style en cascade
+    C’est un standard du W3C.
+    CSS est une syntaxe non XML pour décrire la présentation de documents HTML et XML.
+    Une feuille de style CSS est une simple liste d’éléments auxquels on applique des styles.
+    CSS est très simple à utiliser, aucune transformation n’est effectuée. Il suffit de lier un document XML à une feuille de style par l’intermédiaire d’une instruction de traitement. Cette instruction est reconnue par le navigateur qui applique les styles aux éléments XML.
+    <code>&lt;?xml-stylesheet type="text/css" href="mon/fichier/css.css"?&gt;</code>
+    Les données textuelles sont présentées plus ou moins comme elles apparaissent dans le document XML.
+  </span>
+</section>
 
-Les données textuelles sont présentées plus ou moins comme elles apparaissent dans le document XML.
+<section>
+  <span class="r-fit-text">
+    
+    
+    CSS – syntaxe
+    
+    TEI {font-family: 'Gill Sans';}
+    
+    
+    Sélecteur
+    Propriété
+    Valeur
+    Déclaration
+  </span>
+</section>
 
-CSS – syntaxe
+<section>
+  <span class="r-fit-text">
+    CSS – sélecteurs
+    *
+    *
+    sélecteur universel, tous les éléments
+    element
+    document
+    élément document
+    element1, element2
+    div, span
+    toutes les éléments div et span
+    element1 element2
+    div p
+    tous les p contenus dans une div
+    element1>element2
+    div>p
+    tous les p enfants d’une div
+    [attribut]
+    [type]
+    tous les éléments avec un attribut type
+    [attribut=valeur]
+    div[type=head]
+    toutes les div avec un attribut type de valeur head
+  </span>
+</section>
 
-TEI {font-family: 'Gill Sans';}
+<section>
+  <span class="r-fit-text">
+    CSS – propriété display
+    <?xml version="1.0" encoding="UTF-8"?>
+    <?xml-stylesheet href="style.css" type="text/css"?>
+    <document>
+     <text>texte 1</text>
+     <text>texte 2</text>
+     <text>texte 3</text>
+    </document>
+    text {display: none;}
+    text {display: block;}
+    text {display: inline;}
+    text {display: list-item;}
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    CSS – quelques propriétés utiles…
+    Déclaration
+    Définition
+    Valeurs
+    Exemples
+    margin
+    définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie. Il est possible de manipuler les autres propriétés de marges : margin-top, margin-right, margin-bottom et margin-left
+    pixels (px), centimètre (cm), pourcentage (%), relative à la taille de la police (em), etc.
+    margin : 1 cm
+    margin-bottom: 50px;
+    margin-left: 85%;
+    width
+    définit la largeur de la boîte du contenu d'un élément.
+    pixels (px), centimètre (cm), pourcentage (%), relative à la taille de la police (em), etc.
+    width:50%;
+    font-family
+    définit la police de caractère
+    nom d’une police
+    font-family:  Helvetica;
+    font-size
+    définit la taille de la police de caractère
+    em, point (pt), pixel (px), etc.
+    font-size:3em;
+    font-size:12pt;
+    font-style
+    permet de sélectionner une fonte italique
+    normal | italic | oblique
+    font-style: italic;
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    CSS – quelques propriétés utiles…
+    Déclaration
+    Définition
+    Valeurs
+    Exemples
+    font-weight
+    définit la graisse utilisée pour le texte.
+    normal | bold | bolder, etc.
+    font-weight: bold;
+    color
+    définit la couleur du texte
+    nom de la couleur | valeur hexadécimale | couleur rgb, etc.
+    color: orangered;
+    color: #ff5733
+    color: rgb(214, 122, 127);
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    background-color
+    définit la couleur de l’arrière-plan
+    nom de la couleur | valeur hexadécimale | couleur rgb, etc.
+    
+    background-color: blue;
+    background-color: #ff5733
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    text-align
+    définit l'alignement horizontal d'un élément de bloc
+    left | center | right | justify
+    text-align: right;
+    list-style
+    définit la forme des puces de liste
+    disc | circle | square, | decimal
+    list-style: circle
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    CSS – ressources utiles
+    W3C https://www.w3.org/Style/CSS/
+    W3C CSS validator : https://jigsaw.w3.org/css-validator/
+    CSS cheat sheet : https://github.com/AdamMarsden/css-cheat-sheet
+  </span>
+</section>
+
+<section><span class="r-fit-text">eXtensible Stylesheet Language</span></section>
+
+<section>
+  <span class="r-fit-text">
+    XSL
+     XSL (eXtensible Stylesheet Language), ou langage extensible de feuille de style, regroupe deux éléments :
+    XSLT (eXtensible Stylesheet Language Transformations) qui est un langage spécialisé dans la transformation de documents XML
+    XSL-FO (eXtensible Stylesheet Language - Formating Objects) qui est un langage permettant de décrire précisément la disposition d’un texte sur une page. Il est très utilisé pour produire des documents PDF ou TEX.
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    eXtensible Stylesheet Language Transformations
+    
+    XSLT
+    XSLT est un langage de programmation fonctionnel qui permet de transformer un document XML en une autre ressource textuelle, éventuellement non XML.
+    XSLT peut être utilisé de deux manières :
+    côté serveur, avec une transformation statique ou dynamique qui requiert un processeur XSLT
+    côté client (dans le navigateur), en liant un document XML à une feuille de style XSLT 1.0
+    XSLT repose en partie sur l’utilisation des chemins XPath
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    XSLT – xsl:stylesheet
+    Un document XSLT est un document XML, et son élément racine est stylesheet ou transform, au choix. Les documents XSLT sont dans l’espace de nom http://www.w3.org/1999/XSL/Transform et souvent prefixés xsl:
+    &gt;xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"/&lt;
+    L’attribut version est obligatoire, nous utiliserons la version 1.0.
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    XSLT – instruction de traitement
+    Les documents XML publiés directement par l’intermédiaire d’un navigateur Web peuvent avoir dans leur prologue une instruction de traitement xml-stylesheet renvoyant vers une feuille de style :
+    &lt;?xml-stylesheet href="mon/fichier/xsl.xsl" type="application/xml"?&gt;
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    XSLT – xsl:output
+    Un des premiers éléments de haut niveau que l’on trouve est xsl:output, qui permet de spécifier le format de sortie :
+    &lt;xsl:output method="xhtml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/&gt;
+    method : format de sortie : xml | html | xhtml | text
+    encoding : encodage des caractères dans le document de sortie
+    indent : indentation du document de sortie, yes | no
+    omit-xml-declaration : inclure une déclaration XML en sortie, yes | no
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    XSLT – modèles et règles modèles
+    Les règles de transformation sont définies par l’élément xsl:template. Chaque règle possède
+    soit un attribut match, qui sélectionne un ou plusieurs nœuds XML par l’intermédiaire d’un chemin XPath
+    soit un attribut name, qui permet de nommer cette instruction, et d’appeler cette règle pour l’exécuter (système de macro)
+     <pre>
+       <code>
+         <xsl:template match="/"></xsl:template>
+         <xsl:template name="maRegle"></xsl:template>
+       </code>
+     </pre>
+  </span>
+</section>
 
 
-Sélecteur
-Propriété
-Valeur
-Déclaration
-
-CSS – sélecteurs
-* 
-* 
-sélecteur universel, tous les éléments
-element
-document
-élément document
-element1, element2
-div, span
-toutes les éléments div et span
-element1 element2
-div p
-tous les p contenus dans une div
-element1>element2
-div>p
-tous les p enfants d’une div
-[attribut]
-[type]
-tous les éléments avec un attribut type
-[attribut=valeur]
-div[type=head]
-toutes les div avec un attribut type de valeur head
-
-CSS – propriété display
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="style.css" type="text/css"?>
-<document>
- <text>texte 1</text>
- <text>texte 2</text>
- <text>texte 3</text>
-</document>
-text {display: none;}
-text {display: block;}
-text {display: inline;}
-text {display: list-item;}
-
-CSS – quelques propriétés utiles…
-Déclaration
-Définition
-Valeurs
-Exemples
-margin
-définit la taille des marges sur les quatre côtés de l'élément. C'est une propriété raccourcie. Il est possible de manipuler les autres propriétés de marges : margin-top, margin-right, margin-bottom et margin-left
-pixels (px), centimètre (cm), pourcentage (%), relative à la taille de la police (em), etc.
-margin : 1 cm
-margin-bottom: 50px;
-margin-left: 85%;
-width
-définit la largeur de la boîte du contenu d'un élément.
-pixels (px), centimètre (cm), pourcentage (%), relative à la taille de la police (em), etc.
-width:50%;
-font-family
-définit la police de caractère
-nom d’une police
-font-family:  Helvetica;
-font-size
-définit la taille de la police de caractère
-em, point (pt), pixel (px), etc.
-font-size:3em;
-font-size:12pt;
-font-style
-permet de sélectionner une fonte italique
-normal | italic | oblique
-font-style: italic;
-
-CSS – quelques propriétés utiles…
-Déclaration
-Définition
-Valeurs
-Exemples
-font-weight
-définit la graisse utilisée pour le texte.
-normal | bold | bolder, etc.
-font-weight: bold;
-color
-définit la couleur du texte
-nom de la couleur | valeur hexadécimale | couleur rgb, etc.
-color: orangered;
-color: #ff5733
-color: rgb(214, 122, 127);
-
-background-color
-définit la couleur de l’arrière-plan
-nom de la couleur | valeur hexadécimale | couleur rgb, etc.
-
-background-color: blue;
-background-color: #ff5733
-
-text-align
-définit l'alignement horizontal d'un élément de bloc
-left | center | right | justify
-text-align: right;
-list-style
-définit la forme des puces de liste
-disc | circle | square, | decimal
-list-style: circle
-
-CSS – ressources utiles
-W3C https://www.w3.org/Style/CSS/
-W3C CSS validator : https://jigsaw.w3.org/css-validator/
-CSS cheat sheet : https://github.com/AdamMarsden/css-cheat-sheet
-
-eXtensible Stylesheet Language
-
-XSL
- XSL (eXtensible Stylesheet Language), ou langage extensible de feuille de style, regroupe deux éléments :
-XSLT (eXtensible Stylesheet Language Transformations) qui est un langage spécialisé dans la transformation de documents XML 
-XSL-FO (eXtensible Stylesheet Language - Formating Objects) qui est un langage permettant de décrire précisément la disposition d’un texte sur une page. Il est très utilisé pour produire des documents PDF ou TEX.
-
-eXtensible Stylesheet Language Transformations
-
-XSLT
-XSLT est un langage de programmation fonctionnel qui permet de transformer un document XML en une autre ressource textuelle, éventuellement non XML.
-XSLT peut être utilisé de deux manières :
-côté serveur, avec une transformation statique ou dynamique qui requiert un processeur XSLT
-côté client (dans le navigateur), en liant un document XML à une feuille de style XSLT 1.0
-XSLT repose en partie sur l’utilisation des chemins XPath
-
-XSLT – xsl:stylesheet
-Un document XSLT est un document XML, et son élément racine est stylesheet ou transform, au choix. Les documents XSLT sont dans l’espace de nom http://www.w3.org/1999/XSL/Transform et souvent prefixés xsl:
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"/>
-L’attribut version est obligatoire, nous utiliserons la version 1.0.
-
-XSLT – instruction de traitement
-Les documents XML publiés directement par l’intermédiaire d’un navigateur Web peuvent avoir dans leur prologue une instruction de traitement xml-stylesheet renvoyant vers une feuille de style :
-<?xml-stylesheet href="mon/fichier/xsl.xsl" type="application/xml"?>
-
-XSLT – xsl:output
-Un des premiers éléments de haut niveau que l’on trouve est xsl:output, qui permet de spécifier le format de sortie : 
-<xsl:output method="xhtml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
-method : format de sortie : xml | html | xhtml | text
-encoding : encodage des caractères dans le document de sortie
-indent : indentation du document de sortie, yes | no
-omit-xml-declaration : inclure une déclaration XML en sortie, yes | no
-
-XSLT – modèles et règles modèles
-Les règles de transformation sont définies par l’élément xsl:template. Chaque règle possède
-soit un attribut match, qui sélectionne un ou plusieurs nœuds XML par l’intermédiaire d’un chemin XPath
-soit un attribut name, qui permet de nommer cette instruction, et d’appeler cette règle pour l’exécuter (système de macro)
- <xsl:template match="/"></xsl:template>
- <xsl:template name="maRegle"></xsl:template>
-
-
-XSLT – appliquer les modèles
-Les règles contenues dans un xsl:template vont s’appliquer à tous les nœuds ciblés par l’attribut match. Ces règles vont s’exprimer par l’intermédiaire des éléments suivants :
-xsl:apply-templates applique les règles en descendant dans les nœuds. L’utilisation d’un attribut select permet de spécifier un ordre d’exécution
-xsl:value-of retourne le contenu textuel du nœud ciblé son l’attribut select
-
- 
-xsl:value-of & xsl:apply-templates
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
- <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
- <!-- on cible ici le nœud racine -->
- <xsl:template match="/">
- <!-- application des règles définies pour les descendant -->
-   <xsl:apply-templates/>
- </xsl:template>
- <xsl:template match="identity">
-   <!-- on ne récupère que le nom de famille -->
-   <!-- le chemin Xpath est ici relatif au nœud identity -->
-   <xsl:value-of select="surname"/>
- </xsl:template>
-</xsl:stylesheet>
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="style.xsl" type="application/xml"?>
-<person>
- <identity>
-   <surname>Hugo</surname>
-   <forename>Victor</forename>
- </identity>
-</person>
-
-XSLT – les nœuds
-xsl:element génère un nœud élément dont le nom est défini par l’attribut name
-xsl:attribute génère un nœud attribut dont le nom est défini par l’attribut name
-xsl:text génère un nœud textuel
-xsl:comment génère un nœud commentaire
-
- 
-xsl:element, attribute, text & comment
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
-<xsl:template match="/">
-  <!-- génère en sortie un élément html contenant
-   le texte Hello World et un commentaire-->
-  <xsl:comment>un commentaire</xsl:comment>
-  <xsl:element name="html">
-    <xsl:text>Hello World</xsl:text>
-  </xsl:element>
-</xsl:template>
-</xsl:stylesheet>
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="style.xsl" type="application/xml"?>
-<person>
- <identity>
-   <surname>Hugo</surname>
-   <forename>Victor</forename>
- </identity>
-</person>
-
- 
-xsl:element, attribute, text 2
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-<xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
-<xsl:template match="/">
-  <!-- génère aussi en sortie un élément html contenant le texte Hello World -->
-  <html>Hello World</html>
-</xsl:template>
-</xsl:stylesheet>
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="style.xsl" type="application/xml"?>
-<person>
- <identity>
-   <surname>Hugo</surname>
-   <forename>Victor</forename>
- </identity>
-</person>
-
-XSLT – les boucles et tris
-xsl:for-each exécution d’instructions en bouclant sur chacun des nœuds désignés par l’attribut select
-xsl:sort tri de la séquence de nœuds sélectionnés par xsl:for-each ou xsl:apply-templates. Les attributs select et order (ascending|descending) peuvent être utilisés pour préciser les nœuds qui doivent servir à trier et le sens du tri.
-
- 
-xsl:for-each & xsl:sort
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
- <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
- <xsl:template match="/">
-<!-- pour chaque item-->
-   <xsl:for-each select="list/item">
-<!-- on les trie par ordre alphabétique-->
-     <xsl:sort select="." order="ascending"/>
-<!-- on récupère la valeur textuelle après 'item ' -->
-     <xsl:value-of select="substring-after(., 'item ')"/>
-   </xsl:for-each>
- </xsl:template>
-</xsl:stylesheet>
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="style.xsl" type="application/xml"?>
-<list>
- <item>item C</item>
- <item>item B</item>
- <item>item A</item>
-</list>
-
-XSLT – les conditions
-xsl:if instruction conditionnelle, exécutée si les dispositions de l’attribut test sont vraies
-xsl:choose exécution d’une série de tests exprimés par une série de sous-éléments xsl:when et un traitement par défaut (xsl:otherwise)
+<section>
+  <span class="r-fit-text">
+    XSLT – appliquer les modèles
+    Les règles contenues dans un xsl:template vont s’appliquer à tous les nœuds ciblés par l’attribut match. Ces règles vont s’exprimer par l’intermédiaire des éléments suivants :
+    xsl:apply-templates applique les règles en descendant dans les nœuds. L’utilisation d’un attribut select permet de spécifier un ordre d’exécution
+    xsl:value-of retourne le contenu textuel du nœud ciblé son l’attribut select
+  </span>
+</section>
 
  
-xsl:if & xsl:choose
-<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
- <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
- <xsl:template match="/">
-   <!-- test existence d'éléments item -->
-   <xsl:if test="list/item">
-     <!-- pour chaque item… -->
-     <xsl:for-each select="list/item">
-       <xsl:choose>
-         <!-- …on teste sa position -->
-         <xsl:when test="position() !=last()">
-           <xsl:value-of select="concat(., ', ')"/>
-         </xsl:when>
-         <xsl:otherwise>
-           <xsl:value-of select="concat(., '.')"/>
-         </xsl:otherwise>
-       </xsl:choose>
-     </xsl:for-each>
-   </xsl:if>
- </xsl:template>
-</xsl:stylesheet>
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="style.xsl" type="application/xml"?>
-<list>
- <item>item A</item>
- <item>item B</item>
- <item>item C</item>
-</list>
+<section>
+  <span class="r-fit-text">
+    xsl:value-of & xsl:apply-templates
+    <pre>
+      <code>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+         <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
+         <!-- on cible ici le nœud racine -->
+         <xsl:template match="/">
+         <!-- application des règles définies pour les descendant -->
+           <xsl:apply-templates/>
+         </xsl:template>
+         <xsl:template match="identity">
+           <!-- on ne récupère que le nom de famille -->
+           <!-- le chemin Xpath est ici relatif au nœud identity -->
+           <xsl:value-of select="surname"/>
+         </xsl:template>
+        </xsl:stylesheet>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <?xml-stylesheet href="style.xsl" type="application/xml"?>
+        <person>
+         <identity>
+           <surname>Hugo</surname>
+           <forename>Victor</forename>
+         </identity>
+        </person>
+      </code>
+    </pre>
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    XSLT – les nœuds
+    xsl:element génère un nœud élément dont le nom est défini par l’attribut name
+    xsl:attribute génère un nœud attribut dont le nom est défini par l’attribut name
+    xsl:text génère un nœud textuel
+    xsl:comment génère un nœud commentaire
+  </span>
+</section>
+
+ 
+<section>
+  <span class="r-fit-text">
+    xsl:element, attribute, text & comment
+    <pre>
+      <code>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+        <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
+        <xsl:template match="/">
+          <!-- génère en sortie un élément html contenant
+           le texte Hello World et un commentaire-->
+          <xsl:comment>un commentaire</xsl:comment>
+          <xsl:element name="html">
+            <xsl:text>Hello World</xsl:text>
+          </xsl:element>
+        </xsl:template>
+        </xsl:stylesheet>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <?xml-stylesheet href="style.xsl" type="application/xml"?>
+        <person>
+         <identity>
+           <surname>Hugo</surname>
+           <forename>Victor</forename>
+         </identity>
+        </person>
+      </code>
+    </pre>
+  </span>
+</section>
+
+ 
+<section>
+  <span class="r-fit-text">
+    xsl:element, attribute, text 2
+    <pre>
+      <code>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+        <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
+        <xsl:template match="/">
+          <!-- génère aussi en sortie un élément html contenant le texte Hello World -->
+          <html>Hello World</html>
+        </xsl:template>
+        </xsl:stylesheet>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <?xml-stylesheet href="style.xsl" type="application/xml"?>
+        <person>
+         <identity>
+           <surname>Hugo</surname>
+           <forename>Victor</forename>
+         </identity>
+        </person>
+      </code>
+    </pre>
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    XSLT – les boucles et tris
+    xsl:for-each exécution d’instructions en bouclant sur chacun des nœuds désignés par l’attribut select
+    xsl:sort tri de la séquence de nœuds sélectionnés par xsl:for-each ou xsl:apply-templates. Les attributs select et order (ascending|descending) peuvent être utilisés pour préciser les nœuds qui doivent servir à trier et le sens du tri.
+  </span>
+</section>
+
+ 
+<section>
+  <span class="r-fit-text">
+    xsl:for-each & xsl:sort
+    <pre>
+      <code>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+         <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
+         <xsl:template match="/">
+        <!-- pour chaque item-->
+           <xsl:for-each select="list/item">
+        <!-- on les trie par ordre alphabétique-->
+             <xsl:sort select="." order="ascending"/>
+        <!-- on récupère la valeur textuelle après 'item ' -->
+             <xsl:value-of select="substring-after(., 'item ')"/>
+           </xsl:for-each>
+         </xsl:template>
+        </xsl:stylesheet>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <?xml-stylesheet href="style.xsl" type="application/xml"?>
+        <list>
+         <item>item C</item>
+         <item>item B</item>
+         <item>item A</item>
+        </list>
+      </code>
+    </pre>
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+    XSLT – les conditions
+    xsl:if instruction conditionnelle, exécutée si les dispositions de l’attribut test sont vraies
+    xsl:choose exécution d’une série de tests exprimés par une série de sous-éléments xsl:when et un traitement par défaut (xsl:otherwise)
+  </span>
+</section>
+
+<section>
+  <span class="r-fit-text">
+     
+    xsl:if & xsl:choose
+    <pre>
+      <code>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+        <xsl:output method="xml" encoding="UTF-8" indent="yes" omit-xml-declaration="no"/>
+        <xsl:template match="/">
+          <!-- test existence d'éléments item -->
+          <xsl:if test="list/item">
+            <!-- pour chaque item… -->
+            <xsl:for-each select="list/item">
+              <xsl:choose>
+                <!-- …on teste sa position -->
+                <xsl:when test="position() !=last()">
+                  <xsl:value-of select="concat(., ', ')"/>
+                </xsl:when>
+                <xsl:otherwise>
+                  <xsl:value-of select="concat(., '.')"/>
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:for-each>
+          </xsl:if>
+        </xsl:template>
+        </xsl:stylesheet>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <?xml-stylesheet href="style.xsl" type="application/xml"?>
+        <list>
+        <item>item A</item>
+        <item>item B</item>
+        <item>item C</item>
+        </list>
+      </code>
+    </pre>
+  </span>
+</section>
 
 
 		</div>
