@@ -14,3 +14,50 @@ cite {
 table {
   font-size: 0.5em;
 }
+
+body.index {
+	margin: 0;
+	background: #eee;
+	color: #333;
+	font-family: monospace;
+}
+
+.index main {
+	padding: 1rem;
+	margin: 2rem auto;
+	max-width: 40rem;
+  font-size: 1.2em;
+}
+
+.index a {
+  text-decoration: none;
+  color: orangered;
+}
+
+.index ul {
+  list-style: none;
+}
+
+.index ul ul {
+  list-style:decimal-leading-zero;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+header {
+  padding: 1rem;
+  background: orangered;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  color: white;
+  font-weight: 700;
+}
+
+.index header a {
+  text-align:right;
+  color: white;
+}
