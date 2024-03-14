@@ -21,125 +21,131 @@
 					</span>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h2>Les unités de mesure</h2>
-						<p>Documentation</p>
-					</span>
+					<section>
+						<span class="r-fit-text">
+							<h2>Les unités de mesure</h2>
+							<p class="alignCenter"><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Values_and_units#longueurs">Documentation</a></p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les unités absolues</h3>
+							<p>Les unités de mesure absolues ne dépendent pas d’un paramètre extérieur (largeur de l’écran, valeurs définies préalablement, etc.)</p>
+							<ul>
+								<li>px : pixel</li>
+								<li>cm : centimètre</li>
+								<li>mm : millimètre</li>
+								<li>in : pouce (± 2,54 cm)</li>
+								<li>pt : point (1/72e de pouce)</li>
+							</ul>
+							<p>À l’exception du pixel, ces unités de mesure seront essentiellement utilisées pour l’impression.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les unités relatives</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/RwJvJOe">exemple</a></p>
+							<p>Les unités de mesure relatives sont définies au regard d’un paramètre extérieur (taille de l’écran, zone d’affichage, taille du texte définie pour un élément parent, etc.)</p>
+							<ul>
+								<li>em : pour la typographie, l’unité em est relative à la taille de la police de l’élément parent / pour les autres propriétés, em est relative à la taille de la police de l’élément</li>
+								<li>rem : relative à la taille de la police définie pour l’élément racine (html ou body)</li>
+							</ul>
+							<p>pourcentage : relative à une fraction de l’élément parent</p>
+							<ul>
+								<li>vw : 1% de la largeur de la zone d’affichage</li>
+								<li>vh : 1% de la hauteur de la zone d’affichage</li>
+							</ul>
+							<p>Ces unités de mesure relatives permettent de travailler à l’échelle. En modifiant le paramètre de référence, le design s’adapte automatiquement.</p>
+						</span>
+					</section>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h3>Les unités absolues</h3>
-						<p>Les unités de mesure absolues ne dépendent pas d’un paramètre extérieur (largeur de l’écran, valeurs définies préalablement, etc.)</p>
-						<ul>
-							<li>px : pixel</li>
-							<li>cm : centimètre</li>
-							<li>mm : millimètre</li>
-							<li>in : pouce (± 2,54 cm)</li>
-							<li>pt : point (1/72e de pouce)</li>
-						</ul>
-						<p>À l’exception du pixel, ces unités de mesure seront essentiellement utilisées pour l’impression.</p>
-					</span>
+					<section>
+						<span class="r-fit-text">
+							<h2>Le positionnement</h2>
+							<p class="alignCenter"><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Positioning">Documentation</a></p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Le positionnement relatif</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/rNKPrgr">exemple</a></p>
+							<p>Par défaut, les éléments sont placés les uns à la suite des autres. La propriété position permet de sortir les éléments de ce flux normal en modifiant leur position.</p>
+							<p>{position: static} : valeur par défaut</p>
+							<p>Un élément positionné de manière relative est proche d’un élément statique, simplement il devient possible de modifier sa position par l’intermédiaire des propriétés top, bottom, left et right. Des chevauchements sont alors possibles.</p>
+							<p>{position: relative; top: 30px; left: 10px;}</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Le positionnement absolu</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/XWYOPjo">exemple</a></p>
+							<p>Le positionnement absolu fait sortir un élément du flux normal de la page.</p>
+							<p>{position: absolute}</p>
+							<p>Les propriétés top, bottom, left et right modifient la position de l’élément non plus au regard de sa position relative dans la mise en page du document, mais au regard du contexte défini par son conteneur.</p>
+							<p>Si aucun ancêtre n’a vu sa position modifiée, l’élément sera positionné relativement à la zone d’affichage. Si on souhaite modifier ce contexte de positionnement, il suffit d’attribuer à un ancêtre, au regard duquel on souhaite positionner notre élément, la propriété position: relative</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Le positionnement fixe</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/gOKqdeR">exemple</a></p>
+							<p>Le positionnement fixe est proche du positionnement absolu, à la différence que les éléments sont toujours placés au regard de la fenêtre du navigateur.</p>
+							<p>{position: fixed}</p>
+							<p>Ainsi, même lors du défilement de la page, les éléments restent fixes !</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Le positionnement adhérent</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/MWXLqPx">exemple</a></p>
+							<p>Le positionnement adhérent est entre le positionnement relatif et le positionnement fixe.</p>
+							<p>{position: sticky}</p>
+							<p>C’est-à-dire qu’un élément adhérent garde une position relative jusqu’à un certain point, à partir duquel il adopte une position fixe.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>La superposition z-index</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/JjZxmdK">exemple</a></p>
+							<p>La propriété z-index peut être utiliser pour modifier l’ordre d’empilement lié aux chevauchement</p>
+							<p>{z-index: 1}</p>
+							<p>Plus la valeur de z-index est importante et plus l’élément sera sur le dessus de la pile.</p>
+						</span>
+					</section>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h3>Les unités relatives</h3>
-						<p>exemple</p>
-						<p>Les unités de mesure relatives sont définies au regard d’un paramètre extérieur (taille de l’écran, zone d’affichage, taille du texte définie pour un élément parent, etc.)</p>
-						<ul>
-							<li>em : pour la typographie, l’unité em est relative à la taille de la police de l’élément parent / pour les autres propriétés, em est relative à la taille de la police de l’élément</li>
-							<li>rem : relative à la taille de la police définie pour l’élément racine (html ou body)</li>
-						</ul>
-						<p>pourcentage : relative à une fraction de l’élément parent</p>
-						<ul>
-							<li>vw : 1% de la largeur de la zone d’affichage</li>
-							<li>vh : 1% de la hauteur de la zone d’affichage</li>
-						</ul>
-						<p>Ces unités de mesure relatives permettent de travailler à l’échelle. En modifiant le paramètre de référence, le design s’adapte automatiquement.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h2>Le positionnement</h2>
-						<p>Documentation</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Le positionnement relatif</h3>
-						<p>exemple</p>
-						<p>Par défaut, les éléments sont placés les uns à la suite des autres. La propriété position permet de sortir les éléments de ce flux normal en modifiant leur position.</p>
-						<p>{position: static} : valeur par défaut</p>
-						<p>Un élément positionné de manière relative est proche d’un élément statique, simplement il devient possible de modifier sa position par l’intermédiaire des propriétés top, bottom, left et right. Des chevauchements sont alors possibles.</p>
-						<p>{position: relative; top: 30px; left: 10px;}</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Le positionnement absolu</h3>
-						<p>exemple</p>
-						<p>Le positionnement absolu fait sortir un élément du flux normal de la page.</p>
-						<p>{position: absolute}</p>
-						<p>Les propriétés top, bottom, left et right modifient la position de l’élément non plus au regard de sa position relative dans la mise en page du document, mais au regard du contexte défini par son conteneur.</p>
-						<p>Si aucun ancêtre n’a vu sa position modifiée, l’élément sera positionné relativement à la zone d’affichage. Si on souhaite modifier ce contexte de positionnement, il suffit d’attribuer à un ancêtre, au regard duquel on souhaite positionner notre élément, la propriété position: relative</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Le positionnement fixe</h3>
-						<p>exemple</p>
-						<p>Le positionnement fixe est proche du positionnement absolu, à la différence que les éléments sont toujours placés au regard de la fenêtre du navigateur.</p>
-						<p>{position: fixed}</p>
-						<p>Ainsi, même lors du défilement de la page, les éléments restent fixes !</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Le positionnement adhérent</h3>
-						<p>exemple</p>
-						<p>Le positionnement adhérent est entre le positionnement relatif et le positionnement fixe.</p>
-						<p>{position: sticky}</p>
-						<p>C’est-à-dire qu’un élément adhérent garde une position relative jusqu’à un certain point, à partir duquel il adopte une position fixe.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>La superposition z-index</h3>
-						<p>exemple</p>
-						<p>La propriété z-index peut être utiliser pour modifier l’ordre d’empilement lié aux chevauchement</p>
-						<p>{z-index: 1}</p>
-						<p>Plus la valeur de z-index est importante et plus l’élément sera sur le dessus de la pile.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h2>Les éléments flottants</h2>
-						<p>Documentation</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les éléments flottants</h3>
-						<p>exemple</p>
-						<p>La propriété float permet aussi de sortir des éléments du flux normal du document afin de les rendre flottants.</p>
-						<p>{float: none} : valeur par défaut (les éléments s’empilent les uns au dessus des autres)</p>
-						<p>Lorsque l’on utilise la propriété {float: left}, l’élément devient flottant et est placé sur le côté gauche, les éléments qui le suivent et qui contiennent du texte vont alors de disposer autour de lui.</p>
-						<p>On observe la même chose avec la propriété {float: right}, l’élément devenant flottant du côté droit.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les éléments flottants</h3>
-						<p>exemple</p>
-						<p>La propriété float requiert une disposition block. Ainsi les éléments inline ou inline-block par exemple verront leur propriété display modifiée.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Le dégagement des éléments flottants</h3>
-						<p>exemple</p>
-						<p>Si l’on souhaite forcer un élément à se placer sous un élément flottant, on peut faire appel à la propriété clear.</p>
-						<p>{clear: both}</p>
-					</span>
+					<section>
+						<span class="r-fit-text">
+							<h2>Les éléments flottants</h2>
+							<p class="alignCenter"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/float">Documentation</a></p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les éléments flottants</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/yLEZjNj">exemple</a></p>
+							<p>La propriété float permet aussi de sortir des éléments du flux normal du document afin de les rendre flottants.</p>
+							<p>{float: none} : valeur par défaut (les éléments s’empilent les uns au dessus des autres)</p>
+							<p>Lorsque l’on utilise la propriété {float: left}, l’élément devient flottant et est placé sur le côté gauche, les éléments qui le suivent et qui contiennent du texte vont alors de disposer autour de lui.</p>
+							<p>On observe la même chose avec la propriété {float: right}, l’élément devenant flottant du côté droit.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les éléments flottants</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/ZERwROE">exemple</a></p>
+							<p>La propriété float requiert une disposition block. Ainsi les éléments inline ou inline-block par exemple verront leur propriété display modifiée.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Le dégagement des éléments flottants</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/abKXKjW">exemple</a></p>
+							<p>Si l’on souhaite forcer un élément à se placer sous un élément flottant, on peut faire appel à la propriété clear.</p>
+							<p>{clear: both}</p>
+						</span>
+					</section>
 				</section>
 				<section>
 					<section>
