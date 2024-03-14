@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -34,15 +34,17 @@
 						<p>À de rares exceptions près, HTML n’est pas sensible à la casse !</p>
 						<blockquote>
 							<p>Many strings in the HTML syntax (e.g. the names of elements and their attributes) are case-insensitive, but only for ASCII upper alphas and ASCII lower alphas. For convenience, in this section this is just referred to as "case-insensitive".</p>
-							<cite>WATHWG, HTML Living Standard, https://html.spec.whatwg.org/multipage/syntax.html#syntax</cite>
+							<cite>WATHWG, HTML Living Standard, <a href="https://html.spec.whatwg.org/multipage/syntax.html#syntax">https://html.spec.whatwg.org/multipage/syntax.html#syntax</a></cite>
 						</blockquote>
 						<p>Au tout début de HTML, on utilisait des capitales pour les noms de balises, aujourd’hui on utilise plus volontiers le bas de casse. Pour autant, les anciennes pages web s’affichent toujours dans les navigateurs, à l’image de la première !</p>
 						<p>On peut donc écrire indifféremment :</p>
-						<pre>
-			<code>
-				<p>Mon paragraphe.</p> ou <p>Mon paragraphe.</p> voire <p>Mon paragraphe.</p>
-			</code>
-		</pre>
+<pre>
+<code>
+<p>Mon paragraphe.</p>
+&lt;P&gt;Mon paragraphe.&lt;/P&gt;
+&lt;p&gt;Mon paragraphe.&lt;/P&gt;
+</code>
+</pre>
 					</span>
 				</section>
 				<section>
@@ -76,35 +78,36 @@
 					</span>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h4>les outils de développement web</h4>
-						<p>Les outils du développement web sont présents dans tous les navigateurs récents. Ils permettent :</p>
-						<ul>
-							<li>d'inspecter le code HTML</li>
-							<li>d'inspecter le code CSS</li>
-							<li>de déboguer le code JS et d'accéder à la console</li>
-							<li>de visualiser les accès réseaux et autres requêtes HTTP, etc.</li>
-						</ul>
-						<p>Pour y accéder :</p>
-						<p>Firefox : Outils/Outils du navigateur/Outils de développement web</p>
-						<p>Safari : Developpement/Afficher l'inspecteur web</p>
-						<p>Chrome : Afficher/Options pour les développeurs/Outils de développement</p>
-						<p>Edge : Paramètres et bien plus encore (...)/Autres outils/Outils de développement</p>
-						<p>Ou, pour tous les navigateurs, clique droit sur la page ou sur un élément et sélectionner Inspecter ou Inspecter l’élément</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h4>les outils de développement web : l’inspecteur HTML</h4>
-						<p>exemple</p>
-						<h3>exercice</h3>
-						<p>Le code que l'on voit est en réalité le DOM (Document Object Model) créé par le navigateur :</p>
-						<ul>
-							<li>quand un navigateur reçoit une ressource HTML, il la lit ;</li>
-							<li>il la révise, par exemple pour corriger quelques erreurs qui pourraient être présentes ;</li>
-							<li>il crée ensuite sa propre version, la version DOM.</li>
-						</ul>
-					</span>
+					<section>
+						<span class="r-fit-text">
+							<h4>les outils de développement web</h4>
+							<p>Les outils du développement web sont présents dans tous les navigateurs récents. Ils permettent :</p>
+							<ul>
+								<li>d'inspecter le code HTML</li>
+								<li>d'inspecter le code CSS</li>
+								<li>de déboguer le code JS et d'accéder à la console</li>
+								<li>de visualiser les accès réseaux et autres requêtes HTTP, etc.</li>
+							</ul>
+							<p>Pour y accéder :</p>
+							<p>Firefox : Outils/Outils du navigateur/Outils de développement web</p>
+							<p>Safari : Developpement/Afficher l'inspecteur web</p>
+							<p>Chrome : Afficher/Options pour les développeurs/Outils de développement</p>
+							<p>Edge : Paramètres et bien plus encore (...)/Autres outils/Outils de développement</p>
+							<p>Ou, pour tous les navigateurs, clique droit sur la page ou sur un élément et sélectionner Inspecter ou Inspecter l’élément</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h4>les outils de développement web : l’inspecteur HTML</h4>
+							<p><a href="https://codepen.io/sardinecan/pen/oNdoZLR">Exemple</a> | <a href="https://codepen.io/sardinecan/pen/LYmQpyL">Exercice</a></p>
+							<p>Le code que l'on voit est en réalité le DOM (Document Object Model) créé par le navigateur :</p>
+							<ul>
+								<li>quand un navigateur reçoit une ressource HTML, il la lit ;</li>
+								<li>il la révise, par exemple pour corriger quelques erreurs qui pourraient être présentes ;</li>
+								<li>il crée ensuite sa propre version, la version DOM.</li>
+							</ul>
+						</span>
+					</section>
 				</section>
 				<section>
 					<span class="r-fit-text">
@@ -112,8 +115,7 @@
 						<p>
 							<a href="https://validator.w3.org/">https://validator.w3.org/</a>
 						</p>
-						<p>exemple</p>
-						<h5>exercice</h5>
+						<p><a href="https://codepen.io/sardinecan/pen/ExLQPpp">Exemple</a> | <a href="https://codepen.io/sardinecan/pen/abGqdxP">Exercice</a></p>
 						<p>Valider une page web c’est s’assurer que l’on est conforme aux spécifications du W3C. Mais ce n’est pas qu’une question de syntaxe.</p>
 						<p>Un code « propre » est plus facile à lire, à maintenir et est plus performant, tout en assurant une bonne compatibilité avec tous les navigateurs.</p>
 						<p>Attention, la validation ne corrige pas tout !</p>
