@@ -90,14 +90,13 @@
 			</section>
 
 			<section>
-				<span class="r-fit-text">
-					<h3>Langage de balisage – notions</h3>
-					<p>Ce type de langage utilise des balises pour marquer des portions de texte.</p>
-					<p>On en distingue plusieurs types.</p>
-				</span>
-			</section>
-
-			<section>
+				<section>
+					<span class="r-fit-text">
+						<h3>Langage de balisage – notions</h3>
+						<p>Ce type de langage utilise des balises pour marquer des portions de texte.</p>
+						<p>On en distingue plusieurs types.</p>
+					</span>
+				</section>
 				<section>
 					<span class="r-fit-text">
 						<h4>Langages de balisage procéduraux (et présentationnels)</h4>
@@ -112,12 +111,14 @@
 				</section>
 				<section>
 					<p>Exemple</p>
-					<pre><code><p>Un paragraphe contenant un <a href="#monlien">lien</a>.</p></code></pre>
+<pre>
+<code>
+<p>Un paragraphe contenant un <a href="#monlien">lien</a>.</p>
+
+</code>
+</pre>
 					<p>Un paragraphe contenant un <a href="">lien</a>.</p>
 				</section>
-			</section>
-
-			<section>
 				<section>
 					<span class="r-fit-text">
 						<h3>Langages de balisage descriptifs</h3>
@@ -142,23 +143,26 @@
 				<section>
 					<span class="r-fit-text">
 						<p>HTML</p>
-						<pre><code>
-						&lt;html&gt;
-							&lt;head/&gt;
-							&lt;body&gt;
-								<p><b>Alan Turing</b></p>
-								<p>
-									<u>23 juin 1912</u> à <i>Londres</i> (Royaume-Uni) - 
-									<u>7 juin 1954</u> à <i>Wilmslow</i> (Royaume-Uni)
-								</p>
-								<p>
-									<b>Alan Mathison Turing</b> est un mathématicien
-									et cryptologue britannique, auteur de travaux 
-									qui fondent scientifiquement l'informatique.
-								</p>
-							&lt;/body&gt;
-						&lt;/html&gt;
-						</code></pre>
+<pre>
+<code>
+&lt;html&gt;
+	&lt;head/&gt;
+	&lt;body&gt;
+		<p><b>Alan Turing</b></p>
+		<p>
+			<u>23 juin 1912</u> à <i>Londres</i> (Royaume-Uni) -
+			<u>7 juin 1954</u> à <i>Wilmslow</i> (Royaume-Uni)
+		</p>
+		<p>
+			<b>Alan Mathison Turing</b> est un mathématicien
+			et cryptologue britannique, auteur de travaux
+			qui fondent scientifiquement l'informatique.
+		</p>
+	&lt;/body&gt;
+&lt;/html&gt;
+
+</code>
+</pre>
 					</span>
 				</section>
 				<section>
@@ -173,47 +177,48 @@
 				<section>
 					<span class="r-fit-text">
 						<p>XML</p>
-						<pre><code>
-						&lt;notice&gt;
-							<personne>Alan Turing</personne>
-							<date>
-								<date type="naissance" norm="1912-06-23">23 juin 1912</date> à 
-								<lieu type="naissance">Londres</lieu> (Royaume-Uni) - 
-								<date type="décès" norm="1954-06-07">7 juin 1954</date> à 
-								<lieu type="décès">Wilmslow</lieu> (Royaume-Uni)
-							</date>
-							<biographie>
-								<personne>Alan Mathison Turing</personne> est un 
-								<profession>mathématicien</profession> et
-								<profession>cryptologue</profession> britannique, 
-								auteur de travaux qui fondent scientifiquement
-								l'informatique.
-							</biographie>
-						&lt;/notice&gt;
-						</code></pre>
+<pre>
+<code>
+&lt;notice&gt;
+	<personne>Alan Turing</personne>
+	<dates>
+		<date type="naissance" norm="1912-06-23">23 juin 1912</date> à
+		<lieu type="naissance">Londres</lieu> (Royaume-Uni) -
+		<date type="décès" norm="1954-06-07">7 juin 1954</date> à
+		<lieu type="décès">Wilmslow</lieu> (Royaume-Uni)
+	</dates>
+	<biographie>
+		<personne>Alan Mathison Turing</personne> est un
+		<profession>mathématicien</profession> et
+		<profession>cryptologue</profession> britannique,
+		auteur de travaux qui fondent scientifiquement
+		l'informatique.
+	</biographie>
+&lt;/notice&gt;
+
+</code>
+</pre>
 					</span>
 				</section>
-			</section>
-
-			<section>
-				<span class="r-fit-text">
-					<h3>Langages de balisage descriptifs</h3>
-
-					<p>3 étapes</p>
-					<ul>
-						<li>on identifie des données</li>
-						<li>on choisit des balises</li>
-						<li>on balise le texte (encodage)</li>
-					</ul>
-					<span class="fragment">
-						<p>Avantages</p>
+				<section>
+					<span class="r-fit-text">
+						<h3>Langages de balisage descriptifs</h3>
+						<p>3 étapes</p>
 						<ul>
-							<li>distinction contenu/forme</li>
-							<li>facilite les traitements des textes encodés</li>
-							<li>excellent format pivot (portabilité des documents)</li>
+							<li>on identifie des données</li>
+							<li>on choisit des balises</li>
+							<li>on balise le texte (encodage)</li>
 						</ul>
+						<span class="fragment">
+							<p>Avantages</p>
+							<ul>
+								<li>distinction contenu/forme</li>
+								<li>facilite les traitements des textes encodés</li>
+								<li>excellent format pivot (portabilité des documents)</li>
+							</ul>
+						</span>
 					</span>
-				</span>
+				</section>
 			</section>
 
 			<section>
@@ -259,7 +264,6 @@
 					</span>
 				</section>
 			</section>
-
 			
 			<section>
 				<section>
@@ -342,8 +346,6 @@
 				</section>
 			</section>
 
-
-
 			<section>
 				<section>
 					<h3>Syntaxe XML</h3>
@@ -364,14 +366,15 @@
 				<section>
 					<span class="r-fit-text">
 						<h4>Le prologue</h4>
-						<pre>
-							<code>
-								&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-								<notice>
-									<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
-								</notice>
-							</code>
-						</pre>
+<pre>
+<code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<notice>
+	<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
+</notice>
+
+</code>
+</pre>
 					</span>
 				</section>
 
@@ -392,22 +395,24 @@
 						<h4>Arbre d’éléments</h4>
 						<p>Comme nous l’avons vu, un document XML est une arborescence :</p>
 						<p>Un arbre XML possède un seul et un seul élément racine qui contient tous les autres éléments</p>
-						<pre>
-							<code>
-								<racine>
-									<element>Alan Turing</element>
-									<element></element>
-								</racine>
-							</code>
-						</pre>
+<pre>
+<code>
+<racine>
+	<element>Alan Turing</element>
+	<element></element>
+</racine>
+
+</code>
+</pre>
 						<p>Un élément peut contenir du texte et/ou d’autres éléments (contenu mixte), ou être vide.</p>
-						<pre>
-							<code>
-								<p>
-									<personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.
-								</p>
-							</code>
-						</pre>
+<pre>
+<code>
+<p>
+	<personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.
+</p>
+
+</code>
+</pre>
 					</span>
 				</section>
 	
@@ -415,11 +420,12 @@
 					<span class="r-fit-text">
 						<h4>Les attributs</h4>
 						<p>Les attributs précisent la signification des éléments, leur ajoutent des caractéristiques, des métadonnées.</p>
-						<pre>
-							<code>
-								<date when="1912-06-23">le 23 juin 1912</date>
-							</code>
-						</pre>
+<pre>
+<code>
+<date when="1912-06-23">le 23 juin 1912</date>
+
+</code>
+</pre>
 						<p>L’attribut est toujours saisi à l’intérieur de la balise ouvrante de l’élément.</p>
 					</span>
 				</section>
@@ -455,15 +461,16 @@
 						<h4>Les commentaires</h4>
 						<p>Les commentaires commencent par “&lt;!--” et se terminent par “--&gt;”. Ils ne peuvent contenir de double
 							trait d’union.</p>
-						<pre>
-							<code>
-								&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-								<!-- un commentaire -->
-								<notice>
-									<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
-								</notice>
-							</code>
-						</pre>
+<pre>
+<code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<!-- un commentaire -->
+<notice>
+	<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
+</notice>
+
+</code>
+</pre>
 					</span>
 				</section>
 				
@@ -473,15 +480,16 @@
 						<p>Elles donnent des instructions pour un programme (p. ex. pour l’application d’une feuille de transformation
 							XSLT, ou une feuille de style CSS). Les instructions de traitement commencent par &lt;? et se terminent par
 							?&gt;.</p>
-						<pre>
-							<code>
-								&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-								&lt;?xml-stylesheet href="mon-style.css"?&gt;								
-								<notice>
-									<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
-								</notice>
-							</code>
-						</pre>
+<pre>
+<code>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet href="mon-style.css"?&gt;								
+<notice>
+	<p><personne>Alan Turing</personne> est né <date when="1912-06-23">le 23 juin 1912</date> à Londre.</p>
+</notice>
+
+</code>
+</pre>
 					</span>
 				</section>
 				
@@ -490,15 +498,16 @@
 						<h4>Les sections CDATA</h4>
 						<p>Les sections CDATA commencent par &lt;![CDATA[ se terminent par ]]&gt;</p>
 						<p>Elles indiquent que leur contenu ne doit pas être interprété comme du XML.</p>
-						<pre>
-							<code>
-								<xml>
-									&lt;![CDATA[
-										Je peux donc mettre ici du code javascript ou python, ou encore des &, et des <, >… 
-									]]&gt;
-									</xml>
-							</code>
-						</pre>
+<pre>
+<code>
+<xml>
+	&lt;![CDATA[
+		Je peux donc mettre ici du code javascript ou python, ou encore des &, et des <, >… 
+	]]&gt;
+</xml>
+
+</code>
+</pre>
 					</span>
 				</section>
 				
@@ -507,20 +516,21 @@
 						<h4>Les espaces de nom</h4>
 						<p>Ils permettent l'utilisation d’éléments et d’attributs issus de plusieurs langages XML. Ils peuvent être préfixés ou non.
 						</p>
-						<pre>
-							<code>
-								<!-- espace de nom par défaut-->
-								<doc xmlns="monUri">
-									<para>
-										Mon paragraphe contenant une formule mathématique encodée avec MathML
-										<!-- espace de nom préfixé-->
-										<m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
-											<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
-										</m:math>
-									</para>
-								</doc>
-							</code>
-						</pre>
+<pre>
+<code>
+<!-- espace de nom par défaut-->
+<doc xmlns="monUri">
+	<para>
+		Mon paragraphe contenant une formule mathématique encodée avec MathML
+		<!-- espace de nom préfixé-->
+		<m:math xmlns:m="http://www.w3.org/1998/Math/MathML">
+			<m:mi>x</m:mi><m:mo>=</m:mo><m:mn>2</m:mn>
+		</m:math>
+	</para>
+</doc>
+
+</code>
+</pre>
 					</span>
 				</section>
 				
