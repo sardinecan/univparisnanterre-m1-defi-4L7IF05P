@@ -27,91 +27,95 @@
 					</span>
 				</section>
 				<section>
-					<h2>Les médias HTML</h2>
+					<section>
+						<h2>Les médias HTML</h2>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les images | &lt;img/&gt;</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/wvjRQaQ">exemple</a></p>
+							<p>Pour ajouter une image dans une page web on utilise la balise &lt;img/&gt;. C’est une balise sans contenu – auto-fermante.</p>
+							<p>L’url ou le chemin vers l’image est indiqué par l’intermédiaire de l’attribut src.</p>
+							<p>L’attribut optionnel alt permet d’ajouter une description.</p>
+							<p>Les attributs optionnels width et height permettent d’ajuster la taille de l’image.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Audio et vidéo &lt;audio&gt; | &lt;video&gt;</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/eYrbQWZ">exemple audio</a></p>
+							<p><a href="https://codepen.io/sardinecan/pen/eYrbQxv">exemple vidéo</a></p>
+							<p>Pour intégrer une piste audio ou une vidéo dans une page web on utilisera respectivement les balises &lt;audio&gt; et &lt;video&gt;.</p>
+							<p>Comme pour les images, l’url ou le chemin vers la ressource est indiqué par l’intermédiaire de l’attribut src.</p>
+							<p>L’attribut controls="true" permet d’ajouter les contrôles du navigateur.</p>
+							<p>L’attribut autoplay="true" permet de lancer la lecture automatiquement.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les sources multiples &lt;source&gt;</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/Vwxqqeq">exemple</a></p>
+							<p>Pour une piste audio ou vidéo donnée, il est possible de spécifier plusieurs sources en utilisant des balises &lt;source src="une/url"&gt;.</p>
+							<p>Spécifier plusieurs sources permettra par exemple au navigateur de sélectionner automatiquement les formats qu’il est capable de lire, ou de pallier à un lien mort.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les images responsives</h3>
+							<p>Une image responsive s’adapte automatiquement à son contexte (p. ex. la taille de l’écran.).</p>
+							<p>Cela permet notamment de :</p>
+							<ul>
+								<li>garder une image lisible au regard du matériel utilisé</li>
+								<li>charger plus rapidement les pages</li>
+							</ul>
+							<p>Il est possible de définir des images responsives avec la balise &lt;img&gt; et les attributs srcset et sizes ; ou bien avec les balises &lt;picture&gt; et &lt;source&gt;</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les images responsives avec &lt;img/&gt;</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/KKRbbOQ">exemple</a></p>
+							<p>Attribut src : url de l’image par défaut, pour éviter tout dysfonctionnement.</p>
+							<p>Attribut srcset : une liste d'images séparées par des virgules. Chaque image est définie par une url et un indicateur suivi directement par la lettre 'w' (largeur) ou 'x' (densité de pixel).</p>
+							<p>Attribut sizes : un ensemble de tailles de source possible afin de définir quelle image afficher. Chaque taille est composée d'une condition (media) et d’une largeur en pixel.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les images responsives avec &lt;picture/&gt;</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/PoeXVPp">exemple</a></p>
+							<p>La balise &lt;picture&gt; est construite sur le même modèle que &lt;audio&gt; et &lt;video&gt;. Elle permet de définir plusieurs sources (&lt;source&gt;) pour une image.</p>
+							<p>La balise &lt;img&gt;> permet d’établir une image par défaut</p>
+							<p>Pour chaque &lt;source&gt; on utilisera les attributs srcset (contenant uniquement l’url de la ressource) et media (la condition média).</p>
+						</span>
+					</section>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h3>Les images | &lt;img/&gt;</h3>
-						<p>exemple</p>
-						<p>Pour ajouter une image dans une page web on utilise la balise &lt;img/&gt;. C’est une balise sans contenu – auto-fermante.</p>
-						<p>L’url ou le chemin vers l’image est indiqué par l’intermédiaire de l’attribut src.</p>
-						<p>L’attribut optionnel alt permet d’ajouter une description.</p>
-						<p>Les attributs optionnels width et height permettent d’ajuster la taille de l’image.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Audio et vidéo &lt;audio&gt; | &lt;video&gt;</h3>
-						<p>exemple audio</p>
-						<p>exemple vidéo</p>
-						<p>Pour intégrer une piste audio ou une vidéo dans une page web on utilisera respectivement les balises &lt;audio&gt; et &lt;video&gt;.</p>
-						<p>Comme pour les images, l’url ou le chemin vers la ressource est indiqué par l’intermédiaire de l’attribut src.</p>
-						<p>L’attribut controls="true" permet d’ajouter les contrôles du navigateur.</p>
-						<p>L’attribut autoplay="true" permet de lancer la lecture automatiquement.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les sources multiples &lt;source&gt;</h3>
-						<p>exemple</p>
-						<p>Pour une piste audio ou vidéo donnée, il est possible de spécifier plusieurs sources en utilisant des balises &lt;source src="une/url"&gt;.</p>
-						<p>Spécifier plusieurs sources permettra par exemple au navigateur de sélectionner automatiquement les formats qu’il est capable de lire, ou de pallier à un lien mort.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les images responsives</h3>
-						<p>Une image responsive s’adapte automatiquement à son contexte (p. ex. la taille de l’écran.).</p>
-						<p>Cela notamment permet de :</p>
-						<ul>
-							<li>garder une image lisible au regard du matériel utilisé</li>
-							<li>charger plus rapidement les pages</li>
-						</ul>
-						<p>Il est possible de définir des images responsives avec la balise &lt;img&gt; et les attributs srcset et sizes ; ou bien avec les balises &lt;picture&gt; et &lt;source&gt;</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les images responsives avec &lt;img/&gt;</h3>
-						<p>exemple</p>
-						<p>Attribut src : url de l’image par défaut, pour éviter tout dysfonctionnement.</p>
-						<p>Attribut srcset : une liste d'images séparées par des virgules. Chaque image est définie par une url et un indicateur suivi directement par la lettre 'w' (largeur) ou 'x' (densité de pixel).</p>
-						<p>Attribut sizes : un ensemble de tailles de source possible afin de définir quelle image afficher. Chaque taille est composée d'une condition (media) et d’une largeur en pixel.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les images responsives avec &lt;picture/&gt;</h3>
-						<p>exemple</p>
-						<p>La balise &lt;picture&gt; est construite sur le même modèle que &lt;audio&gt; et &lt;video&gt;. Elle permet de définir plusieurs sources (&lt;source&gt;) pour une image.</p>
-						<p>La balise &lt;img&gt;> permet d’établir une image par défaut</p>
-						<p>Pour chaque &lt;source&gt; on utilisera les attributs srcset (contenant uniquement l’url de la ressource) et media (la condition média).</p>
-					</span>
-				</section>
-				<section>
-					<h2>Les conteneurs HTML</h2>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les conteneurs spécifiques</h3>
-						<p>exemple</p>
-						<p>&lt;header&gt; : en-tête d’une page web, pouvant contenir un bandeau (image) ou la navigation</p>
-						<p>&lt;nav&gt; : ensemble de liens permettant de naviguer au sein d’une page ou d’un site web.</p>
-						<p>&lt;article&gt; : un groupe d’informations autonome (ré-utilisable indépendamment du contexte)</p>
-						<p>&lt;section&gt; : un groupement thématique de contenus. /!\ une section n’est pas un article, elle fait généralement partie d’un ensemble plus vaste.</p>
-						<p>&lt;aside&gt; : aparté</p>
-						<p>&lt;footer&gt; : pied de page</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les conteneurs génériques</h3>
-						<p>exemple</p>
-						<p>L’élément &lt;div&gt; (division) est un conteneur générique de type block.</p>
-						<p>L’élément &lt;span&gt; est également un conteneur générique mais de type inline cette fois.</p>
-						<p>En théorie, ils ne devraient pas être utilisés lorsqu’une autre balise avec une portée sémantique (article, section, nav, etc.) peut être employée à leur place.</p>
-						<p>On a généralement recours à &lt;div&gt; et &lt;span&gt; pour la mise en forme conjointement avec leurs attributs id et class.</p>
-					</span>
+					<section>
+						<h2>Les conteneurs HTML</h2>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les conteneurs spécifiques</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/ExLGBmN">exemple</a></p>
+							<p>&lt;header&gt; : en-tête d’une page web, pouvant contenir un bandeau (image) ou la navigation</p>
+							<p>&lt;nav&gt; : ensemble de liens permettant de naviguer au sein d’une page ou d’un site web.</p>
+							<p>&lt;article&gt; : un groupe d’informations autonome (ré-utilisable indépendamment du contexte)</p>
+							<p>&lt;section&gt; : un groupement thématique de contenus. /!\ une section n’est pas un article, elle fait généralement partie d’un ensemble plus vaste.</p>
+							<p>&lt;aside&gt; : aparté</p>
+							<p>&lt;footer&gt; : pied de page</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les conteneurs génériques</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/oNdJKGm">exemple</a></p>
+							<p>L’élément &lt;div&gt; (division) est un conteneur générique de type block.</p>
+							<p>L’élément &lt;span&gt; est également un conteneur générique mais de type inline cette fois.</p>
+							<p>En théorie, ils ne devraient pas être utilisés lorsqu’une autre balise avec une portée sémantique (article, section, nav, etc.) peut être employée à leur place.</p>
+							<p>On a généralement recours à &lt;div&gt; et &lt;span&gt; pour la mise en forme conjointement avec leurs attributs id et class.</p>
+						</span>
+					</section>
 				</section>
 				<section>
 					<span class="r-fit-text">
