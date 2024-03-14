@@ -27,10 +27,10 @@
 				<section>
 					<h2>CSS – ressources utiles</h2>
 					<ul>
-						<li>W3C https://www.w3.org/Style/CSS/</li>
-						<li>MDN https://developer.mozilla.org/fr/docs/Web/CSS</li>
-						<li>W3C CSS validator : https://jigsaw.w3.org/css-validator/</li>
-						<li>CSS cheat sheet : https://github.com/AdamMarsden/css-cheat-sheet</li>
+						<li>W3C <a href="https://www.w3.org/Style/CSS/">https://www.w3.org/Style/CSS/</a></li>
+						<li>MDN <a href="https://developer.mozilla.org/fr/docs/Web/CSS">https://developer.mozilla.org/fr/docs/Web/CSS</a></li>
+						<li>W3C CSS validator : <a href="https://jigsaw.w3.org/css-validator/">https://jigsaw.w3.org/css-validator/</a></li>
+						<li>CSS cheat sheet : <a href="https://github.com/AdamMarsden/css-cheat-sheet">https://github.com/AdamMarsden/css-cheat-sheet</a></li>
 					</ul>
 				</section>
 				<section>
@@ -42,113 +42,127 @@
 				</section>
 				<section>
 					<h2>CSS – Syntaxe</h2>
-					<pre>
-		<code>
-			/*une déclaration*/
-			p /*sélecteur*/ {
-			color /*propriété*/: red /*valeurs*/; 
-			font-size: 1em ;
-			}
-		</code>
-	</pre>
+<pre>
+<code>
+/*une déclaration*/
+p /*sélecteur*/ {
+	color /*propriété*/: red /*valeurs*/; 
+	font-size: 1em ;
+}
+
+</code>
+</pre>
 				</section>
 				<section>
-					<section> CSS – Déclaration <ul>
-							<li>directement sur les éléments, avec l’attribut style</li>
-						</ul>
-						<pre>
-			<code>
-				<p style="color: red;">Lorem, ipsum dolor sit amet</p>
-			</code>
-		</pre>
-					</section>
-					<section> CSS – Déclaration <ul>
-							<li>directement sur les éléments, avec l’attribut style</li>
-							<li>dans le &lt;head/&gt; d’une page web, avec l’aide de la balise &lt;style/&gt;</li>
-						</ul>
-						<pre>
-			<code>
-				&lt;!DOCTYPE html&gt;
-				&lt;html lang="fr"&gt;
-					&lt;head&gt;
-						&lt;title&gt;Document&lt;/title&gt;
-						&lt;style&gt;
-							p { color: red; }
-						&lt;/style&gt;
-					&lt;/head&gt;
-					&lt;body&gt;&lt;p&gt;Lorem, ipsum dolor&lt;/p&gt;&lt;/body&gt;
-				&lt;/html&gt;
-			</code>
-		</pre>
-					</section>
-					<section> CSS – Déclaration <ul>
-							<li>directement sur les éléments, avec l’attribut style</li>
-							<li>dans le &lt;head/&gt; d’une page web, avec l’aide de la balise &lt;style/&gt;</li>
-							<li>dans un document distinct</li>
-						</ul>
-						<pre>
-			<code>
-				<!--maPageWeb.html-->
-				&lt;head&gt;
-					<title>Document</title>
-					<link href="style.css" rel="stylesheet" />
-				&lt;/head&gt;
-				
-				<!-- style.css -->
-				p {
-					 color: red;
-				}
-			</code>
-		</pre>
-					</section>
-				</section>
-				<section>
-					<h2>Les sélecteurs</h2>
-					<p class="alignCenter">https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors</p>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les sélecteurs simples</h3>
-						<p>Documentation</p>
-						<p>Exemples</p>
-						<p>Sélecteur de type : cible les éléments qui correspondent au nom indiqué. Syntaxe : nomElement</p>
-						<p>Sélecteur de classe : cible les éléments au regard de la valeur de leur attribut class. Syntaxe : .nomClass | nomElement.nomClass</p>
-						<p>Sélecteur d’identifiant : cible les éléments au regard de la valeur de leur attribut id. Syntaxe : #valeurId</p>
-						<p>Sélecteur universel : cible n’importe quel élément. Syntaxe : *</p>
-						<p>Sélecteur d’attribut : cible les éléments qui possèdent un attribut particulier ou qui possèdent un attribut avec une valeur particulière Syntaxe : [nomAttribut] (autres possibilités dans la documentation) </p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les combinateurs</h3>
-						<p>Documentation</p>
-						<p>Exemples</p>
-						<p>Les sélecteurs de voisin direct : cible les nœuds qui suivent immédiatement un élément donné. Syntaxe : A + B</p>
-						<p>Les sélecteurs de voisins : cible les nœuds qui suivent un élément et qui ont le même parent. Syntaxe : A ~ B</p>
-						<p>Les sélecteurs d'éléments enfants : cible les nœuds qui sont des enfants directs d'un élément donné. Syntaxe : A > B</p>
-						<p>Les sélecteurs d'éléments descendants : cible les nœuds qui sont des descendants (pas nécessairement des enfants directs) d'un élément donné. Syntaxe : A B</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les pseudo-classes</h3>
-						<p>Documentation</p>
-						<p>Exemples</p>
-						<p>Une pseudo-classe est un sélecteur qui permet de cibler des éléments au regard de leur état.</p>
-						<p>Syntaxe : nomElément:pseudoClass</p>
+					<section>
+						<h3>CSS – Déclaration</h3>
 						<ul>
-							<li>:hover cible un élément lors de son survol avec le pointeur</li>
-							<li>:first-child / :last-child cible le premier/dernier élément fils par rapport à son élément parent</li>
-							<li>:first-of-type / :last-of-type cible le premier/dernier élément d’un type particulier par rapport à son élément parent</li>
-							<li>:nth-child() / :nth-of-type() idem mais permettent de cibler des éléments au regard de leur position ou d’un paterne (tous les paires ou tous les impaires par exemple)</li>
+							<li>→ directement sur les éléments, avec l’attribut style</li>
 						</ul>
-					</span>
+<pre>
+<code>
+<p style="color: red;">Lorem, ipsum dolor sit amet</p>
+
+</code>
+</pre>
+</section>
+
+					<section>
+						<h3>CSS – Déclaration</h3>
+						<ul>
+							<li>directement sur les éléments, avec l’attribut style</li>
+							<li>→ dans le &lt;head/&gt; d’une page web, avec l’aide de la balise &lt;style/&gt;</li>
+						</ul>
+<pre>
+<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+	&lt;head&gt;
+		&lt;title&gt;Document&lt;/title&gt;
+		&lt;style&gt;
+			p { color: red; }
+		&lt;/style&gt;
+	&lt;/head&gt;
+	&lt;body&gt;&lt;p&gt;Lorem, ipsum dolor&lt;/p&gt;&lt;/body&gt;
+&lt;/html&gt;
+
+</code>
+</pre>
+					</section>
+					<section>
+						<h3>CSS – Déclaration</h3>
+						<ul>
+							<li>directement sur les éléments, avec l’attribut style</li>
+							<li>dans le &lt;head/&gt; d’une page web, avec l’aide de la balise &lt;style/&gt;</li>
+							<li>→ dans un document distinct</li>
+						</ul>
+<pre>
+<code>
+<!--maPageWeb.html-->
+&lt;head&gt;
+	<title>Document</title>
+	<link href="style.css" rel="stylesheet" />
+&lt;/head&gt;
+
+</code>
+</pre>
+<pre>
+<code></code>
+/* style.css */
+
+p {
+	color: red;
+}
+
+</code>
+</pre>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>Les sélecteurs</h2>
+						<p class="alignCenter"><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors">https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors</a></p>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les sélecteurs simples</h3>
+							<p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors#les_s%C3%A9lecteurs_simples">Documentation</a> | <a href="https://codepen.io/sardinecan/pen/poKwYzx">Exemples</a></p>
+							<p>Sélecteur de type : cible les éléments qui correspondent au nom indiqué. Syntaxe : nomElement</p>
+							<p>Sélecteur de classe : cible les éléments au regard de la valeur de leur attribut class. Syntaxe : .nomClass | nomElement.nomClass</p>
+							<p>Sélecteur d’identifiant : cible les éléments au regard de la valeur de leur attribut id. Syntaxe : #valeurId</p>
+							<p>Sélecteur universel : cible n’importe quel élément. Syntaxe : *</p>
+							<p>Sélecteur d’attribut : cible les éléments qui possèdent un attribut particulier ou qui possèdent un attribut avec une valeur particulière Syntaxe : [nomAttribut] (autres possibilités dans la documentation) </p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les combinateurs</h3>
+							<p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors#les_combinateurs">Documentation</a> | <a href="https://codepen.io/sardinecan/pen/MWXoxmd">Exemples</a></p>
+							<p>Les sélecteurs de voisin direct : cible les nœuds qui suivent immédiatement un élément donné. Syntaxe : A + B</p>
+							<p>Les sélecteurs de voisins : cible les nœuds qui suivent un élément et qui ont le même parent. Syntaxe : A ~ B</p>
+							<p>Les sélecteurs d'éléments enfants : cible les nœuds qui sont des enfants directs d'un élément donné. Syntaxe : A > B</p>
+							<p>Les sélecteurs d'éléments descendants : cible les nœuds qui sont des descendants (pas nécessairement des enfants directs) d'un élément donné. Syntaxe : A B</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les pseudo-classes</h3>
+							<p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/Pseudo-classes">Documentation</a> | <a href="https://codepen.io/sardinecan/pen/abKwMep">Exemples</a></p>
+							<p>Une pseudo-classe est un sélecteur qui permet de cibler des éléments au regard de leur état.</p>
+							<p>Syntaxe : nomElément:pseudoClass</p>
+							<ul>
+								<li>:hover cible un élément lors de son survol avec le pointeur</li>
+								<li>:first-child / :last-child cible le premier/dernier élément fils par rapport à son élément parent</li>
+								<li>:first-of-type / :last-of-type cible le premier/dernier élément d’un type particulier par rapport à son élément parent</li>
+								<li>:nth-child() / :nth-of-type() idem mais permettent de cibler des éléments au regard de leur position ou d’un paterne (tous les paires ou tous les impaires par exemple)</li>
+							</ul>
+						</span>
+					</section>
 				</section>
 				<section>
 					<span class="r-fit-text">
 						<h3>Héritage, cascade et spécificité</h3>
-						<p>Documentation</p>
-						<p>Exemples</p>
+						<p><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance">Documentation</a> | <a href="https://codepen.io/sardinecan/pen/NWzgVKr">Exemples</a></p>
 						<p>L’ordre d’apparition des règles à de l’importance. Quand deux règles sont applicables, c’est la dernière qui est utilisée. Il s’agit du principe de cascade.</p>
 						<p>Lorsque des règles avec des sélecteurs différents ciblent un même élément, c’est toujours la règle la plus spécifique qui s’applique.</p>
 						<p>Certaines règles se transmettent des éléments parents aux élément enfants. C’est le principe de l’héritage. </p>
@@ -156,6 +170,7 @@
 				</section>
 				<section>
 					<h2>TP CSS Diner</h2>
+					<p class="alignCenter">https://flukeout.github.io/</p>
 					<p class="alignCenter">Atteignez le niveau 32 de CSS Diner !</p>
 				</section>
 			</div>
