@@ -21,183 +21,184 @@
 					</span>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h2>Le modèle de boîte</h2>
-						<p>Documentation</p>
-					</span>
+					<section>
+						<span class="r-fit-text">
+							<h2>Le modèle de boîte</h2>
+							<p><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model">Documentation</a></p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les boîtes</h3>
+							<p><a href="https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/The_box_model">Documentation</a></p>
+							<p>Comprendre le modèle de boîte est primordial pour maîtriser CSS.</p>
+							<p>Avec CSS, tout élément HTML est représenté par une boîte qui dispose de certaines propriétés : (par défaut) </p>
+							<ul>
+								<li>width : largeur, par défaut la totalité de l’espace disponible</li>
+								<li>height : hauteur, par défaut dépend du contenu</li>
+								<li>padding : marges intérieures</li>
+								<li>border : bordure</li>
+								<li>margin : marges extérieures</li>
+							</ul>
+							<p>NB : les navigateurs appliquent des styles par défaut.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les types de boîte</h3>
+							<p>la propriété display</p>
+							<p>La propriété display permet de définir la façon dont les boîtes vont se comporter au regard des autres éléments environnants.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>display: block</h3>
+							<p>paragraphes, titres, etc.</p>
+							<p><a href="https://codepen.io/sardinecan/pen/LYrBPWP">exemple</a></p>
+							<p>prend toute la largeur disponible (par défaut)</p>
+							<p>la hauteur et la largeur peuvent être définies manuellement</p>
+							<p>deux éléments block ne peuvent être côte à côte</p>
+							<p>les marges intérieures/extérieures et les bordures repoussent les autres éléments environnants</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>display: inline</h3>
+							<p>Balises qui entourent simplement du texte (em, span, strong, a, etc.)</p>
+							<p><a href="https://codepen.io/sardinecan/pen/LYrBYJz">exemple</a></p>
+							<p>prend uniquement la dimension de son contenu</p>
+							<p>la hauteur et la largeur ne peuvent pas être définies manuellement</p>
+							<p>n’induit pas de retour à la ligne avec les éléments environnants</p>
+							<p>les marges intérieures/extérieures et bordures verticales sont appliquées mais ne repoussent pas les éléments alentours</p>
+							<p>les marges intérieures/extérieures et bordures horizontales sont appliquées et repoussent les éléments alentours</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>display: inline-block</h3>
+							<p>par exemple les champs de formulaire de type texte</p>
+							<p><a href="https://codepen.io/sardinecan/pen/oNyMNQo">exemple</a></p>
+							<p>À mi-chemin entre les display block et inline.</p>
+							<p>Les éléments se comportent comme des éléments inline, mais il est possible de définir une largeur et une hauteur spécifiques.</p>
+							<p>Les marges extérieures/intérieures, et les bordures repoussent bien les éléments environnants.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les autres valeurs de display</h3>
+							<p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/display">documentation</a> | <a href="https://codepen.io/sardinecan/pen/wvXEaKG">exemple</a></p>
+							<p>Il existe d’autres valeurs pour la propriété display</p>
+							<ul>
+								<li>none : masque les éléments. Ils sont retirés de l’arbre d’accessibilité</li>
+								<li>list-item : les éléments se comportent comme des items de liste</li>
+								<li>flex : éléments flexibles (capacité à modifier leurs dimensions pour occuper l’espace disponible)</li>
+								<li>grid : grille css</li>
+								<li>etc.</li>
+							</ul>
+						</span>
+					</section>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h3>Les boîtes</h3>
-						<p>Documentation</p>
-						<p>Comprendre le modèle de boîte est primordial pour maîtriser CSS.</p>
-						<p>Avec CSS, tout élément HTML est représenté par une boîte qui dispose de certaines propriétés : (par défaut) </p>
-						<ul>
-							<li>width : largeur, par défaut la totalité de l’espace disponible</li>
-							<li>height : hauteur, par défaut dépend du contenu</li>
-							<li>padding : marges intérieures</li>
-							<li>border : bordure</li>
-							<li>margin : marges extérieures</li>
-						</ul>
-						<p>NB : les navigateurs appliquent des styles par défaut.</p>
-					</span>
+					<section>
+						<span class="r-fit-text">
+							<h2>Les marges intérieures/extérieures et les bordures</h2>
+							<p class="alignCenter">margin, padding et border</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>propriété margin</h3>
+							<p>marges extérieures</p>
+							<p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/margin">documentation</a> | <a href="https://codepen.io/sardinecan/pen/YzvOXEz">exemple</a></p>
+							<p>Syntaxe</p>
+							<ul>
+								<li>margin: 10px; marge de 10 pixels pour tous les côtés</li>
+								<li>margin: 10px 20px; marges verticales | marges horizontales</li>
+								<li>margin: 10px 20px 5px; marge haute | marges horizontales | marge basse</li>
+								<li>margin: 10px 20px 5px 20px; haut | droite | bas | gauche</li>
+								<li>margin-top | margin-bottom | margin-left | margin-right</li>
+							</ul>
+							<p>fusion des marges : la marge haute d’un élément se fond parfois avec la marge basse de l’élément qui le précède. La marge restituée est alors égale à la plus grande des deux marges.</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>propriété padding</h3>
+							<p>marges intérieures</p>
+							<p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/padding">documentation</a> | <a href="https://codepen.io/sardinecan/pen/PoadqOz">exemple</a></p>
+							<p>Syntaxe</p>
+							<ul>
+								<li>padding: 10px; marge de 10 pixels pour tous les côtés</li>
+								<li>padding: 10px 20px; marges verticales | marges horizontales</li>
+								<li>padding: 10px 20px 5px; marge haute | marges horizontales | marge basse</li>
+								<li>padding: 10px 20px 5px 20px; haut | droite | bas | gauche</li>
+								<li>padding-top | padding-bottom | padding-left | padding-right</li>
+							</ul>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>propriété border</h3>
+							<p>les bordures</p>
+							<p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/border">documentation</a> | <a href="https://codepen.io/sardinecan/pen/YzvORqW">exemple</a></p>
+							<p>Syntaxe</p>
+							<ul>
+								<li>border: solid; style</li>
+								<li>border: 2px dotted; largeur | style</li>
+								<li>border: dashed orangered; style | couleur</li>
+								<li>border: 5px dashed red; largeur | style | couleur</li>
+							</ul>
+						</span>
+					</section>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h3>Les types de boîte</h3>
-						<p>la propriété display</p>
-						<p>La propriété display permet de définir la façon dont les boîtes vont se comporter au regard des autres éléments environnants.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>display: block</h3>
-						<p>paragraphes, titres, etc.</p>
-						<p>exemple</p>
-						<p>prend toute la largeur disponible (par défaut)</p>
-						<p>la hauteur et la largeur peuvent être définies manuellement</p>
-						<p>deux éléments block ne peuvent être côte à côte</p>
-						<p>les marges intérieures/extérieures et les bordures repoussent les autres éléments environnants</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>display: inline</h3>
-						<p>Balises qui entourent simplement du texte (em, span, strong, a, etc.)</p>
-						<p>exemple</p>
-						<p>prend uniquement la dimension de son contenu</p>
-						<p>la hauteur et la largeur ne peuvent pas être définies manuellement</p>
-						<p>n’induit pas de retour à la ligne avec les éléments environnants</p>
-						<p>les marges intérieures/extérieures et bordures verticales sont appliquées mais ne repoussent pas les éléments alentours</p>
-						<p>les marges intérieures/extérieures et bordures horizontales sont appliquées et repoussent les éléments alentours</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>display: inline-block</h3>
-						<p>par exemple les champs de formulaire de type texte</p>
-						<p>exemple</p>
-						<p>À mi-chemin entre les display block et inline.</p>
-						<p>Les éléments se comportent comme des éléments inline, mais il est possible de définir une largeur et une hauteur spécifiques.</p>
-						<p>Les marges extérieures/intérieures, et les bordures repoussent bien les éléments environnants.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les autres valeurs de display</h3>
-						<p>documentation</p>
-						<p>exemple</p>
-						<p>Il existe d’autres valeurs pour la propriété display</p>
-						<ul>
-							<li>none : masque les éléments. Ils sont retirés de l’arbre d’accessibilité</li>
-							<li>list-item : les éléments se comportent comme des items de liste</li>
-							<li>flex : éléments flexibles (capacité à modifier leurs dimensions pour occuper l’espace disponible)</li>
-							<li>grid : grille css</li>
-							<li>etc.</li>
-						</ul>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h2>Les marges intérieures/extérieures et les bordures</h2>
-						<p class="alignCenter">margin, padding et border</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>propriété margin</h3>
-						<p>marges extérieures</p>
-						<p>documentation</p>
-						<p>exemple</p>
-						<p>Syntaxe</p>
-						<ul>
-							<li>margin: 10px; marge de 10 pixels pour tous les côtés</li>
-							<li>margin: 10px 20px; marges verticales | marges horizontales</li>
-							<li>margin: 10px 20px 5px; marge haute | marges horizontales | marge basse</li>
-							<li>margin: 10px 20px 5px 20px; haut | droite | bas | gauche</li>
-							<li>margin-top | margin-bottom | margin-left | margin-right</li>
-						</ul>
-						<p>fusion des marges : la marge haute d’un élément se fond parfois avec la marge basse de l’élément qui le précède. La marge restituée est alors égale à la plus grande des deux marges.</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>propriété padding</h3>
-						<p>marges intérieures</p>
-						<p>documentation</p>
-						<p>exemple</p>
-						<p>Syntaxe</p>
-						<ul>
-							<li>padding: 10px; marge de 10 pixels pour tous les côtés</li>
-							<li>padding: 10px 20px; marges verticales | marges horizontales</li>
-							<li>padding: 10px 20px 5px; marge haute | marges horizontales | marge basse</li>
-							<li>padding: 10px 20px 5px 20px; haut | droite | bas | gauche</li>
-							<li>padding-top | padding-bottom | padding-left | padding-right</li>
-						</ul>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>propriété border</h3>
-						<p>les bordures</p>
-						<p>documentation</p>
-						<p>exemple</p>
-						<p>Syntaxe</p>
-						<ul>
-							<li>border: solid; style</li>
-							<li>border: 2px dotted; largeur | style</li>
-							<li>border: dashed orangered; style | couleur</li>
-							<li>border: 5px dashed red; largeur | style | couleur</li>
-						</ul>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h2>La typographie</h2>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>propriété color</h3>
-						<p>Couleur du texte</p>
-						<p>documentation</p>
-						<p>exemple</p>
-						<p>color accepte plusieurs formats de couleur</p>
-						<ul>
-							<li>couleurs nommées (red, green, blue, orangered, etc.)</li>
-							<li>hexadécimales (#0000FF, #856D4D, etc.)</li>
-							<li>RGB, mélange rouge-vert-bleu (rgb(255,160,122))</li>
-							<li>RGBA, idem mais avec un paramètre de transparence (rgba(255, 0, 0, 1))</li>
-						</ul>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les propriétés pour les fontes</h3>
-						<p>exemple</p>
-						<p>font-size taille de la fonte (font-size: 12px;)</p>
-						<p>font-weight graisse du texte (font-weight: bold;)</p>
-						<p>font-family liste priorisée de polices ou de types de police à utiliser (font-family: sans-serif; font-family: Georgia, serif)</p>
-						<p>font-style italique/oblique</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les propriétés pour le texte</h3>
-						<p>exemple</p>
-						<p>text-align: alignement horizontal du texte (font-size: left | right | center | justify;) ne s’applique que sur des éléments de type inline ou inline-block</p>
-						<p>text-decoration ornementation du texte (text-decoration: wavy overline lime;)</p>
-						<p>text-indent ornementation du texte (text-indent: 30px;)</p>
-						<p>text-transform gestion des capitales/minuscules (text-transform: capitalize;)</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Les espacements</h3>
-						<p>exemple</p>
-						<p>line-height : hauteur de l’interligne</p>
-						<p>letter-spacing : réglage de l’interlettre</p>
-					</span>
+					<section>
+						<span class="r-fit-text">
+							<h2>La typographie</h2>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>propriété color</h3>
+							<p>Couleur du texte</p>
+							<p><a href="https://developer.mozilla.org/fr/docs/Web/CSS/color">documentation</a> | <a href="https://codepen.io/sardinecan/pen/KKexbpO">exemple</a></p>
+							<p>color accepte plusieurs formats de couleur</p>
+							<ul>
+								<li>couleurs nommées (red, green, blue, orangered, etc.)</li>
+								<li>hexadécimales (#0000FF, #856D4D, etc.)</li>
+								<li>RGB, mélange rouge-vert-bleu (rgb(255,160,122))</li>
+								<li>RGBA, idem mais avec un paramètre de transparence (rgba(255, 0, 0, 1))</li>
+							</ul>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les propriétés pour les fontes</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/BaVOvpM">exemple</a></p>
+							<p>font-size taille de la fonte (font-size: 12px;)</p>
+							<p>font-weight graisse du texte (font-weight: bold;)</p>
+							<p>font-family liste priorisée de polices ou de types de police à utiliser (font-family: sans-serif; font-family: Georgia, serif)</p>
+							<p>font-style italique/oblique</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les propriétés pour le texte</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/RwJYEye">exemple</a></p>
+							<p>text-align: alignement horizontal du texte (font-size: left | right | center | justify;) ne s’applique que sur des éléments de type inline ou inline-block</p>
+							<p>text-decoration ornementation du texte (text-decoration: wavy overline lime;)</p>
+							<p>text-indent ornementation du texte (text-indent: 30px;)</p>
+							<p>text-transform gestion des capitales/minuscules (text-transform: capitalize;)</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Les espacements</h3>
+							<p><a href="https://codepen.io/sardinecan/pen/ZERMVKW">exemple</a></p>
+							<p>line-height : hauteur de l’interligne</p>
+							<p>letter-spacing : réglage de l’interlettre</p>
+						</span>
+					</section>
 				</section>
 				<section>
 					<section>
