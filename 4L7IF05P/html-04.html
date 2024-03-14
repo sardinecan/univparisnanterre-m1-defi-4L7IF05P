@@ -27,103 +27,105 @@
 					</span>
 				</section>
 				<section>
-					<span class="r-fit-text">
-						<h2>Retour sur vos réalisations</h2>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Syntaxe — balises</h3>
-						<p>Balise ouvrante : &lt;p&gt; | balise fermante : &lt;/p&gt;</p>
-						<p>Principe 1 : toute balise ouverte doit être fermée !</p>
-						<pre>
-			<code>
-				<p><em>mon contenu</em></p>
-			</code>
-		</pre>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Syntaxe — balises</h3>
-						<p>Principe 2 : Les éléments peuvent s’imbriquer, mais pas se chevaucher !</p>
-						<pre>
-				<code>
-					&lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/i&gt;&lt;/p&gt;
-					&lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/p&gt;&lt;/i&gt;	
-				</code>
-			</pre>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Syntaxe — balises</h3>
-						<p>Principe 2 : Les éléments peuvent s’imbriquer, mais pas se chevaucher !</p>
-						<pre>
-			<code>
-				✅ &lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/i&gt;&lt;/p&gt;
-				❌ &lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/p&gt;&lt;/i&gt;	
-			</code>
-		</pre>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Syntaxe — attributs</h3>
-						<p>Un attribut est une paire nom-valeur associée à la balise ouvrante d’un élément.</p>
-						<pre>
-			<code>
-				<p id="monId">Lorem ipsum…</p>
-			</code>
-		</pre>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Syntaxe — attributs</h3>
-						<pre>
-				<code>
-					&lt;p id="monId"&gt;Lorem ipsum…&lt;/p&gt;
-					&lt;p id=monId&gt;Lorem ipsum…&lt;/p&gt;
-					&lt;pid=monId&gt;Lorem ipsum…&lt;/p&gt;
-					&lt;p&gt;Lorem ipsum…&lt;/p id=monId&gt;
-				</code>
-			</pre>
-						<p>La valeur id ne prend pas d’espace : ✅ id="monId" | ❌ id="mon Id"</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Syntaxe — attributs</h3>
-						<pre>
-			<code>
-				✅ &lt;p id="monId"&gt;Lorem ipsum…&lt;/p&gt;
-				❌ &lt;p id=monId&gt;Lorem ipsum…&lt;/p&gt;
-				❌ &lt;pid=monId&gt;Lorem ipsum…&lt;/p&gt;
-				❌ &lt;p&gt;Lorem ipsum…&lt;/p id=monId&gt;
-			</code>
-		</pre>
-						<p>La valeur id ne prend pas d’espace : ✅ id="monId" | ❌ id="mon Id"</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Confusion dans l’utilisation des balises</h3>
-						<p>La balise &lt;head&gt; contient les métadonnées et est placée avant le &lt;body&gt;</p>
-						<p>La balise &lt;header&gt; indique l’en-tête du document et est placée dans le &lt;body&gt;</p>
-						<p>La balise &lt;title&gt; précise le titre du document, dans la barre des onglets. Elle est placée dans l’élément &lt;head&gt;</p>
-						<p>Les balises &lt;h1&gt; à &lt;h6&gt; indiquent des niveaux de titre dans un document. Elles sont utilisées dans le &lt;body&gt; et certains sous-éléments de ce dernier (&lt;div&gt;, &lt;article&gt;, &lt;section&gt;, etc.).</p>
-					</span>
-				</section>
-				<section>
-					<span class="r-fit-text">
-						<h3>Structuration du contenu et balisage sémantique</h3>
-						<p>Le langage HTML permet de structurer du contenu pour publier sur le web.</p>
-						<p>Il contient un grand nombre de balises dites sémantiques c’est-à-dire qu’elles apportent une indication sur le type de données qu’elles contiennent.</p>
-						<p>
-							<strong>Utilisez-les !</strong>
-						</p>
-					</span>
+					<section>
+						<span class="r-fit-text">
+							<h2>Retour sur vos réalisations</h2>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Syntaxe — balises</h3>
+							<p>Balise ouvrante : &lt;p&gt; | balise fermante : &lt;/p&gt;</p>
+							<p>Principe 1 : toute balise ouverte doit être fermée !</p>
+<pre>
+<code>
+<p><em>mon contenu</em></p>
+</code>
+</pre>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Syntaxe — balises</h3>
+							<p>Principe 2 : Les éléments peuvent s’imbriquer, mais pas se chevaucher !</p>
+<pre>
+<code>
+&lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/p&gt;&lt;/i&gt;	
+</code>
+</pre>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Syntaxe — balises</h3>
+							<p>Principe 2 : Les éléments peuvent s’imbriquer, mais pas se chevaucher !</p>
+<pre>
+<code>
+✅ &lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/i&gt;&lt;/p&gt;
+❌ &lt;p&gt;Mon contenu avec du texte en &lt;i&gt;italique&lt;/p&gt;&lt;/i&gt;	
+</code>
+</pre>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Syntaxe — attributs</h3>
+							<p>Un attribut est une paire nom-valeur associée à la balise ouvrante d’un élément.</p>
+<pre>
+<code>
+<p id="monId">Lorem ipsum…</p>
+</code>
+</pre>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Syntaxe — attributs</h3>
+<pre>
+<code>
+&lt;p id="monId"&gt;Lorem ipsum…&lt;/p&gt;
+&lt;p id=monId&gt;Lorem ipsum…&lt;/p&gt;
+&lt;pid=monId&gt;Lorem ipsum…&lt;/p&gt;
+&lt;p&gt;Lorem ipsum…&lt;/p id=monId&gt;
+</code>
+</pre>
+							<p>La valeur id ne prend pas d’espace : ✅ id="monId" | ❌ id="mon Id"</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Syntaxe — attributs</h3>
+<pre>
+<code>
+✅ &lt;p id="monId"&gt;Lorem ipsum…&lt;/p&gt;
+❌ &lt;p id=monId&gt;Lorem ipsum…&lt;/p&gt;
+❌ &lt;pid=monId&gt;Lorem ipsum…&lt;/p&gt;
+❌ &lt;p&gt;Lorem ipsum…&lt;/p id=monId&gt;
+</code>
+</pre>
+							<p>La valeur id ne prend pas d’espace : ✅ id="monId" | ❌ id="mon Id"</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Confusion dans l’utilisation des balises</h3>
+							<p>La balise &lt;head&gt; contient les métadonnées et est placée avant le &lt;body&gt;</p>
+							<p>La balise &lt;header&gt; indique l’en-tête du document et est placée dans le &lt;body&gt;</p>
+							<p>La balise &lt;title&gt; précise le titre du document, dans la barre des onglets. Elle est placée dans l’élément &lt;head&gt;</p>
+							<p>Les balises &lt;h1&gt; à &lt;h6&gt; indiquent des niveaux de titre dans un document. Elles sont utilisées dans le &lt;body&gt; et certains sous-éléments de ce dernier (&lt;div&gt;, &lt;article&gt;, &lt;section&gt;, etc.).</p>
+						</span>
+					</section>
+					<section>
+						<span class="r-fit-text">
+							<h3>Structuration du contenu et balisage sémantique</h3>
+							<p>Le langage HTML permet de structurer du contenu pour publier sur le web.</p>
+							<p>Il contient un grand nombre de balises dites sémantiques c’est-à-dire qu’elles apportent une indication sur le type de données qu’elles contiennent.</p>
+							<p>
+								<strong>Utilisez-les !</strong>
+							</p>
+						</span>
+					</section>
 				</section>
 				<section>
 					<span class="r-fit-text">
@@ -154,8 +156,8 @@
 					<section>
 						<span class="r-fit-text">
 							<h3>Un petit exercice de balisage…</h3>
-							<pre>
-								<code>
+<pre>
+<code>
 &lt;html&gt;
 	&lt;head/&gt;
 	&lt;body&gt;
@@ -171,7 +173,8 @@
 		</p>
 	&lt;/body&gt;
 &lt;/html&gt;
-</code></pre>
+</code>
+</pre>
 						</span>
 					</section>
 					<section>
@@ -187,7 +190,8 @@
 					<section>
 						<span class="r-fit-text">
 							<h3>Un petit exercice de balisage…</h3>
-							<pre><code>
+<pre>
+<code>
 &lt;notice&gt;
 	<personne>Alan Turing</personne>
 	<date>
@@ -204,7 +208,8 @@
 		l'informatique.
 	</biographie>
 &lt;/notice&gt;
-</code></pre>
+</code>
+</pre>
 						</span>
 					</section>
 				</section>
