@@ -62,21 +62,22 @@
             <h3>Retour sur la notion d’arborescence</h3>
             <pre>
               <code>
-                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-                <personnes>
-                 <personne>
-                   <identité>
-                     <prénom>Victor</prénom>
-                     <nom>Hugo</nom>
-                   </identité>
-                   <!-- à l'avenue du même nom -->
-                   <adresse>avenue Victor-Hugo à Paris</adresse>
-                   <existence>
-                     <date type="naissance">26 février 1802</date>
-                     <date type="décès">22 mai 1885</date>
-                   </existence>
-                 </personne>
-                </personnes>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+<personnes>
+ <personne>
+   <identité>
+     <prénom>Victor</prénom>
+     <nom>Hugo</nom>
+   </identité>
+   <!-- à l'avenue du même nom -->
+   <adresse>avenue Victor-Hugo à Paris</adresse>
+   <existence>
+     <date type="naissance">26 février 1802</date>
+     <date type="décès">22 mai 1885</date>
+   </existence>
+ </personne>
+</personnes>
+
               </code>
             </pre>
             <p>
@@ -204,24 +205,25 @@
             <h4>Exemple XPath</h4>
             <pre>
               <code>
-                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-                &lt;?xml-stylesheet type="text/xsl" href="xslt.xsl"?&gt;
-                <personnes>
-                  <personne>
-                    <identité>
-                      <prénom>Victor</prénom>
-                      <nom>Hugo</nom>
-                    </identité>
-                    <!-- à l'avenue du même nom-->
-                    <adresse>avenue Victor-Hugo à Paris</adresse>
-                    <existence>
-                      <date type="naissance" norm="1802-02-26">26 février 1802</date>
-                      <lieu type="naissance">Besançon</lieu>
-                      <date type="décès" norm="1885-05-22">22 mai 1885</date>
-                      <lieu type="décès">Paris</lieu>
-                    </existence>
-                  </personne>
-                </personnes>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="xslt.xsl"?&gt;
+<personnes>
+  <personne>
+    <identité>
+      <prénom>Victor</prénom>
+      <nom>Hugo</nom>
+    </identité>
+    <!-- à l'avenue du même nom-->
+    <adresse>avenue Victor-Hugo à Paris</adresse>
+    <existence>
+      <date type="naissance" norm="1802-02-26">26 février 1802</date>
+      <lieu type="naissance">Besançon</lieu>
+      <date type="décès" norm="1885-05-22">22 mai 1885</date>
+      <lieu type="décès">Paris</lieu>
+    </existence>
+  </personne>
+</personnes>
+
               </code>
             </pre>
           </span>
@@ -252,11 +254,13 @@
         </section>
         <section>
           <span class="r-fit-text">
-            / : nœud racine ou document, retourne tout le document
-            /node() : tous les nœuds enfants du nœud racine
-            /personnes : l’élément personnes, enfant du nœud racine
-            /personnes/personne : l’élément personne, fils de personnes
-            /personnes/personne//date/@type : les attributs @type des éléments date
+            <ul>
+              <li>/ : nœud racine ou document, retourne tout le document</li>
+              <li>/node() : tous les nœuds enfants du nœud racine</li>
+              <li>/personnes : l’élément personnes, enfant du nœud racine</li>
+              <li>/personnes/personne : l’élément personne, fils de personnes</li>
+              <li>/personnes/personne//date/@type : les attributs @type des éléments date</li>
+            </ul>
           </span>
         </section>
       </section>
@@ -275,24 +279,25 @@
             <h3>Exemples Prédicat</h3>
             <pre>
               <code>
-                &lt;?xml version="1.0" encoding="UTF-8"?&gt;
-                &lt;?xml-stylesheet type="text/xsl" href="xslt.xsl"?&gt;
-                <personnes>
-                  <personne>
-                    <identité>
-                      <prénom>Victor</prénom>
-                      <nom>Hugo</nom>
-                    </identité>
-                    <!-- à l'avenue du même nom-->
-                    <adresse>avenue Victor-Hugo à Paris</adresse>
-                    <existence>
-                      <date type="naissance" norm="1802-02-26">26 février 1802</date>
-                      <lieu type="naissance">Besançon</lieu>
-                      <date type="décès" norm="1885-05-22">22 mai 1885</date>
-                      <lieu type="décès">Paris</lieu>
-                    </existence>
-                  </personne>
-                </personnes>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet type="text/xsl" href="xslt.xsl"?&gt;
+<personnes>
+  <personne>
+    <identité>
+      <prénom>Victor</prénom>
+      <nom>Hugo</nom>
+    </identité>
+    <!-- à l'avenue du même nom-->
+    <adresse>avenue Victor-Hugo à Paris</adresse>
+    <existence>
+      <date type="naissance" norm="1802-02-26">26 février 1802</date>
+      <lieu type="naissance">Besançon</lieu>
+      <date type="décès" norm="1885-05-22">22 mai 1885</date>
+      <lieu type="décès">Paris</lieu>
+    </existence>
+  </personne>
+</personnes>
+
               </code>
             </pre>
           </span>
@@ -332,9 +337,9 @@
             <h4>Opérateurs de comparaison</h4>
             <pre>
               <code>
-                //p[position() > 1]
-                //chapitre[head != 'Introduction']
-                //chapitre/[@type = 'Introduction' or @type = 'conclusion']
+//p[position() > 1]
+//chapitre[head != 'Introduction']
+//chapitre/[@type = 'Introduction' or @type = 'conclusion']
               </code>
             </pre>
               <ul>
@@ -344,8 +349,8 @@
                 <li>différent « != »</li>
                 <li>et « and »</li>
                 <li>or « or »</li>
-                <li>*Dans un document XSLT on utilisera &lt; et &gt;</li>
               </ul>
+              <p>*Dans un document XSLT on utilisera &amp;lt; et &amp;gt;</p>
           </span>
         </section>
       </section>
@@ -361,14 +366,15 @@
             <h4>Fonctions sur les nombres</h4>
             <pre>
               <code>
-                <!-- <node>string</node> -->
-                number(node) => NaN
-                <!-- <node>2</node> -->
-                /node/number() => 2.0
-                <!-- <node>3.14</node> -->
-                ceiling(node) => 4.0
-                <!-- <node>3.14</node> -->
-                round(node) => 3.0
+<!-- <node>string</node> -->
+number(node) => NaN
+<!-- <node>2</node> -->
+/node/number() => 2.0
+<!-- <node>3.14</node> -->
+ceiling(node) => 4.0
+<!-- <node>3.14</node> -->
+round(node) => 3.0
+
               </code>
             </pre>
             <ul>
@@ -385,12 +391,13 @@
             <h4>Fonctions sur les booléens</h4>
             <pre>
               <code>
-                <!-- <node>string</node> -->
-                boolean(node) => true
-                <!-- <node>string</node> -->
-                boolean(node/sub)=> false
-                <!-- <node>string</node> -->
-                not(boolean(node/sub))=> true
+<!-- <node>string</node> -->
+boolean(node) => true
+<!-- <node>string</node> -->
+boolean(node/sub)=> false
+<!-- <node>string</node> -->
+not(boolean(node/sub))=> true
+
               </code>
             </pre>
             <ul>
@@ -407,16 +414,17 @@
             <h4>Fonctions sur les nœuds</h4>
             <pre>
               <code>
-                <!-- <root><node/><node/></root> -->
-                //node/position() => (1, 2)
-                <!-- <root><node/><node/></root> -->
-                count(//node) => 2
-                <!--
-                  <ns:root xmlns:ns="http://ns">
-                  <ns:node/>
-                  </ns:root>-->
-                name(/ns:root) => ns:root (préfixe + nom)
-                local-name(/ns:root) => root
+<!-- <root><node/><node/></root> -->
+//node/position() => (1, 2)
+<!-- <root><node/><node/></root> -->
+count(//node) => 2
+<!--
+<ns:root xmlns:ns="http://ns">
+<ns:node/>
+</ns:root>-->
+name(/ns:root) => ns:root (préfixe + nom)
+local-name(/ns:root) => root
+
               </code>
             </pre>
             <ul>
@@ -433,13 +441,14 @@
             <h4>Fonctions sur les chaînes de caractères</h4>
             <pre>
               <code>
-                <!-- <root><node>10</node></root> -->
-                /root/node/string() => '10'
-                <!-- <root><node>10</node></root> -->
-                /root/node/string-length() => 2
-                concat('Hello', ' World') => 'Hello World'
-                <!-- <node att="Hello">World</node> -->
-                /node/concat(@att, .) => 'HelloWorld'
+<!-- <root><node>10</node></root> -->
+/root/node/string() => '10'
+<!-- <root><node>10</node></root> -->
+/root/node/string-length() => 2
+concat('Hello', ' World') => 'Hello World'
+<!-- <node att="Hello">World</node> -->
+/node/concat(@att, .) => 'HelloWorld'
+
               </code>
             </pre>
             <ul>
@@ -457,13 +466,14 @@
             <h4>Fonctions sur les chaînes de caractères</h4>
             <pre>
               <code>
-                <!-- <root><node>Hello</node></root> -->
-                /root/node/contains(., 'Hello') => true
-                <!-- <root>Hello World</root> -->
-                substring-before(/root, ' World') => 'Hello'
-                <!-- <root>Hello World</root> -->
-                substring(/root, 7, 5) => World
-                substring(/root, 7) => World
+<!-- <root><node>Hello</node></root> -->
+/root/node/contains(., 'Hello') => true
+<!-- <root>Hello World</root> -->
+substring-before(/root, ' World') => 'Hello'
+<!-- <root>Hello World</root> -->
+substring(/root, 7, 5) => World
+substring(/root, 7) => World
+
               </code>
             </pre>
             <ul>
