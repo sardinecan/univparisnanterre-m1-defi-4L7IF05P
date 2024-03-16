@@ -51,7 +51,7 @@ body.index {
 }
 
 header {
-  padding: 1rem;
+  padding: 0 1rem;
   background: orangered;
   display: flex;
   flex-wrap: wrap;
@@ -68,4 +68,15 @@ header {
 
 figcaption {
   font-size: 25px;
+}
+
+footer {
+  padding: 0 1rem;
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  color: orangered;
+  font-weight: 700;
 }
