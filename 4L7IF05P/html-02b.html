@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <title>reveal.js</title>
+        <link rel="stylesheet" href="../dist/reset.css" />
+        <link rel="stylesheet" href="../dist/reveal.css" />
+        <link rel="stylesheet" href="../dist/theme/blood.css" />
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+        <link rel="stylesheet" href="../css/local.css" />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <span class="r-fit-text">
+                        <h1>
+                            Communiquer, collaborer, échanger à l'ère numérique
+                        </h1>
+                        <p class="alignCenter">
+                            Introduction aux langages HTML et CSS
+                        </p>
+                    </span>
+                </section>
+                <section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h2>Les attributs</h2>
+                        </span>
+                    </section>
+                    <section>
+                        <h2>Les attributs</h2>
+                        <p>
+                            Un attribut est une paire nom-valeur associée à la
+                            balise ouvrante d’un élément. Le nom de l’attribut
+                            est séparé de la valeur par un signe « = ». La
+                            valeur est placée entre guillemets.
+                        </p>
+                        <code>
+                            <pre>
+&lt;balise attribut="valeur"&gt;&lt;/balise&gt;
+</pre
+                            >
+                        </code>
+                    </section>
+                    <section>
+                        <h2>Les attributs</h2>
+                        <p>
+                            Un <emph>attribut</emph> est une information
+                            supplémentaire que l’on ajoute sur un élément HTML
+                            pour ajuster son comportement.
+                        </p>
+                        <p>
+                            Chaque élément ne peut pas avoir plus d’un attribut
+                            avec un nom donné.
+                        </p>
+                        <p>
+                            Il existe des <emph>attributs globaux</emph> et
+                            d’autres qui sont <emph>spécifiques</emph> à un ou
+                            plusieurs éléments.
+                        </p>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Les attributs globaux</h3>
+                            <p>
+                                Attributs utilisables avec tous les éléments
+                                HTML.
+                            </p>
+                            <p>
+                                id : un identifiant unique pour l'ensemble du
+                                document. Cet attribut permet d’identifier un
+                                élément lorsqu'on crée un lien, quand on
+                                souhaite le manipuler avec un script ou pour le
+                                mettre en forme avec CSS. Un identifiant
+                                commence toujours par une lettre.
+                            </p>
+                            <p>
+                                class : indique une liste de classes associées à
+                                l'élément courant. Les classes permettent de
+                                manipuler les éléments via CSS ou JavaScript.
+                            </p>
+                            <p>
+                                contenteditable : indique si l’élément courant
+                                peut être édité par l'utilisateur ou non.
+                            </p>
+                            <p>
+                                dir : indique la direction du texte contenu dans
+                                l'élément.
+                            </p>
+                        </span>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Liens et navigation</h2>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Les liens &lt;a&gt;</h3>
+                            <p>
+                                La balise &lt;a&gt; signifie
+                                <emph>anchor</emph> (ancre). Elle permet de
+                                créer des liens hypertextes. C’est la balise qui
+                                rend le web possible.
+                            </p>
+                            <p>
+                                &lt;a&gt; requiert l’attribut
+                                <code>href</code> (hypertext reference).
+                            </p>
+                            <p>
+                                <a
+                                    href="https://codepen.io/sardinecan/pen/JjvpbPV"
+                                    target="_blank"
+                                    >exemple</a
+                                >
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Les liens &lt;a&gt;</h3>
+                            <p>Il est possible de créer des liens</p>
+                            <ul>
+                                <li>
+                                    externes (pages web, images, documents,
+                                    etc.)
+                                </li>
+                                <li>internes (href="#monID")</li>
+                                <li>vers des adresses mail (mailto:)</li>
+                                <li>vers des numéros de téléphone (tel:)</li>
+                            </ul>
+                            <p>Il est possible d’ouvrir un lien</p>
+                            <ul>
+                                <li>dans la fenêtre active du navigateur</li>
+                                <li>
+                                    dans un nouvel onglet (attribut
+                                    target="_blank")
+                                </li>
+                            </ul>
+                            <p>
+                                <a
+                                    href="https://codepen.io/sardinecan/pen/LYmQxZW"
+                                    target="_blank"
+                                    >exemple</a
+                                >
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <h3>Les URLs | Uniform Resource Locator</h3>
+                        <blockquote>
+                            <p>
+                                « Une URL est simplement l'adresse d'une
+                                ressource donnée, unique sur le Web »
+                            </p>
+                            <cite
+                                >MDN,
+                                <a
+                                    href="https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL"
+                                    target="_blank"
+                                    >Comprendre les URL et leur structure</a
+                                ></cite
+                            >
+                        </blockquote>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Les URLs | Uniform Resource Locator</h3>
+                            <code>
+                                <pre>
+https://fr.wikipedia.org/wiki/Uniform_Resource_Locator</pre
+                                >
+                            </code>
+                            <ul>
+                                <li>https : le protocole</li>
+                                <li>fr.wikipedia.org : le nom de domaine</li>
+                                <li>
+                                    wiki/Uniform_Resource_Locator : le chemin
+                                    vers la ressource
+                                </li>
+                            </ul>
+                            <p>
+                                On peut aussi trouver un port, des paramètres ou
+                                encore une ancre…
+                            </p>
+                            <p>L’URL ci-dessus est dite absolue (complète)</p>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>URLs absolues et relatives</h3>
+                            <p>
+                                Une URL fonctionnelle dépend du contexte dans
+                                lequel elle est utilisée.
+                            </p>
+                            <p>
+                                Il n’y a pas de contexte dans la barre d’adresse
+                                d’un navigateur, il faut donc fournir une URL
+                                absolue – même si on peut se passer aujourd’hui
+                                du protocole.
+                            </p>
+                            <p>
+                                Pour un lien au sein d’une page web c’est – un
+                                peu – différent car le navigateur connaît déjà
+                                l’emplacement de la page courante :
+                            </p>
+                            <p>
+                                URL absolue – en prenant soin d’indiquer le
+                                protocole – plutôt pour les liens dits
+                                extérieurs ;
+                            </p>
+                            <p>
+                                URL relative plutôt pour les liens entre les
+                                ressources d’une même arborescence, ou sur un
+                                même serveur. Le chemin vers la ressource est
+                                dit relatif soit :
+                            </p>
+                            <ul>
+                                <li>au regard de la page courante</li>
+                                <li>au regard de la racine du du serveur</li>
+                            </ul>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>URLs absolues et relatives</h3>
+                            <ul>
+                                <li>le chemin « / » indique la racine ;</li>
+                                <li>
+                                    un chemin commençant par « / » indique qu’il
+                                    débute à la racine, p. ex. /monDossier ;
+                                </li>
+                                <li>
+                                    on navigue dans l’arborescence avec « / » p.
+                                    ex. « monSite/html/index.html » ;
+                                </li>
+                                <li>
+                                    « ./ » le point indique le dossier courant,
+                                    il peut être omis ;
+                                </li>
+                                <li>
+                                    « ../ » signifie que l’on remonte d’un
+                                    niveau.
+                                </li>
+                            </ul>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>La navigation | &lt;nav&gt;</h3>
+                            <p>
+                                Les liens &lt;a&gt; permettent de relier des
+                                pages entre elles. Pour autant, lorsque l’on
+                                élabore un site web, il est parfois nécessaire
+                                d’isoler un groupe de liens pour élaborer la
+                                navigation du site. C’est le rôle de la balise
+                                &lt;nav&gt;.
+                            </p>
+                            <p>
+                                <a
+                                    href="https://codepen.io/sardinecan/pen/JjvLpjm"
+                                    target="_blank"
+                                    >Exemple</a
+                                >
+                            </p>
+                        </span>
+                    </section>
+                </section>
+                <section>
+                    <span class="r-fit-text">
+                        <h2>TP</h2>
+                        <ul>
+                            <li>
+                                Télécharger le dossier « tp ». Il contient
+                                l’ébauche d’un site web formé de 4 pages HTML
+                                réparties dans différents dossiers (index.html,
+                                apropos.html, transcriptions.html et
+                                fevrier.html) ;
+                            </li>
+                            <li>
+                                Ouvrir ces 4 fichiers dans un éditeur de texte ;
+                            </li>
+                            <li>
+                                Pour chacun de ces fichiers, créer une
+                                navigation renvoyant vers les pages index.html,
+                                apropos.html et transcriptions.html (urls et
+                                chemins relatifs);
+                            </li>
+                            <li>
+                                Au sein de la page transcriptions.html, ajouter
+                                un lien vers le document fevrier.html (urls et
+                                chemins relatifs) ;
+                            </li>
+                            <li>
+                                Dans la page fevrier.html, créer un système de
+                                liens pour accéder directement à chaque entrée
+                                du journal ;
+                            </li>
+                            <li>
+                                Bonus : créer une page HTML pour le mois de
+                                janvier suivant le même modèle. Le contenu se
+                                trouve dans le fichier janvier.txt.
+                            </li>
+                        </ul>
+                    </span>
+                </section>
+            </div>
+        </div>
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            });
+        </script>
+    </body>
+</html>
