@@ -1,236 +1,455 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <title>reveal.js</title>
-    <link rel="stylesheet" href="../dist/reset.css" />
-    <link rel="stylesheet" href="../dist/reveal.css" />
-    <link rel="stylesheet" href="../dist/theme/blood.css" />
-    <!-- Theme used for syntax highlighted code -->
-    <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
-    <link rel="stylesheet" href="../css/local.css" />
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <span class="r-fit-text">
-            <h1>
-              Communiquer, collaborer, échanger à l'ère numérique
-            </h1>
-            <p class="alignCenter">Introduction aux langages HTML et CSS</p>
-          </span>
-        </section>
-        <section>
-          <section>
-            <span class="r-fit-text">
-              <h2>Les attributs</h2>
-            </span>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h2>Les attributs</h2>
-              <p>Un attribut est une paire nom-valeur associée à la balise ouvrante d’un élément. Le nom de l’attribut est séparé de la valeur par un signe « = ». La valeur est placée entre guillemets.</p>
-<pre>
+<head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <title>reveal.js</title>
+        <link rel="stylesheet" href="../dist/reset.css" />
+        <link rel="stylesheet" href="../dist/reveal.css" />
+        <link rel="stylesheet" href="../dist/theme/blood.css" />
+        <!-- Theme used for syntax highlighted code -->
+        <link rel="stylesheet" href="../plugin/highlight/monokai.css" />
+        <link rel="stylesheet" href="../css/local.css" />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <span class="r-fit-text">
+                        <h1>
+                            Communiquer, collaborer, échanger à l'ère numérique
+                        </h1>
+                        <p class="alignCenter">
+                            Introduction aux langages HTML et CSS
+                        </p>
+                    </span>
+                </section>
+                <section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h2>Les attributs</h2>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h2>Les attributs</h2>
+                            <p>
+                                Un attribut est une paire nom-valeur associée à
+                                la balise ouvrante d’un élément. Le nom de
+                                l’attribut est séparé de la valeur par un signe
+                                « = ». La valeur est placée entre guillemets.
+                            </p>
+                            <pre>
 <code>
 &lt;balise attribut="valeur"&gt;&lt;/balise&gt;
 </code>
 </pre>
-            </span>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h2>Les attributs</h2>
-              <p>Un <emph>attribut</emph> est une information supplémentaire que l’on ajoute sur un élément HTML pour ajuster son comportement.</p>
-              <p>Chaque élément ne peut pas avoir plus d’un attribut avec un nom donné.</p>
-              <p>Il existe des <emph>attributs globaux</emph> et d’autres qui sont <emph>spécifiques</emph> à un ou plusieurs éléments.</p>
-            </span>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h3>Les attributs globaux</h3>
-              <p>Attributs utilisables avec tous les éléments HTML.</p>
-              <ul>
-                <li><emph>id</emph> : un identifiant unique pour l'ensemble du document. Cet attribut permet d’identifier un élément lorsqu'on crée un lien, quand on souhaite le manipuler avec un script ou pour le mettre en forme avec CSS. Un identifiant commence toujours par une lettre.</li>
-                <li><emph>class</emph> : indique une liste de classes associées à l'élément courant. Les classes permettent de manipuler les éléments via CSS ou JavaScript.</li>
-                <li><emph>contenteditable</emph> : indique si l’élément courant peut être édité par l'utilisateur ou non.</li>
-                <li><emph>dir</emph> : indique la direction du texte contenu dans l'élément.</li>
-              </ul>
-            </span>
-          </section>
-        </section>
-        <section>
-          <section>
-            <h2>Liens et navigation</h2>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h3>Les liens &lt;a&gt;</h3>
-              <p>La balise &lt;a&gt; signifie <emph>anchor</emph> (ancre). Elle permet de créer des liens hypertextes. C’est la balise qui rend le web possible.</p>
-              <p>&lt;a&gt; requiert l’attribut <emph><code>href</code></emph> (hypertext reference), dans lequel on indique un chemin, ou une URL.</p>
-              <code><pre>&lt;a href="https://www.parisnanterre.fr/"&gt;université Paris Nanterre&lt;/a&gt;</pre></code>
-              <p>Il est possible de créer des liens <emph>externes</emph> (pages web, images, documents, etc.) ; <emph>internes</emph> (href="#monID") ; vers des <emph>adresses mail</emph> (mailto:) ; vers des <emph>numéros de téléphone</emph> (tel:)</p>
-              <p><a href="https://codepen.io/sardinecan/pen/LYmQxZW" target="_blank">exemples</a></p>
-            </span>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h3>URL et Chemins absolus / relatifs</h3>
-              <p>URL : <emph>Uniform Resource Locator</emph>, <q>Une URL est simplement l'adresse d'une ressource donnée, unique sur le Web</q> <cite>MDN, <a href="https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL" target="_blank">Comprendre les URL et leur structure</a></cite></p>
-              <p>Lorsque l'on réalise un site web, et plus particulièrement lorsque l'on met en place des liens ou une navigation, il est important de comprendre la distinction entre <emph>chemins absolus</emph> et <emph>chemins relatifs</emph>.</p>
-            </span>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h3>Chemins absolus</h3>
-              <p>Un <emph>chemin absolu</emph> correspond à l’URL complète, partant du protocole, jusqu’au chemin précis de la ressource.</p>
-<pre>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h2>Les attributs</h2>
+                            <p>
+                                Un <emph>attribut</emph> est une information
+                                supplémentaire que l’on ajoute sur un élément
+                                HTML pour ajuster son comportement.
+                            </p>
+                            <p>
+                                Chaque élément ne peut pas avoir plus d’un
+                                attribut avec un nom donné.
+                            </p>
+                            <p>
+                                Il existe des <emph>attributs globaux</emph> et
+                                d’autres qui sont <emph>spécifiques</emph> à un
+                                ou plusieurs éléments.
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Les attributs globaux</h3>
+                            <p>
+                                Attributs utilisables avec tous les éléments
+                                HTML.
+                            </p>
+                            <ul>
+                                <li>
+                                    <emph>id</emph> : un identifiant unique pour
+                                    l'ensemble du document. Cet attribut permet
+                                    d’identifier un élément lorsqu'on crée un
+                                    lien, quand on souhaite le manipuler avec un
+                                    script ou pour le mettre en forme avec CSS.
+                                    Un identifiant commence toujours par une
+                                    lettre.
+                                </li>
+                                <li>
+                                    <emph>class</emph> : indique une liste de
+                                    classes associées à l'élément courant. Les
+                                    classes permettent de manipuler les éléments
+                                    via CSS ou JavaScript.
+                                </li>
+                                <li>
+                                    <emph>contenteditable</emph> : indique si
+                                    l’élément courant peut être édité par
+                                    l'utilisateur ou non.
+                                </li>
+                                <li>
+                                    <emph>dir</emph> : indique la direction du
+                                    texte contenu dans l'élément.
+                                </li>
+                            </ul>
+                        </span>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h2>Liens et navigation</h2>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Les liens &lt;a&gt;</h3>
+                            <p>
+                                La balise &lt;a&gt; signifie
+                                <emph>anchor</emph> (ancre). Elle permet de
+                                créer des liens hypertextes. C’est la balise qui
+                                rend le web possible.
+                            </p>
+                            <p>
+                                &lt;a&gt; requiert l’attribut
+                                <emph><code>href</code></emph> (hypertext
+                                reference), dans lequel on indique un chemin, ou
+                                une URL.
+                            </p>
+                            <code>
+                                <pre>
+&lt;a href="https://www.parisnanterre.fr/"&gt;université Paris Nanterre&lt;/a&gt;</pre
+                                >
+                            </code>
+                            <p>
+                                Il est possible de créer des liens
+                                <emph>externes</emph> (pages web, images,
+                                documents, etc.) ;
+                                <emph>internes</emph> (href="#monID") ; vers des
+                                <emph>adresses mail</emph> (mailto:) ; vers des
+                                <emph>numéros de téléphone</emph> (tel:)
+                            </p>
+                            <p>
+                                <a
+                                    href="https://codepen.io/sardinecan/pen/LYmQxZW"
+                                    target="_blank"
+                                    >exemples</a
+                                >
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>URL et Chemins absolus / relatifs</h3>
+                            <p>
+                                URL : <emph>Uniform Resource Locator</emph>,
+                                <q
+                                    >Une URL est simplement l'adresse d'une
+                                    ressource donnée, unique sur le Web</q
+                                >
+                                <cite
+                                    >MDN,
+                                    <a
+                                        href="https://developer.mozilla.org/fr/docs/Learn/Common_questions/What_is_a_URL"
+                                        target="_blank"
+                                        >Comprendre les URL et leur structure</a
+                                    ></cite
+                                >
+                            </p>
+                            <p>
+                                Lorsque l'on réalise un site web, et plus
+                                particulièrement lorsque l'on met en place des
+                                liens ou une navigation, il est important de
+                                comprendre la distinction entre
+                                <emph>chemins absolus</emph> et
+                                <emph>chemins relatifs</emph>.
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Chemins absolus</h3>
+                            <p>
+                                Un <emph>chemin absolu</emph> correspond à l’URL
+                                complète, partant du protocole, jusqu’au chemin
+                                précis de la ressource.
+                            </p>
+                            <pre>
 <code>
 https://fr.wikipedia.org/wiki/Uniform_Resource_Locator
 </code>
 </pre>
-              <ul>
-                <li>le <emph>protocole</emph> : <code>https</code></li>
-                <li>le <emph>nom de domaine</emph> : <code>fr.wikipedia.org</code></li>
-                <li>le <emph>chemin</emph> vers la ressource : <code>wiki/Uniform_Resource_Locator</code></li>
-              </ul>
-              <p>On peut aussi trouver un <emph>port</emph>, des <emph>paramètres</emph> ou encore une <emph>ancre</emph>…</p>
-            </span>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h3>Chemins relatifs</h3>
-              <p>Un <emph>chemin relatif</emph> fournit un chemin d'accès à partir de la position actuelle de la page ou du fichier. Il est utilisé pour relier des ressources au sein d'un même site, sans avoir besoin d'indiquer l’URL complète.</p>
-<pre>
+                            <ul>
+                                <li>
+                                    le <emph>protocole</emph> :
+                                    <code>https</code>
+                                </li>
+                                <li>
+                                    le <emph>nom de domaine</emph> :
+                                    <code>fr.wikipedia.org</code>
+                                </li>
+                                <li>
+                                    le <emph>chemin</emph> vers la ressource :
+                                    <code>wiki/Uniform_Resource_Locator</code>
+                                </li>
+                            </ul>
+                            <p>
+                                On peut aussi trouver un <emph>port</emph>, des
+                                <emph>paramètres</emph> ou encore une
+                                <emph>ancre</emph>…
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Chemins relatifs</h3>
+                            <p>
+                                Un <emph>chemin relatif</emph> fournit un chemin
+                                d'accès à partir de la position actuelle de la
+                                page ou du fichier. Il est utilisé pour relier
+                                des ressources au sein d'un même site, sans
+                                avoir besoin d'indiquer l’URL complète.
+                            </p>
+                            <pre>
 <code>
 images/photo.jpg
 </code>
 </pre>
-              <p>Si l'on se trouve sur la page <code>https://www.exemple.com/articles/index.html</code>, le lien relatif <code>../images/photo.jpg</code> signifie "dans le dossier parent (<code>../</code>) ; chercher le répertoire images (<code>images/</code>) ; puis le fichier <code>photo.jpg</code>".</p>
-            </span>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h3>Quand les utiliser</h3>
-              <ul>
-                <li>Les <emph>chemins absolus</emph> sont souvent utilisés pour des liens externes, car ils garantissent que le lien fonctionne partout.</li>
-                <li>Les <emph>chemins relatifs</emph>, en revanche, sont très pratiques pour lier des ressources à l'intérieur d'un même site. Ils simplifient la gestion du contenu et rendent les migrations de site plus faciles. Par exemple, si le nom de domaine change, les liens internes continueront de fonctionner sans qu'il soit nécessaire de les modifier.</li>
-              </ul>
-              <p>À noter que ces chemins d'accès tirent leur origine des systèmes de fichiers hiérarchiques, systèmes popularisés par UNIX.</p>
-            </span>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h3>Syntaxe</h3>
-              <p>Un chemin absolu part toujours de la <emph>racine</emph> ou du <emph>nom de domaine</emph> :</p>
-              <ul>
-                <li>
-                  racine : <q><emph><code>/</code></emph></q> (linux/macos) ou <q><emph><code>C:</code></emph>, <emph><code>D:</code></emph>, etc.</q> (Windows)<br/><code>/home/user/documents/file.txt</code> <br/><code>C:\Users\John\Documents\file.txt</code>
-                </li>
-                <li>
-                  protocole et nom de domaine (pour le web) : <q><emph><code>http://www.mon-nom-de-domaine.fr</code></emph></q> (ou <code>https://</code>) <br/><code>https://www.example.com/images/photo.jpg</code>
-                </li>
-              </ul>
-              <p>Un chemin relatif part du répertoire courant. Il est alors possible de descendre ou de remonter dans l'arborescence.</p>
-              <ul>
-                <li>Utilisation de <emph><code>.</code></emph> pour indiquer le dossier actuel (optionnel).</li>
-                <li>Utilisation de <emph><code>..</code></emph> pour remonter d'un niveau.</li>
-              </ul>
-              <p>Chaque <emph>étape</emph> est ensuite délimitée par <q><emph><code>/</code></emph></q></p>
-            </span>
-          </section>
-          <section>
-            <p>Quel est le chemin absolu vers le fichier about.html &nbsp;?</p>
-            <img src="../assets/img/path.png"/>
-          </section>
-          <section>
-            <p>Quel est le chemin absolu vers le fichier about.html &nbsp;?</p>
-            <img src="../assets/img/pathAbsolute.png"/>
-            <p><code>/home/username/Documents/about.html</code></p>
-          </section>
-          <section>
-            <p>Depuis <code>about.html</code>, quel est le chemin relatif vers <code>index.html</code>&nbsp;?</p>
-            <img src="../assets/img/path.png"/>
-          </section>
-          <section>
-            <p>Depuis <code>about.html</code> quel est le chemin relatif vers <code>index.html</code>&nbsp;?</p>
-            <img src="../assets/img/pathRelative1.png"/>
-            <p><code>./index.html</code></p>
-          </section>
-          <section>
-            <p>Depuis <code>index.html</code>, quel est le chemin relatif vers le fichier <code>image.jpg</code>&nbsp;?</p>
-            <img src="../assets/img/path.png"/>
-          </section>
-          <section>
-            <p>Depuis <code>index.html</code>, quel est le chemin relatif vers le fichier <code>image.jpg</code>&nbsp;?</p>
-            <img src="../assets/img/pathRelative2.png"/>
-            <p><code>../images/image.jpg</code></p>
-          </section>
-          <section>
-            <span class="r-fit-text">
-              <h3>La navigation | &lt;nav&gt;</h3>
-              <p>Les liens <code>&lt;a&gt;</code> permettent de relier des pages entre elles. Pour autant, lorsque l’on élabore un site web, il est parfois nécessaire d’isoler un groupe de liens pour élaborer la navigation du site. C’est le rôle de la balise <code>&lt;nav&gt;</code>.</p>
-              <p><a href="https://codepen.io/sardinecan/pen/JjvLpjm" target="_blank" >Exemple</a></p>
-            </span>
-          </section>
-        </section>
-        <section>
-          <span class="r-fit-text">
-            <h2>TP</h2>
-            <ul>
-              <li>
-                Télécharger le dossier « tp ». Il contient
-                l’ébauche d’un site web formé de 4 pages HTML
-                réparties dans différents dossiers (index.html,
-                apropos.html, transcriptions.html et
-                fevrier.html) ;
-              </li>
-              <li>
-                Ouvrir ces 4 fichiers dans un éditeur de texte ;
-              </li>
-              <li>
-                Pour chacun de ces fichiers, créer une
-                navigation renvoyant vers les pages index.html,
-                apropos.html et transcriptions.html (urls et
-                chemins relatifs);
-              </li>
-              <li>
-                Au sein de la page transcriptions.html, ajouter
-                un lien vers le document fevrier.html (urls et
-                chemins relatifs) ;
-              </li>
-              <li>
-                Dans la page fevrier.html, créer un système de
-                liens pour accéder directement à chaque entrée
-                du journal ;
-              </li>
-              <li>
-                Bonus : créer une page HTML pour le mois de
-                janvier suivant le même modèle. Le contenu se
-                trouve dans le fichier janvier.txt.
-              </li>
-            </ul>
-          </span>
-        </section>
-      </div>
-    </div>
-    <script src="../dist/reveal.js"></script>
-    <script src="../plugin/notes/notes.js"></script>
-    <script src="../plugin/markdown/markdown.js"></script>
-    <script src="../plugin/highlight/highlight.js"></script>
-    <script>
-    // More info about initialization & config:
-    // - https://revealjs.com/initialization/
-    // - https://revealjs.com/config/
-    Reveal.initialize({
-      hash: true,
-      // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-    });
-    </script>
-  </body>
+                            <p>
+                                Si l'on se trouve sur la page
+                                <code
+                                    >https://www.exemple.com/articles/index.html</code
+                                >, le lien relatif
+                                <code>../images/photo.jpg</code> signifie "dans
+                                le dossier parent (<code>../</code>) ; chercher
+                                le répertoire images (<code>images/</code>) ;
+                                puis le fichier <code>photo.jpg</code>".
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Quand les utiliser</h3>
+                            <ul>
+                                <li>
+                                    Les <emph>chemins absolus</emph> sont
+                                    souvent utilisés pour des liens externes,
+                                    car ils garantissent que le lien fonctionne
+                                    partout.
+                                </li>
+                                <li>
+                                    Les <emph>chemins relatifs</emph>, en
+                                    revanche, sont très pratiques pour lier des
+                                    ressources à l'intérieur d'un même site. Ils
+                                    simplifient la gestion du contenu et rendent
+                                    les migrations de site plus faciles. Par
+                                    exemple, si le nom de domaine change, les
+                                    liens internes continueront de fonctionner
+                                    sans qu'il soit nécessaire de les modifier.
+                                </li>
+                            </ul>
+                            <p>
+                                À noter que ces chemins d'accès tirent leur
+                                origine des systèmes de fichiers hiérarchiques,
+                                systèmes popularisés par UNIX.
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>Syntaxe</h3>
+                            <p>
+                                Un chemin absolu part toujours de la
+                                <emph>racine</emph> ou du
+                                <emph>nom de domaine</emph> :
+                            </p>
+                            <ul>
+                                <li>
+                                    racine :
+                                    <q
+                                        ><emph><code>/</code></emph></q
+                                    >
+                                    (linux/macos) ou
+                                    <q
+                                        ><emph><code>C:</code></emph
+                                        >, <emph><code>D:</code></emph
+                                        >, etc.</q
+                                    >
+                                    (Windows)<br /><code
+                                        >/home/user/documents/file.txt</code
+                                    >
+                                    <br /><code
+                                        >C:\Users\John\Documents\file.txt</code
+                                    >
+                                </li>
+                                <li>
+                                    protocole et nom de domaine (pour le web) :
+                                    <q
+                                        ><emph
+                                            ><code
+                                                >http://www.mon-nom-de-domaine.fr</code
+                                            ></emph
+                                        ></q
+                                    >
+                                    (ou <code>https://</code>) <br /><code
+                                        >https://www.example.com/images/photo.jpg</code
+                                    >
+                                </li>
+                            </ul>
+                            <p>
+                                Un chemin relatif part du répertoire courant. Il
+                                est alors possible de descendre ou de remonter
+                                dans l'arborescence.
+                            </p>
+                            <ul>
+                                <li>
+                                    Utilisation de
+                                    <emph><code>.</code></emph> pour indiquer le
+                                    dossier actuel (optionnel).
+                                </li>
+                                <li>
+                                    Utilisation de
+                                    <emph><code>..</code></emph> pour remonter
+                                    d'un niveau.
+                                </li>
+                            </ul>
+                            <p>
+                                Chaque <emph>étape</emph> est ensuite délimitée
+                                par
+                                <q
+                                    ><emph><code>/</code></emph></q
+                                >
+                            </p>
+                        </span>
+                    </section>
+                    <section>
+                        <p>
+                            Quel est le chemin absolu vers le fichier about.html
+                            &nbsp;?
+                        </p>
+                        <img src="../assets/img/path.png" />
+                    </section>
+                    <section>
+                        <p>
+                            Quel est le chemin absolu vers le fichier about.html
+                            &nbsp;?
+                        </p>
+                        <img src="../assets/img/pathAbsolute.png" />
+                        <p><code>/home/username/Documents/about.html</code></p>
+                    </section>
+                    <section>
+                        <p>
+                            Depuis <code>about.html</code>, quel est le chemin
+                            relatif vers <code>index.html</code>&nbsp;?
+                        </p>
+                        <img src="../assets/img/path.png" />
+                    </section>
+                    <section>
+                        <p>
+                            Depuis <code>about.html</code> quel est le chemin
+                            relatif vers <code>index.html</code>&nbsp;?
+                        </p>
+                        <img src="../assets/img/pathRelative1.png" />
+                        <p><code>./index.html</code></p>
+                    </section>
+                    <section>
+                        <p>
+                            Depuis <code>index.html</code>, quel est le chemin
+                            relatif vers le fichier
+                            <code>image.jpg</code>&nbsp;?
+                        </p>
+                        <img src="../assets/img/path.png" />
+                    </section>
+                    <section>
+                        <p>
+                            Depuis <code>index.html</code>, quel est le chemin
+                            relatif vers le fichier
+                            <code>image.jpg</code>&nbsp;?
+                        </p>
+                        <img src="../assets/img/pathRelative2.png" />
+                        <p><code>../images/image.jpg</code></p>
+                    </section>
+                    <section>
+                        <span class="r-fit-text">
+                            <h3>La navigation | &lt;nav&gt;</h3>
+                            <p>
+                                Les liens <code>&lt;a&gt;</code> permettent de
+                                relier des pages entre elles. Pour autant,
+                                lorsque l’on élabore un site web, il est parfois
+                                nécessaire d’isoler un groupe de liens pour
+                                élaborer la navigation du site. C’est le rôle de
+                                la balise <code>&lt;nav&gt;</code>.
+                            </p>
+                            <p>
+                                <a
+                                    href="https://codepen.io/sardinecan/pen/JjvLpjm"
+                                    target="_blank"
+                                    >Exemple</a
+                                >
+                            </p>
+                        </span>
+                    </section>
+                </section>
+                <section>
+                    <span class="r-fit-text">
+                        <h2>TP</h2>
+                        <ul>
+                            <li>
+                                Télécharger le dossier « tp ». Il contient
+                                l’ébauche d’un site web formé de 4 pages HTML
+                                réparties dans différents dossiers (index.html,
+                                apropos.html, transcriptions.html et
+                                fevrier.html) ;
+                            </li>
+                            <li>
+                                Ouvrir ces 4 fichiers dans un éditeur de texte ;
+                            </li>
+                            <li>
+                                Pour chacun de ces fichiers, créer une
+                                navigation renvoyant vers les pages index.html,
+                                apropos.html et transcriptions.html (urls et
+                                chemins relatifs);
+                            </li>
+                            <li>
+                                Au sein de la page transcriptions.html, ajouter
+                                un lien vers le document fevrier.html (urls et
+                                chemins relatifs) ;
+                            </li>
+                            <li>
+                                Dans la page fevrier.html, créer un système de
+                                liens pour accéder directement à chaque entrée
+                                du journal ;
+                            </li>
+                            <li>
+                                Bonus : créer une page HTML pour le mois de
+                                janvier suivant le même modèle. Le contenu se
+                                trouve dans le fichier janvier.txt.
+                            </li>
+                        </ul>
+                    </span>
+                </section>
+            </div>
+        </div>
+        <script src="../dist/reveal.js"></script>
+        <script src="../plugin/notes/notes.js"></script>
+        <script src="../plugin/markdown/markdown.js"></script>
+        <script src="../plugin/highlight/highlight.js"></script>
+        <script>
+            // More info about initialization & config:
+            // - https://revealjs.com/initialization/
+            // - https://revealjs.com/config/
+            Reveal.initialize({
+                hash: true,
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            });
+        </script>
+    </body>
 </html>
