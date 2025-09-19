@@ -1,4 +1,4 @@
-# master-defi-web
+# univparisnanterre-m1-defi-4L7IF05P
 
 Supports pour l'enseignement 4L7IF05P réalisés dans le cadre du Master 1 DEFI - UFR Phillia - Université Paris-Nanterre.
 
