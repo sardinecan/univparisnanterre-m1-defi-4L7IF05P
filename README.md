@@ -1,8 +1,8 @@
 # master-defi-web
 
-Supports pour les enseignements 4L7IF05P et 4L8IF01P réalisés dans le cadre du Master 1 DEFI - UFR Phillia - Université Paris-Nanterre.
+Supports pour l'enseignement 4L7IF05P réalisés dans le cadre du Master 1 DEFI - UFR Phillia - Université Paris-Nanterre.
 
-Ces supports réalisés avec le framework [Reveal.js](https://revealjs.com/) et sont disponible en ligne : [https://sardinecan.github.io/master-defi-web/](https://sardinecan.github.io/master-defi-web/).
+Ces supports réalisés avec le framework [Reveal.js](https://revealjs.com/) et sont disponible en ligne : [https://sardinecan.github.io/univparisnanterre-m1-defi-4L7IF05P/](https://sardinecan.github.io/univparisnanterre-m1-defi-4L7IF05P/).
 
 ## installation locale
 ### prérequis
