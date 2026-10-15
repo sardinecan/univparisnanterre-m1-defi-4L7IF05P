@@ -84,3 +84,8 @@ footer {
 emph {
   color: teal;  
 }
+
+.reveal pre code {
+  max-height: none !important;
+  overflow: visible !important;
+}
